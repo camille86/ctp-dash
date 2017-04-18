@@ -22,13 +22,13 @@ $(document).ready(function() {
             .pad([0, 0.1])
             .accessors([function(d) { return d.Underemployment; }]);
 
-        var xaxis = fc.axisBottom(d3.scaleBand())
-            .decorate(function(sel) {
-                sel.enter()
-                    .select('text')
-                    .style('text-anchor', 'start')
-                    .attr('transform', 'rotate(45 -10 10)');
-            });
+        // var xaxis = fc.axisBottom(d3.scaleBand())
+        //     .decorate(function(sel) {
+        //         sel.enter()
+        //             .select('text')
+        //             .style('text-anchor', 'start')
+        //             .attr('transform', 'rotate(45 -10 10)');
+        //     });
 
         var chart = fc.chartSvgCartesian(d3.scalePoint(), d3.scaleLinear())
             .xDomain(csv.map(function(d) { return d.Location; }))
