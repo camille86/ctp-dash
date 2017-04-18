@@ -27,6 +27,11 @@ body {
   font-size: small;
 }
 
+body.application .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .chart-wrapper {
     border-color: #cecfdd;
 }
@@ -77,6 +82,20 @@ body {
     border: 1px solid #cecfdd;
 }
 
+.definition {
+    padding: 16px;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: #F1EFD5;
+    border-radius: 8px;
+    color: #4f4f4f;
+    border: 1px solid #e2dea9;
+}
+
+.definition strong {
+    font-weight: 600;
+}
+
 #accordion-title {
     background-color: #4c516d;
     color: #eee;
@@ -111,252 +130,4 @@ body {
 
 #intro {
     margin-bottom: 0;
-}
-
-#underemployment-chart {
-    width: 100%;
-    height: 250px;
-}
-
-.bar {
-    fill: #562339;
-    stroke-width: 0;
-}
-
-/*isotope*/
-.grid {
-  /*border: 1px solid #999;*/
-  max-width: 1200px;
-  margin: 12px;
-  /*padding: 2px;*/
-}
-
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer, .grid-item {
-    /*width: 25%;*/
-    width: 280px;
-}
-
-.grid-item {
-  position: relative;
-  float: left;
-  /*width: 25%;*/
-/*   height: 200px; */
-  min-height: 240px;
-  padding: 10px 14px 10px 14px;
-  border: 5px solid #fff;
-  background: #888;
-/*   color: #E8E5ED; */
-  color: #333;
-  border-radius: 8px;
-}
-
-.grid-item > * {
-  margin: 0;
-  padding: 0;
-}
-
-.grid-item .name {
-  font-size: 1.1em;
-  font-weight: 700;
-  padding: 0;
-}
-
-.grid-item .current-val {
-  font-size: 2.8em;
-  font-weight: 600;
-  color: #f5f5f5;
-/*   vertical-align: baseline; */
-  margin-top: 2px;
-  /*-webkit-transition: font-size 400ms;
-  -moz-transition: font-size 400ms;
-  -o-transition: font-size 400ms;
-  transition: font-size 400ms;*/
-}
-
-.grid-item .current-year {
-/*   font-size: 1.5em; */
-  font-size: 0.5em;
-  color: #444;
-}
-
-.grid-item .prev-val {
-  font-size: 2.2em;
-  font-weight: 600;
-  color: #dfdfdf;
-  margin: 2px;
-  /*-webkit-transition: font-size 400ms;
-  -moz-transition: font-size 400ms;
-  -o-transition: font-size 400ms;
-  transition: font-size 400ms;*/
-}
-
-.grid-item .prev-year {
-  font-size: 0.6em;
-  color: #444;
-}
-
-.grid-item .descript {
-  position: absolute;
-  bottom: 30px;
-  font-size: 1.25em;
-  width: 90%;
-  color: #333;
-}
-
-.grid-item .area {
-  position: absolute;
-  color: #eee;
-  bottom: 10px;
-}
-
-.grid-item .trend {
-    color: #eee;
-    font-size: 2.8em;
-    padding: 0;
-}
-
-.row-no-gutter {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.row-no-gutter [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
-.workforce {
-  background-color: #ce6193;
-}
-
-.workforce .name {
-  border-bottom: 2px solid #b13c71;
-}
-
-.workforce .descript {
-  border-bottom: 1px solid #b13c71;
-}
-
-.childhood {
-  background-color: #f58573;
-}
-
-.childhood .name {
-  border-bottom: 2px solid #d35a47;
-}
-
-.childhood .descript {
-  border-bottom: 1px solid #d35a47;
-}
-
-.housing {
-  background-color: #55b572;
-}
-
-.housing .name {
-    border-bottom: 2px solid #349c54;
-}
-
-.housing .descript {
-    border-bottom: 1px solid #349c54;
-}
-
-.health {
-  background-color: #9bc55f;
-}
-
-.health .name {
-    border-bottom: 2px solid #71a623;
-}
-
-.health .descript {
-    border-bottom: 1px solid #71a623;
-}
-
-.big {
-    /*width: 50%;*/
-    width: 560px;
-    height: 300px;
-}
-
-.big .current-val, .big .trend {
-    font-size: 5em;
-    -webkit-transition: font-size 400ms;
-    -moz-transition: font-size 400ms;
-    -o-transition: font-size 400ms;
-    transition: font-size 400ms;
-}
-
-.big .prev-val {
-    font-size: 3em;
-    -webkit-transition: font-size 400ms;
-    -moz-transition: font-size 400ms;
-    -o-transition: font-size 400ms;
-    transition: font-size 400ms;
-}
-
-p.descript-text {
-    visibility: hidden;
-}
-
-.big p.descript-text {
-    visibility: visible;
-}
-
-.positive {
-
-}
-
-.negative {
-
-}
-
-.neutral {
-
-}
-
-
-/*d3fc*/
-.chart-label {
-    font-size: 1.5em;
-    line-height: normal;
-    color: #222;
-}
-
-.chart {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.chart svg {
-    overflow: visible !important;
-}
-
-.chart.large {
-    height: 400px;
-}
-
-.plot-area {
-    background-color: white;
-}
-
-.y-axis-label {
-    white-space: nowrap;
-}
-
-.d3fc-svg svg {
-    overflow: visible !important;
-}
-
-.annotation-line > line {
-    fill-opacity: 0;
-    stroke: #999;
-    stroke-width: 1;
-    stroke-dasharray: 3, 3;
 }

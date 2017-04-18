@@ -1,0 +1,120 @@
+
+.bar {
+    fill: #562339;
+    stroke-width: 0;
+}
+
+
+
+/*d3fc*/
+.chart-label {
+    font-size: 1.5em;
+    line-height: normal;
+    color: #222;
+}
+
+.chart {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.chart svg {
+    overflow: visible !important;
+    display: block;
+}
+
+.chart.large {
+    height: 400px;
+}
+
+.plot-area {
+    background-color: white;
+}
+
+.y-axis-label {
+    white-space: nowrap;
+}
+
+.d3fc-svg svg {
+    overflow: visible !important;
+}
+
+.annotation-line > line {
+    fill-opacity: 0;
+    stroke: #999;
+    stroke-width: 1;
+    stroke-dasharray: 3, 3;
+}
+
+
+.chart240 {
+    height: 240px;
+}
+
+.chart300 {
+    height: 300px;
+}
+
+.chart320 {
+    height: 320px;
+}
+
+.chart400 {
+    height: 400px;
+}
+
+#burden-tenure .horiz-legend {
+    position: absolute;
+    display: block;
+    height: 60px;
+    bottom: auto;
+    /*right: 0;*/
+    left: 80px;
+    right: auto;
+    top: 16px;
+    width: 100px;
+}
+
+#burden-tenure .x-axis .domain {
+    display: none;
+}
+
+#burden-map .polygon {
+    stroke: #433F52;
+}
+
+#underemployment-chart .x-axis .domain {
+    display: none;
+}
+
+#underemployment-chart .y-axis .domain {
+    display: none;
+}
+
+.bar-label {
+    text-anchor: middle;
+    font-size: 0.8em;
+    fill: black;
+    font-weight: 600;
+}
+
+/*#underemployment-chart d3fc-svg.y-axis {
+    width: 8em;
+}
+
+#underemployment-chart .x-axis {
+    margin-left: 8em;
+
+}*/
+
+#underemployment-chart {
+    width: 100%;
+    height: 300px;
+}
+
+#underemployment-chart .x-axis {
+    height: 8em;
+}

@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jobs and Workforce - City Transformation Plan</title>
+    <title>Housing - City Transformation Plan</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.0/topojson.min.js"></script>
+    <!-- <script src="https://unpkg.com/plottable@3.0.0/plottable.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-    <script type="text/javascript" src="../js/workforce.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+
+    <script type="text/javascript" src="../js/housing.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
+    <!-- <link rel="stylesheet" href="../bower_components/plottable/plottable.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" /> -->
     <link rel="stylesheet" href="../css/stylesheet.css" />
     <link rel="stylesheet" href="../css/chart-styles.css" />
 
@@ -34,12 +44,12 @@
                 <a class="navbar-brand" href="../">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <div class="navbar-brand">Job Creation &amp; Workforce Development</div>
+                <div class="navbar-brand">Housing &amp; Physical Environment</div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../">Dashboard home</a></li>
-                    <li><a href="http://www.transformnewhaven.org/job-creation-and-workforce">Workforce in the CTP</a></li>
+                    <li><a href="http://www.transformnewhaven.org/housing-and-physical-environment">Housing in the CTP</a></li>
                 </ul>
             </div>
         </div>
@@ -50,9 +60,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="plank" id="plank">
-                    <h2 class="text-uppercase">Job creation and workforce development</h2>
+                    <h2 class="text-uppercase">Housing and physical environment</h2>
                     <p class="goal">
-                        <strong>Vision: </strong> All residents have the job training, basic skills, and access to services that they need to succeed in living wage employment and achieve financial stability
+                        <strong>Vision: </strong> All residents have access to quality housing, infrastructure, and neighborhood spaces that promote community cohesion and are affordable
                     </p>
                 </div>
             </div>
@@ -70,13 +80,13 @@
                                 <div class="panel-heading" role="tab" id="target1">
                                     <h5 class="panel-title">
                                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                            Underemployment
+                                            Affordable housing
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="target1">
                                     <div class="panel-body">
-                                        Reduce the underemployment rate from 20% to 15% by moving 3,000 individuals into better jobs
+                                        Reduce percentage of cost-burdened residents down to 43% from 53%
                                     </div>
                                 </div>
                             </div>
@@ -84,13 +94,13 @@
                                 <div class="panel-heading" role="tab" id="target2">
                                     <h5 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                            Living wage jobs
+                                            Development
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target2">
                                     <div class="panel-body">
-                                        Increase the percentage of residents in jobs making a living wage from 39% to 45%, placing 700 people per year
+                                        Build 800 units of affordable housing
                                     </div>
                                 </div>
                             </div>
@@ -98,13 +108,27 @@
                                 <div class="panel-heading" role="tab" id="target3">
                                     <h5 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                            Pipeline
+                                            Homelessness
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target3">
                                     <div class="panel-body">
-                                        Establish a unified workforce pipeline that supports, tracks, and places 5,000 residents in jobs
+                                        Reduce the number of homeless residents by 50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target4">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            Complete Streets
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target4">
+                                    <div class="panel-body">
+                                        Design and implement 20 Complete Streets
                                     </div>
                                 </div>
                             </div>
@@ -115,18 +139,41 @@
 
             <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                         <div class="chart-wrapper">
                             <div class="chart-title">
-                                Underemployment rate by location, 2015
+                                Severe housing cost burden by neighborhood, 2015
                             </div>
-                            <div class="chart-stage chart300">
-                                <div id="underemployment-chart"></div>
+                            <div class="chart-stage chart400">
+                                <div id="burden-map" class="chart"></div>
                             </div>
                             <div class="chart-notes">
-                                Source: DataHaven Community Wellbeing Survey
+                                Source: US Census Bureau, American Community Survey
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Severe housing cost burden by tenure, 2015
+                                </div>
+                                <div class="chart-stage chart240">
+                                    <div id="burden-tenure" class="chart"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="definition">
+                                <p>
+                                    <strong>Definition: </strong>Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
