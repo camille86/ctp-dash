@@ -32,6 +32,11 @@ body.application .container-fluid {
     padding-right: 12px;
 }
 
+.application {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .chart-wrapper {
     border-color: #cecfdd;
 }
@@ -140,4 +145,8 @@ body.application .container-fluid {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+.row-max {
+    max-width: 1200px;
 }

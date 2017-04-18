@@ -52,6 +52,10 @@ $(document).ready(function() {
             $('.grid').isotope();
         }).on('click', 'a', function(e) {
             e.stopPropagation();
+        }).on('mouseover', function(e) {
+            $(this).find('.learn-more').removeClass('hidden');
+        }).on('mouseout', function(e) {
+            $(this).find('.learn-more').addClass('hidden');
         });
     }
 
@@ -78,7 +82,7 @@ function render(d, i) {
     var card = d;
     card.current_val = makeFormat(d.format, +d.current_val);
     card.prev_val = d.prev_val.length ? makeFormat(d.format, +d.prev_val) : '';
-    card.area = '<a class="area" href="pages/' + d.class + '.html">' + d.area + '</a>';
+    card.area = '<a class="area" href="pages/' + d.class + '.html"><span class="hidden learn-more">Learn more about </span>' + d.area + '</a>';
     card.arrow = '<span class="glyphicon glyphicon-arrow-' + d.arrow + '"></span>';
     console.log(card);
 
