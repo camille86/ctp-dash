@@ -1,0 +1,27 @@
+---
+title: "Data prep scripts"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+These are scripts in R used to make tables from the ACS and prep indicators for use in the CTP dashboard. Requires use of the DataHaven `acsprofiles` package.
+
+To install the package: 
+
+```{r, eval=FALSE}
+devtools::install_github("CT-Data-Haven/acsprofiles")
+```
+
+Note that the package requires a Census API key, [available from the Census Bureau](http://api.census.gov/data/key_signup.html).
+
+To save your key:
+
+```{r, eval=FALSE}
+acs::api.key.install(key)
+```
+
+
+
