@@ -1,7 +1,7 @@
 d3.queue()
     .defer(d3.json, '../json/nhv_shape.json')
     .defer(d3.csv, '../data/cost_burden_neighborhoods.csv')
-    .defer(d3.csv, '../data/cost_burden_tenure_wide.csv')
+    .defer(d3.csv, '../data/cost_burden_tenure.csv')
     .await(init);
 
 //////////////////////////// INITIALIZE
@@ -16,7 +16,42 @@ function init(error, json, hood, tenure) {
     // });
 
     drawMap(json, hood);
-    drawTenure(tenure);
+    drawTenure2(tenure);
+}
+
+function drawTenure2(csv) {
+    var fullwidth = 380;
+    var fullheight = 210;
+    var margin = { top: 12, right: 18, bottom: 40, left: 30 };
+    var width = fullwidth - margin.left - margin.right;
+    var height = fullheight - margin.top - margin.bottom;
+    var svg = d3.select('#burden-tenure')
+        .append('svg')
+        .attr('width', '100%')
+        // .attr('height', '100%')
+        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+
+    var bars = new dimple.chart(svg, csv);
+    bars.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+    bars.defaultColors = [
+        new dimple.color('#992156'),
+        new dimple.color('#739DD0')
+    ];
+    
+
+    var x = bars.addCategoryAxis('x', ['Location', 'Tenure'])
+        .addOrderRule(['CT', 'GNH', 'New Haven']);
+
+    var y = bars.addMeasureAxis('y', 'Burden');
+    y.tickFormat = '.0%';
+    y.ticks = 5;
+    y.title = null;
+
+    bars.addSeries('Tenure', dimple.plot.bar);
+    bars.addLegend('15%', '5%', 100, 20, 'left');
+    bars.draw();
+    // x.titleShape.remove();
+
 }
 
 function drawTenure(csv) {

@@ -9,6 +9,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
     <script type="text/javascript" src="../js/workforce.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -34,7 +35,7 @@
                 <a class="navbar-brand" href="../">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <div class="navbar-brand">Job Creation &amp; Workforce Development</div>
+                <div class="navbar-brand">DRAFT - Job Creation &amp; Workforce Development</div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -115,13 +116,29 @@
 
             <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                         <div class="chart-wrapper">
                             <div class="chart-title">
                                 Underemployment rate by location, 2015
                             </div>
                             <div class="chart-stage chart300">
                                 <div id="underemployment-chart"></div>
+                                <p id="location-def" class="small">
+                                    CT = Connecticut, GNH = Greater New Haven, NHV low-income = Low-income neighborhoods in New Haven, Other NHV = Non-low-income neighborhoods in New Haven
+                                </p>
+                            </div>
+                            <div class="chart-notes">
+                                Source: DataHaven Community Wellbeing Survey
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Underemployment over time
+                            </div>
+                            <div class="chart-stage chart300">
+                                <div id="underemployment-trend"></div>
                             </div>
                             <div class="chart-notes">
                                 Source: DataHaven Community Wellbeing Survey

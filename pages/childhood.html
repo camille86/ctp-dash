@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Early Childhood - City Transformation Plan</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script type="text/javascript" src="../js/childhood.js"></script>
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/chart-styles.css" />
+
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body class="application">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <div class="navbar-brand">DRAFT - Early Childhood</div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../">Dashboard home</a></li>
+                    <li><a href="http://www.transformnewhaven.org/early-childhood">Early childhood in the CTP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="plank" id="plank">
+                    <h2 class="text-uppercase">Early childhood</h2>
+                    <p class="goal">
+                        <strong>Vision: </strong> All New Haven children, birth through age 8, will be healthy, safe, thriving in nurturing families, and prepared to be successful, lifelong learners
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="chart-wrapper">
+                    <div class="chart-title med-title" id="accordion-title">
+                        <h4>2020 targets</h4>
+                    </div>
+                    <div class-"chart-stage">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target1">
+                                    <h5 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            Access to pre-K
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="target1">
+                                    <div class="panel-body">
+                                        Increase the percentage of New Haven children with pre-K experience from 73.9% to 100%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target2">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            Quality teaching
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target2">
+                                    <div class="panel-body">
+                                        Increase the percentage of preschool teachers meeting state credential requirements from 70% to 100%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target3">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            Families and caregivers
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target3">
+                                    <div class="panel-body">
+                                        Expand parenting education and support efforts to reach 60% of parents of young children
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Preschool enrollment by location, 2015
+                            </div>
+                            <div class="chart-stage chart300">
+                                <div id="prek-chart"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source: US Census Bureau, American Community Survey
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Availability of childcare slots, 2014
+                            </div>
+                            <div class="chart-stage chart300">
+                                <div id="childcare-chart"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+
+                            </div>
+                            <div class="chart-stage chart300">
+                                <div id=""></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- <div class="goal" id="goal">
+                            <p>
+                                <strong>Goal: </strong>Goal text for workforce
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

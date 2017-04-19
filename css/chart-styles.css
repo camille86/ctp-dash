@@ -86,13 +86,7 @@
     stroke: #433F52;
 }
 
-#underemployment-chart .x-axis .domain {
-    display: none;
-}
 
-#underemployment-chart .y-axis .domain {
-    display: none;
-}
 
 .bar-label {
     text-anchor: middle;
@@ -109,12 +103,10 @@
     margin-left: 8em;
 
 }*/
-
-#underemployment-chart {
-    width: 100%;
-    height: 300px;
+#location-def {
+    margin-top: 10px;
 }
 
-#underemployment-chart .x-axis {
-    height: 8em;
+#underemployment-chart {
+    /*height: 300px;*/
 }
