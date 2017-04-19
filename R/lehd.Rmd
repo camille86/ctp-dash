@@ -1,0 +1,70 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+```{r}
+library(tidyverse)
+library(tigris)
+library(R.utils)
+library(stringr)
+```
+
+```{r}
+if(!file.exists("lehd.csv")) {
+  url <- "https://lehd.ces.census.gov/data/lodes/LODES7/ct/rac/ct_rac_S000_JT00_2014.csv.gz"
+  download.file(url, "lehd.csv.gz")
+  gunzip("lehd.csv.gz")
+}
+
+lehd <- read_csv("lehd.csv") %>%
+  select(1, 2, CE01:CE03) %>%
+  setNames(c("block", "total_jobs", "low_inc", "med_inc", "high_inc"))
+
+if(!file.exists("xwalk.csv")) {
+  url <- "https://lehd.ces.census.gov/data/lodes/LODES7/ct/ct_xwalk.csv.gz"
+  download.file(url, "xwalk.csv.gz")
+  gunzip("xwalk.csv.gz")
+}
+xwalk <- read_csv("xwalk.csv", col_types = rep("c", 41) %>% str_c(collapse = "")) %>%
+  select(tabblk2010, bgrp, ctycsubname)
+
+bg <- block_groups(state = 09, county = 09, cb = T)
+```
+
+```{r}
+nhv <- lehd %>%
+  inner_join(xwalk, by = c("block" = "tabblk2010")) %>%
+  filter(str_detect(ctycsubname, "New Haven town")) %>%
+  select(bgrp, total_jobs, low_inc, med_inc, high_inc) %>%
+  group_by(bgrp) %>%
+  summarise_all(sum) %>%
+  mutate(per_low = low_inc / total_jobs, per_med = med_inc / total_jobs, per_high = high_inc / total_jobs)
+
+nhv_fips <- nhv$bgrp
+nhv_bg <- bg[bg@data$GEOID %in% nhv_fips, ]
+
+map <- broom::tidy(nhv_bg, region = "GEOID") %>%
+  inner_join(nhv, by = c("id" = "bgrp"))
+```
+
+```{r}
+ggplot(map, aes(x = long, y = lat, group = group, fill = per_low)) + geom_polygon() + coord_map() + scale_fill_continuous(low = "white", high = "orchid")
+```
+
+```{r}
+write_csv(nhv, "salary_by_block_group.csv")
+```
+
+```{r}
+geojsonio::geojson_write(nhv_bg, file = "nhv_bg.geojson")
+```
+
