@@ -9,6 +9,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script type="text/javascript" src="../js/health.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -129,29 +130,13 @@
 
             <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Insurance coverage over time
-                            </div>
-                            <div class="chart-stage chart400">
-                                <div id="insurance-map"></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source: US Census Bureau, American Community Survey
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col-sm-6">
                         <div class="chart-wrapper">
                             <div class="chart-title">
-
+                                Obesity rates among adults by location, 2015
                             </div>
-                            <div class="chart-stage chart300">
-                                <div id=""></div>
+                            <div class="chart-stage chart220">
+                                <div id="obesity-loc"></div>
                             </div>
                             <div class="chart-notes">
                                 Source:
@@ -161,10 +146,68 @@
                     <div class="col-sm-6">
                         <div class="chart-wrapper">
                             <div class="chart-title">
-
+                                Obesity rates among adults over time
                             </div>
-                            <div class="chart-stage chart300">
-                                <div id=""></div>
+                            <div class="chart-stage chart220">
+                                <div id="obesity-trend"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Smoking rates among adults by location, 2015
+                            </div>
+                            <div class="chart-stage chart220">
+                                <div id="smoking-loc"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Smoking rates among adults over time
+                            </div>
+                            <div class="chart-stage chart220">
+                                <div id="smoking-trend"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Adults lacking health insurance over time
+                            </div>
+                            <div class="chart-stage chart220">
+                                <div id="insurance-trend"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Food insecurity over time
+                            </div>
+                            <div class="chart-stage chart220">
+                                <div id="food-trend"></div>
                             </div>
                             <div class="chart-notes">
                                 Source:

@@ -31,25 +31,30 @@ function makeBars3(csv) {
         .attr('width', '100%')
         // .attr('height', '100%')
         .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
-    var bars = new dimple.chart(svg, csv);
-    bars.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    bars.defaultColors = [
+    var chart = new dimple.chart(svg, csv);
+    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+    chart.defaultColors = [
         new dimple.color('#992156')
     ];
 
-    var y = bars.addCategoryAxis('y', 'Location')
-        .addOrderRule(['CT', 'GNH', 'New Haven', 'NHV low-income', 'Other NHV'], true);
-    // y.title = '';
+    var y = chart.addCategoryAxis('y', 'Location');
+    y.addOrderRule(['CT', 'GNH', 'New Haven', 'NHV low-income', 'Other NHV'], true);
+    y.title = null;
 
-    var x = bars.addMeasureAxis('x', 'Underemployment');
+    var x = chart.addMeasureAxis('x', 'Underemployment');
     // x.title = '';
     x.tickFormat = '.0%';
     x.ticks = 6;
     x.title = null;
 
 
-    bars.addSeries(null, dimple.plot.bar);
-    bars.draw();
+    var bars = chart.addSeries(null, dimple.plot.bar);
+    bars.getTooltipText = function(e) {
+        var txt = e.y + ': ' + d3.format('.0%')(e.xValue);
+        return [txt];
+    };
+
+    chart.draw();
     // x.titleShape.remove();
 
 }
@@ -67,28 +72,33 @@ function makeTrend(csv) {
         // .attr('height', '100%')
         .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
 
-    var lines = new dimple.chart(svg, csv);
-    lines.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+    var chart = new dimple.chart(svg, csv);
+    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
 
-    var x = lines.addTimeAxis('x', 'Year', '%Y-%m-%d', '%Y');
+    var x = chart.addTimeAxis('x', 'Year', '%Y', '%Y');
     x.title = null;
 
-    var y = lines.addMeasureAxis('y', 'Underemployment');
+    var y = chart.addMeasureAxis('y', 'Underemployment');
     y.tickFormat = '.0%';
     y.ticks = 6;
 
-    lines.defaultColors = [
+    chart.defaultColors = [
         new dimple.color('#739DD0'),
         new dimple.color('#992156')
     ];
 
-    var baseline = lines.addSeries(null, dimple.plot.line);
-    var colorline = lines.addSeries('Type', dimple.plot.line);
+    var baseline = chart.addSeries(null, dimple.plot.line);
+    var colorline = chart.addSeries('Type', dimple.plot.line);
     colorline.lineMarkers = true;
     baseline.lineMarkers = false;
 
-    lines.addLegend('75%', '5%', 100, 20, 'left', colorline);
-    lines.draw();
+    colorline.getTooltipText = function(e) {
+        var txt = d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
+        return [txt];
+    };
+
+    chart.addLegend('75%', '5%', 100, 20, 'left', colorline);
+    chart.draw();
 
     var shapes = baseline.shapes.selectAll('path.dimple-line');
     console.log(shapes);

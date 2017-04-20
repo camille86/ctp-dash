@@ -31,26 +31,31 @@ function drawTenure2(csv) {
         // .attr('height', '100%')
         .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
 
-    var bars = new dimple.chart(svg, csv);
-    bars.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    bars.defaultColors = [
+    var chart = new dimple.chart(svg, csv);
+    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+    chart.defaultColors = [
         new dimple.color('#992156'),
         new dimple.color('#739DD0')
     ];
-    
 
-    var x = bars.addCategoryAxis('x', ['Location', 'Tenure'])
-        .addOrderRule(['CT', 'GNH', 'New Haven']);
 
-    var y = bars.addMeasureAxis('y', 'Burden');
+    var x = chart.addCategoryAxis('x', ['Location', 'Tenure']);
+    x.addOrderRule(['CT', 'GNH', 'New Haven']);
+    x.title = null;
+
+    var y = chart.addMeasureAxis('y', 'Burden');
     y.tickFormat = '.0%';
     y.ticks = 5;
     y.title = null;
 
-    bars.addSeries('Tenure', dimple.plot.bar);
-    bars.addLegend('15%', '5%', 100, 20, 'left');
-    bars.draw();
-    // x.titleShape.remove();
+    var bars = chart.addSeries('Tenure', dimple.plot.bar);
+    bars.getTooltipText = function(e) {
+        var txt = e.xField[0] + ', ' + e.xField[1] + ': ' + d3.format('.0%')(e.y); 
+        return [txt];
+    };
+
+    chart.addLegend('15%', '5%', 100, 20, 'left');
+    chart.draw();
 
 }
 
