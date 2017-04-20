@@ -17,6 +17,9 @@ function init(error, rates, trend) {
 
     makeBars3(rates);
     makeTrend(trend);
+
+    d3.selectAll('.dimple-marker')
+        .attr('r', 3);
 }
 
 

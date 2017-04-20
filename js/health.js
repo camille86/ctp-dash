@@ -27,6 +27,9 @@ function init(error, locs, trend) {
     makeSmokingTrend(smoking_trend);
     makeFoodTrend(food_trend);
     makeInsuranceTrend(insurance_trend);
+
+    d3.selectAll('.dimple-marker')
+        .attr('r', 3);
 }
 
 function makeObesityBars(data) {
@@ -127,6 +130,9 @@ function makeObesityTrend(data) {
         new dimple.color('#992156'),
         new dimple.color('#2F588B')
     ];
+    var color = d3.scaleOrdinal()
+        .domain(d3.extent(data, function(d) { return d.value; }))
+        .range(['#739dd0', '#992156', '#2f588b']);
 
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
@@ -149,7 +155,7 @@ function makeObesityTrend(data) {
         return [txt];
     };
     baseline.getTooltipText = function(e) {
-        console.log(e);
+        // console.log(e);
         var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
         return [txt];
     };
@@ -162,6 +168,18 @@ function makeObesityTrend(data) {
     // console.log(shapes);
     d3.select('#obesity-trend #dimple-all')
         .style('stroke-dasharray', ('5, 5'));
+
+    // d3.selectAll('#obesity-trend .dimple-marker')
+    //     .attr('fill', function(d) {
+    //         console.log(d);
+    //         // console.log(color(d))
+    //         return color(d.aggField[0]);
+    //     });
+    // d3.selectAll('#obesity-trend .dimple-line')
+    //     .attr('stroke', function(d) {
+    //         // return color(d.aggField[0]);
+    //         console.log(d);
+    //     });
 }
 
 function makeSmokingTrend(data) {
@@ -206,7 +224,7 @@ function makeSmokingTrend(data) {
         return [txt];
     };
     baseline.getTooltipText = function(e) {
-        console.log(e);
+        // console.log(e);
         var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
         return [txt];
     };
@@ -317,7 +335,7 @@ function makeInsuranceTrend(data) {
     colorline.data = base;
 
     colorline.getTooltipText = function(e) {
-        console.log(e);
+        // console.log(e);
         var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
         return [txt];
     };
@@ -330,8 +348,8 @@ function makeInsuranceTrend(data) {
 
     colorline.afterDraw = function(shp, d) {
         var paths = d3.select(shp);
-        console.log(paths.style('stroke'));
-        
+        // console.log(paths.style('stroke'));
+
         // svg.append('circle')
         //     .attr('x', shape.attr('x'))
         //     .attr('y', shape.attr('y'))
@@ -347,8 +365,8 @@ function makeInsuranceTrend(data) {
 
     // var markers = colorline.shapes.filter('circle.dimple-marker');
     // console.log(markers);
-    var markers = d3.selectAll('#insurance-trend circle.dimple-marker');
-    markers.attr('r', 3);
+    // var markers = d3.selectAll('#insurance-trend circle.dimple-marker');
+    // markers.attr('r', 3);
 
     // colorline.shapes.filter('circle.dimple-marker')
     //     .attr('fill', function(d) { console.log(d); return 'blue'; });

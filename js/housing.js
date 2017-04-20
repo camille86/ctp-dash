@@ -17,6 +17,9 @@ function init(error, json, hood, tenure) {
 
     drawMap(json, hood);
     drawTenure2(tenure);
+
+    d3.selectAll('.dimple-marker')
+        .attr('r', 3);
 }
 
 function drawTenure2(csv) {
@@ -50,7 +53,7 @@ function drawTenure2(csv) {
 
     var bars = chart.addSeries('Tenure', dimple.plot.bar);
     bars.getTooltipText = function(e) {
-        var txt = e.xField[0] + ', ' + e.xField[1] + ': ' + d3.format('.0%')(e.y); 
+        var txt = e.xField[0] + ', ' + e.xField[1] + ': ' + d3.format('.0%')(e.y);
         return [txt];
     };
 
