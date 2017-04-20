@@ -297,7 +297,7 @@ function makeInsuranceTrend(data) {
         new dimple.color('#739DD0'),
         new dimple.color('#992156'),
         new dimple.color('#2F588B'),
-        new dimple.color('#d483a7')
+        new dimple.color('#359957')
     ];
 
 
@@ -328,10 +328,34 @@ function makeInsuranceTrend(data) {
 
     chart.addLegend('50%', '10%', 200, 50, 'left', colorline);
 
+    colorline.afterDraw = function(shp, d) {
+        var paths = d3.select(shp);
+        console.log(paths.style('stroke'));
+        
+        // svg.append('circle')
+        //     .attr('x', shape.attr('x'))
+        //     .attr('y', shape.attr('y'))
+        //     .attr('r')
+    };
+
+    baseline.afterDraw = function(shp, d) {
+        var shape = d3.select(shp);
+        shape.style('stroke-dasharray', ('5, 5'));
+    };
+
     chart.draw();
+
+    // var markers = colorline.shapes.filter('circle.dimple-marker');
+    // console.log(markers);
+    var markers = d3.selectAll('#insurance-trend circle.dimple-marker');
+    markers.attr('r', 3);
+
+    // colorline.shapes.filter('circle.dimple-marker')
+    //     .attr('fill', function(d) { console.log(d); return 'blue'; });
 
     // var shapes = baseline.shapes.selectAll('path');
     // console.log(shapes);
-    d3.select('#insurance-trend #dimple-all')
-        .style('stroke-dasharray', ('5, 5'));
+    // d3.select('#insurance-trend #dimple-all')
+    //     .style('stroke-dasharray', ('5, 5'));
+
 }
