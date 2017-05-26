@@ -185,13 +185,13 @@ p.descript-text {
 }
 
 .positive {
-
+    color: #23B65E;
 }
 
 .negative {
-
+    color: #B62323;
 }
 
 .neutral {
-
+    color: #C4C827;
 }

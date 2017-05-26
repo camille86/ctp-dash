@@ -78,6 +78,10 @@ body.application .container-fluid {
     background-color: #4c515d;
 }*/
 
+#filters .btn {
+    margin: 0 1px;
+}
+
 .goal {
     padding: 16px;
     font-size: x-large;

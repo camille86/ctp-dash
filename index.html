@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="intro">
+    <div class="container" id="intro">
         <div class="row">
             <div class="col-sm-12">
                 <div class="plank" id="plank">
@@ -82,7 +82,15 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
+        <div class="btn-group" id="filters" role="group" aria-label="filters">
+            <button type="button" class="btn btn-default active" data-filter="*">All sectors</button>
+            <button type="button" class="btn btn-default" data-filter=".workforce">Workforce</button>
+            <button type="button" class="btn btn-default" data-filter=".childhood">Early childhood</button>
+            <button type="button" class="btn btn-default" data-filter=".health">Health</button>
+            <button type="button" class="btn btn-default" data-filter=".housing">Housing</button>
+            <button type="button" class="btn btn-default" data-filter=".cross">Cross-sector</button>
+        </div>
         <div class="row">
             <div class="grid" id="grid-container">
                 <div class="grid-sizer"></div>
@@ -96,20 +104,21 @@
 
 <script id="card-template" type="text/template">
         <div class="row">
-            <h5 class="name col-xs-12">{{name}}</h5>
+            <!-- <h5 class="name col-xs-12">{{name}}</h5> -->
+            <h5 class="name">{{name}}</h5>
         </div>
 
-        <div class="row col-xs-12">
+        <div class="row">
             <div class="col-xs-10">
-                <div class="row">
-                    <h1 class="current-val col-xs-12">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
+                <div class="row row-no-gutter">
+                    <h1 class="current-val">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
                 </div>
-                <div class="row">
-                    <h3 class="prev-val col-xs-12">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
+                <div class="row row-no-gutter">
+                    <h3 class="prev-val">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
                 </div>
             </div>
             <h1 class="trend col-xs-2">
-                {{{arrow}}}
+                <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span>
             </h1>
         </div>
 
@@ -117,7 +126,7 @@
             <div class="descript"><p class="descript-text">{{description}}</p></div>
         </div>
         <div class="row">
-            {{{area}}}
+            <a class="area" href="pages/{{class}}.html"><span class="hidden learn-more">Learn more about </span>{{area}}</a>
         </div>
 </script>
 

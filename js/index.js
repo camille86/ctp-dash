@@ -25,42 +25,50 @@ $(document).ready(function() {
 
         cards.append('div')
             // .classed('grid-item', true)
-            .attr('class', function(d) { return 'grid-item col-md-3 ' + d.class; })
+            .attr('class', function(d) { return 'grid-item ' + d.class; })
             .html(render);
 
+        setupIsotope();
 
-
-
-
-        $('.grid').isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.grid-sizer'
-            }
-        });
-
-        $('.grid-item').on('click', function(e) {
-            // $(this).toggleClass('big');
-            $('.grid-item').not(this).removeClass('big');
-            // $('.descript-text').addClass('hidden');
-            // $('.descript-text').css('visibility', 'hidden');
-            $(this).toggleClass('big');
-            // $(this).find('.descript-text').toggleClass('hidden');
-            // $(this).find('.descript-text').css('visibility', 'visible');
-
-            $('.grid').isotope();
-        }).on('click', 'a', function(e) {
-            e.stopPropagation();
-        }).on('mouseover', function(e) {
-            $(this).find('.learn-more').removeClass('hidden');
-        }).on('mouseout', function(e) {
-            $(this).find('.learn-more').addClass('hidden');
-        });
     }
 
-
 });
+
+function setupIsotope() {
+    var $grid = $('.grid');
+    $grid.isotope({
+        itemSelector: '.grid-item',
+        // percentPosition: true,
+        masonry: {
+            columnWidth: '.grid-sizer'
+        }
+    });
+
+    $('.grid-item').on('click', function(e) {
+        // $(this).toggleClass('big');
+        $('.grid-item').not(this).removeClass('big');
+        $(this).toggleClass('big');
+
+        // redraw
+        $grid.isotope('layout');
+    }).on('click', 'a', function(e) {
+        e.stopPropagation();
+    }).on('mouseover', function(e) {
+        $(this).find('.learn-more').removeClass('hidden');
+    }).on('mouseout', function(e) {
+        $(this).find('.learn-more').addClass('hidden');
+    });
+
+
+    var $filters = $('#filters');
+    $filters.on('click', '.btn', function() {
+        var filterVal = $(this).data('filter');
+        $grid.isotope({ filter: filterVal });
+        $filters.find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+
+}
 
 
 
@@ -70,20 +78,23 @@ function makeFormat(format, number) {
     var dollar = d3.format('$,.0f');
 
     switch (format) {
-        case 'percent': return percent(number);
-        case 'thousand': return thousand(number);
-        case 'dollar': return dollar(number);
+        case 'percent': return percent(+number);
+        case 'thousand': return thousand(+number);
+        case 'dollar': return dollar(+number);
+        case 'text': return number;
         default: return '';
+        // default: return number;
     }
 }
 
 function render(d, i) {
     var template = Handlebars.compile(d3.select('#card-template').html());
     var card = d;
-    card.current_val = makeFormat(d.format, +d.current_val);
-    card.prev_val = d.prev_val.length ? makeFormat(d.format, +d.prev_val) : '';
-    card.area = '<a class="area" href="pages/' + d.class + '.html"><span class="hidden learn-more">Learn more about </span>' + d.area + '</a>';
-    card.arrow = '<span class="glyphicon glyphicon-arrow-' + d.arrow + '"></span>';
+    card.current_val = makeFormat(d.format, d.current_val);
+    card.prev_val = d.prev_val.length ? makeFormat(d.format, d.prev_val) : '';
+    card.area2 = card.area.toLowerCase();
+    // card.area = '<a class="area" href="pages/' + d.class + '.html"><span class="hidden learn-more">Learn more about </span>' + d.area + '</a>';
+    // card.arrow = '<span class="glyphicon glyphicon-arrow-' + d.arrow + '"></span>';
     console.log(card);
 
     return template(card);
