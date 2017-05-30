@@ -49,6 +49,10 @@
     stroke-dasharray: 3, 3;
 }
 
+.chart210 {
+    height: 210px;
+}
+
 .chart220 {
     height: 220px;
 }
@@ -69,22 +73,6 @@
     height: 400px;
 }
 
-#burden-tenure .horiz-legend {
-    position: absolute;
-    display: block;
-    height: 60px;
-    bottom: auto;
-    /*right: 0;*/
-    left: 80px;
-    right: auto;
-    top: 16px;
-    width: 100px;
-}
-
-#burden-tenure .x-axis .domain {
-    display: none;
-}
-
 #burden-map .polygon {
     stroke: #433F52;
 }
@@ -96,20 +84,4 @@
     font-size: 0.8em;
     fill: black;
     font-weight: 600;
-}
-
-/*#underemployment-chart d3fc-svg.y-axis {
-    width: 8em;
-}
-
-#underemployment-chart .x-axis {
-    margin-left: 8em;
-
-}*/
-#location-def {
-    margin-top: 10px;
-}
-
-#underemployment-chart {
-    /*height: 300px;*/
 }

@@ -17,7 +17,6 @@ white: #dfdfdf
     }
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -27,14 +26,10 @@ body {
   font-size: small;
 }
 
-body.application .container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.application {
+body.application {
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 80px;
 }
 
 .chart-wrapper {
@@ -119,22 +114,34 @@ body.application .container-fluid {
 }
 
 .plank {
-    padding: 16px;
-    margin-bottom: 2px;
+  padding: 16px;
+  margin-bottom: 2px;
 }
 
+.plank p.goal {
+  font-size: 1.2em;
+  color: #333;
+}
+.plank p.explanation {
+  color: #333;
+  size: small;
+}
+
+@media (min-width: 768px) {
+  .plank p.goal {
+    font-size: 1.4em;
+  }
+}
 .plank h2 {
-    color: #bb105f;
+  font-size: 2em;
 }
-
-.plank p {
-    color: #562339;
-    font-size: large;
+@media (min-width: 768px) {
+  .plank h2 {
+    font-size: 2.2em;
+  }
 }
-
-.plank .explanation {
-    color: #562339;
-    font-size: small;
+.plank h2, .plank h4 {
+  color: #bb105f;
 }
 
 #intro {
@@ -153,4 +160,8 @@ body.application .container-fluid {
 
 .row-max {
     max-width: 1200px;
+}
+
+.bg-danger {
+    background: #ecd0de;
 }

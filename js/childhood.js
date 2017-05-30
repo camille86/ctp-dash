@@ -11,23 +11,24 @@ function init(error, childcare) {
         d.value = +d.value;
     });
 
-    makeRings(childcare);
+    var enrollmentRings = makeRings(childcare);
+    d3.select(window).on('resize', function() {
+        enrollmentRings.draw(0, true);
+    });
 }
 
 
 function makeRings(data) {
-    var fullwidth = 575;
-    var fullheight = 320;
-    var margin = { top: 30, right: 12, bottom: 24, left: 24 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
+    // var fullwidth = 575;
+    // var fullheight = 400;
+    var margin = { top: 50, right: 12, bottom: 40, left: 24 };
+    // var width = fullwidth - margin.left - margin.right;
+    // var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#childcare-chart')
         .append('svg')
-        // .attr('width', width)
-        // .attr('height', height);
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%');
+
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -55,5 +56,7 @@ function makeRings(data) {
     };
 
     chart.draw();
+
+    return chart;
 
 }

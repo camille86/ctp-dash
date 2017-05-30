@@ -106,54 +106,6 @@
     padding-left:0;
 }
 
-.workforce {
-  background-color: #ce6193;
-}
-
-.workforce .name {
-  border-bottom: 2px solid #b13c71;
-}
-
-.workforce .descript {
-  border-bottom: 1px solid #b13c71;
-}
-
-.childhood {
-  background-color: #f58573;
-}
-
-.childhood .name {
-  border-bottom: 2px solid #d35a47;
-}
-
-.childhood .descript {
-  border-bottom: 1px solid #d35a47;
-}
-
-.housing {
-  background-color: #55b572;
-}
-
-.housing .name {
-    border-bottom: 2px solid #349c54;
-}
-
-.housing .descript {
-    border-bottom: 1px solid #349c54;
-}
-
-.health {
-  background-color: #9bc55f;
-}
-
-.health .name {
-    border-bottom: 2px solid #71a623;
-}
-
-.health .descript {
-    border-bottom: 1px solid #71a623;
-}
-
 .big {
     /*width: 50%;*/
     width: 560px;
@@ -185,13 +137,51 @@ p.descript-text {
 }
 
 .positive {
-    color: #23B65E;
+    color: #1a9850;
 }
 
 .negative {
-    color: #B62323;
+    color: #a50026;
 }
 
 .neutral {
-    color: #C4C827;
+    color: #fee08b;
 }
+
+
+.workforce {
+  background: #ce74a1; }
+  .workforce .name {
+    border-bottom: 2px solid #bc4382; }
+  .workforce .descript {
+    border-bottom: 1px solid #bc4382; }
+
+.childhood {
+  background: #c992cd; }
+  .childhood .name {
+    border-bottom: 2px solid #a780a9; }
+  .childhood .descript {
+    border-bottom: 1px solid #a780a9; }
+
+.health {
+  background: #95cc91; }
+  .health .name {
+    border-bottom: 2px solid #81a87e; }
+  .health .descript {
+    border-bottom: 1px solid #81a87e; }
+
+.housing {
+  background: #7070cf; }
+  .housing .name {
+    border-bottom: 2px solid #3b3bc1; }
+  .housing .descript {
+    border-bottom: 1px solid #3b3bc1; }
+
+.cross {
+  background: #c2a4a4; }
+  .cross .name {
+    border-bottom: 2px solid #999999; }
+  .cross .descript {
+    border-bottom: 1px solid #999999; }
+
+/*# sourceMappingURL=grid.css.map */

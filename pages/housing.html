@@ -7,10 +7,10 @@
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
+    <!-- <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script> -->
     <script src="https://d3js.org/topojson.v1.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.0/topojson.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.0/topojson.min.js"></script> -->
     <!-- <script src="https://unpkg.com/plottable@3.0.0/plottable.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
@@ -45,7 +45,7 @@
                 <a class="navbar-brand" href="../">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <div class="navbar-brand">DRAFT - Housing &amp; Physical Environment</div>
+                <div class="navbar-brand">DRAFT - Housing</div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12">
@@ -140,12 +140,12 @@
 
             <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <div class="chart-wrapper">
                             <div class="chart-title">
                                 Severe housing cost burden by neighborhood, 2015
                             </div>
-                            <div class="chart-stage chart400">
+                            <div class="chart-stage">
                                 <div id="burden-map" class="chart"></div>
                             </div>
                             <div class="chart-notes">
@@ -153,28 +153,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="row row-no-gutter">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Severe housing cost burden by tenure, 2015
-                                </div>
-                                <div class="chart-stage chart240">
-                                    <div id="burden-tenure" class="chart"></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: US Census Bureau, American Community Survey
-                                </div>
+                    <div class="col-md-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Severe housing cost burden by tenure, 2015
+                            </div>
+                            <div class="chart-stage chart240">
+                                <div id="burden-tenure" class="chart"></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source: US Census Bureau, American Community Survey
                             </div>
                         </div>
-                        <div class="row row-no-gutter">
-                            <div class="definition">
-                                <p>
-                                    <strong>Definition: </strong>Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -187,9 +177,26 @@
                         </div> -->
                     </div>
                 </div>
+
+                <div class="definition">
+                    <p>
+                        <strong>Definition: </strong>Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
+                    </p>
+                </div>
+
             </div>
         </div>
 
+    </div>
+
+    <div class="plank">
+        <h4>Key</h4>
+        <ul class="list-inline key">
+            <li><strong>CT: </strong>Connecticut</li>
+            <li><strong>GNH: </strong>Greater New Haven region</li>
+            <li><strong>NHV low-income: </strong>Low-income neighborhoods in New Haven</li>
+            <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
+        </ul>
     </div>
 
 </body>

@@ -14,35 +14,49 @@ function init(error, locs, trend) {
         d.value = +d.value;
     });
 
-    var obesity_loc = locs.filter(function(d) { return d.indicator === 'obesity'; });
-    var smoking_loc = locs.filter(function(d) { return d.indicator === 'smoking'; });
-    var obesity_trend = trend.filter(function(d) { return d.indicator === 'obesity'; });
-    var smoking_trend = trend.filter(function(d) { return d.indicator === 'smoking'; });
-    var food_trend = trend.filter(function(d) { return d.indicator === 'food_insecurity'; });
-    var insurance_trend = trend.filter(function(d) { return d.indicator === 'insurance'; });
+    // var obesity_loc = locs.filter(function(d) { return d.indicator === 'obesity'; });
+    // var smoking_loc = locs.filter(function(d) { return d.indicator === 'smoking'; });
+    // var obesity_trend = trend.filter(function(d) { return d.indicator === 'obesity'; });
+    // var smoking_trend = trend.filter(function(d) { return d.indicator === 'smoking'; });
+    // var food_trend = trend.filter(function(d) { return d.indicator === 'food_insecurity'; });
+    // var insurance_trend = trend.filter(function(d) { return d.indicator === 'insurance'; });
 
-    makeObesityBars(obesity_loc);
-    makeSmokingBars(smoking_loc);
-    makeObesityTrend(obesity_trend);
-    makeSmokingTrend(smoking_trend);
-    makeFoodTrend(food_trend);
-    makeInsuranceTrend(insurance_trend);
+    // makeObesityBars(obesity_loc);
+    // makeSmokingBars(smoking_loc);
+    // makeObesityTrend(obesity_trend);
+    // makeSmokingTrend(smoking_trend);
+    // makeFoodTrend(food_trend);
+    // makeInsuranceTrend(insurance_trend);
+
+    // var plots = [makeObesityBars(locs), makeSmokingBars(locs), makeObesityTrend(trend),
+    //     makeSmokingTrend(trend), makeFoodTrend(trend), makeInsuranceTrend(trend)
+    // ];
+    var barplots = [makeObesityBars(locs), makeSmokingBars(locs)];
+    makeObesityTrend(trend);
+    makeSmokingTrend(trend);
+    makeFoodTrend(trend);
+    makeInsuranceTrend(trend);
+
+    d3.select(window).on('resize', function() {
+        barplots.forEach(function(plot) { plot.draw(0, true); });
+        makeObesityTrend(trend);
+        makeSmokingTrend(trend);
+        makeFoodTrend(trend);
+        makeInsuranceTrend(trend);
+    });
 
     d3.selectAll('.dimple-marker')
         .attr('r', 3);
 }
 
-function makeObesityBars(data) {
-    var fullwidth = 400;
-    var fullheight = 200;
+function makeObesityBars(locs) {
+    var data = locs.filter(function(d) { return d.indicator === 'obesity'; });
     var margin = { top: 12, right: 18, bottom: 40, left: 90 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#obesity-loc')
         .append('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%');
+
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -69,19 +83,18 @@ function makeObesityBars(data) {
 
     chart.draw();
 
+    return chart;
+
 }
 
-function makeSmokingBars(data) {
-    var fullwidth = 400;
-    var fullheight = 200;
+function makeSmokingBars(locs) {
+    var data = locs.filter(function(d) { return d.indicator === 'smoking'; });
     var margin = { top: 12, right: 18, bottom: 40, left: 90 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#smoking-loc')
         .append('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%');
+        // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -107,22 +120,23 @@ function makeSmokingBars(data) {
     };
 
     chart.draw();
+
+    return chart;
 }
 
-function makeObesityTrend(data) {
-    // var nhv = dimple.filterData(data, 'name', 'New Haven');
+function makeObesityTrend(trend) {
+    var data = trend.filter(function(d) { return d.indicator === 'obesity'; });
+
     var base = dimple.filterData(data, 'series', 'base');
     var second = dimple.filterData(data, 'series', 'second');
-    var fullwidth = 400;
-    var fullheight = 200;
+
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#obesity-trend')
-        .append('svg')
+        .select('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%')
+        .html('');
+
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -130,10 +144,6 @@ function makeObesityTrend(data) {
         new dimple.color('#992156'),
         new dimple.color('#2F588B')
     ];
-    var color = d3.scaleOrdinal()
-        .domain(d3.extent(data, function(d) { return d.value; }))
-        .range(['#739dd0', '#992156', '#2f588b']);
-
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
@@ -160,7 +170,7 @@ function makeObesityTrend(data) {
         return [txt];
     };
 
-    chart.addLegend('75%', '5%', 100, 20, 'left', colorline);
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
@@ -169,32 +179,21 @@ function makeObesityTrend(data) {
     d3.select('#obesity-trend #dimple-all')
         .style('stroke-dasharray', ('5, 5'));
 
-    // d3.selectAll('#obesity-trend .dimple-marker')
-    //     .attr('fill', function(d) {
-    //         console.log(d);
-    //         // console.log(color(d))
-    //         return color(d.aggField[0]);
-    //     });
-    // d3.selectAll('#obesity-trend .dimple-line')
-    //     .attr('stroke', function(d) {
-    //         // return color(d.aggField[0]);
-    //         console.log(d);
-    //     });
+    return chart;
 }
 
-function makeSmokingTrend(data) {
+function makeSmokingTrend(trend) {
+    var data = trend.filter(function(d) { return d.indicator === 'smoking'; });
+
     var base = dimple.filterData(data, 'series', 'base');
     var second = dimple.filterData(data, 'series', 'second');
-    var fullwidth = 400;
-    var fullheight = 200;
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#smoking-trend')
-        .append('svg')
+        .select('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%')
+        .html('');
+
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -202,7 +201,6 @@ function makeSmokingTrend(data) {
         new dimple.color('#992156'),
         new dimple.color('#2F588B')
     ];
-
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
@@ -229,29 +227,28 @@ function makeSmokingTrend(data) {
         return [txt];
     };
 
-    chart.addLegend('75%', '5%', 100, 20, 'left', colorline);
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
-    // var shapes = baseline.shapes.selectAll('path');
-    // console.log(shapes);
     d3.select('#smoking-trend #dimple-all')
         .style('stroke-dasharray', ('5, 5'));
+
+    return chart;
 }
 
-function makeFoodTrend(data) {
+function makeFoodTrend(trend) {
+    var data = trend.filter(function(d) { return d.indicator === 'food_insecurity'; });
+
     var base = dimple.filterData(data, 'series', 'base');
     var second = dimple.filterData(data, 'series', 'second');
-    var fullwidth = 400;
-    var fullheight = 200;
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#food-trend')
-        .append('svg')
+        .select('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%')
+        .html('');
+        // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -259,7 +256,6 @@ function makeFoodTrend(data) {
         new dimple.color('#992156'),
         new dimple.color('#2F588B')
     ];
-
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
@@ -286,7 +282,7 @@ function makeFoodTrend(data) {
         return [txt];
     };
 
-    chart.addLegend('75%', '5%', 100, 20, 'left', colorline);
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
@@ -294,21 +290,22 @@ function makeFoodTrend(data) {
     // console.log(shapes);
     d3.select('#food-trend #dimple-all')
         .style('stroke-dasharray', ('5, 5'));
+
+    return chart;
 }
 
-function makeInsuranceTrend(data) {
+function makeInsuranceTrend(trend) {
+    var data = trend.filter(function(d) { return d.indicator === 'insurance'; });
+
     var base = dimple.filterData(data, 'series', 'base');
     var second = dimple.filterData(data, 'series', 'second');
-    var fullwidth = 400;
-    var fullheight = 200;
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
-    var width = fullwidth - margin.left - margin.right;
-    var height = fullheight - margin.top - margin.bottom;
     var svg = d3.select('#insurance-trend')
-        .append('svg')
+        .select('svg')
         .attr('width', '100%')
-        // .attr('height', '100%')
-        .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
+        .attr('height', '100%')
+        .html('');
+        // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
     chart.defaultColors = [
@@ -317,7 +314,6 @@ function makeInsuranceTrend(data) {
         new dimple.color('#2F588B'),
         new dimple.color('#359957')
     ];
-
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
@@ -334,6 +330,8 @@ function makeInsuranceTrend(data) {
     baseline.data = second;
     colorline.data = base;
 
+    colorline.addOrderRule(['New Haven', 'GNH', 'CT']);
+
     colorline.getTooltipText = function(e) {
         // console.log(e);
         var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
@@ -344,7 +342,7 @@ function makeInsuranceTrend(data) {
         return [txt];
     };
 
-    chart.addLegend('50%', '10%', 200, 50, 'left', colorline);
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     colorline.afterDraw = function(shp, d) {
         var paths = d3.select(shp);
@@ -363,17 +361,6 @@ function makeInsuranceTrend(data) {
 
     chart.draw();
 
-    // var markers = colorline.shapes.filter('circle.dimple-marker');
-    // console.log(markers);
-    // var markers = d3.selectAll('#insurance-trend circle.dimple-marker');
-    // markers.attr('r', 3);
-
-    // colorline.shapes.filter('circle.dimple-marker')
-    //     .attr('fill', function(d) { console.log(d); return 'blue'; });
-
-    // var shapes = baseline.shapes.selectAll('path');
-    // console.log(shapes);
-    // d3.select('#insurance-trend #dimple-all')
-    //     .style('stroke-dasharray', ('5, 5'));
+    return chart;
 
 }
