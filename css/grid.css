@@ -1,0 +1,36 @@
+.workforce {
+  background: #ce74a1; }
+  .workforce .name {
+    border-bottom: 2px solid #bc4382; }
+  .workforce .descript {
+    border-bottom: 1px solid #bc4382; }
+
+.childhood {
+  background: #c992cd; }
+  .childhood .name {
+    border-bottom: 2px solid #a780a9; }
+  .childhood .descript {
+    border-bottom: 1px solid #a780a9; }
+
+.health {
+  background: #95cc91; }
+  .health .name {
+    border-bottom: 2px solid #81a87e; }
+  .health .descript {
+    border-bottom: 1px solid #81a87e; }
+
+.housing {
+  background: #7070cf; }
+  .housing .name {
+    border-bottom: 2px solid #3b3bc1; }
+  .housing .descript {
+    border-bottom: 1px solid #3b3bc1; }
+
+.cross {
+  background: #c2a4a4; }
+  .cross .name {
+    border-bottom: 2px solid #999999; }
+  .cross .descript {
+    border-bottom: 1px solid #999999; }
+
+/*# sourceMappingURL=grid.css.map */

@@ -92,8 +92,9 @@
 
 .grid-item .trend {
     color: #eee;
-    font-size: 2.8em;
+    font-size: 3em;
     padding: 0;
+    margin: 10px auto;
 }
 
 .row-no-gutter {
@@ -112,21 +113,28 @@
     height: 300px;
 }
 
-.big .current-val, .big .trend {
-    font-size: 5em;
+.big .current-val,
+.big .prev-val,
+.big .trend {
     -webkit-transition: font-size 400ms;
     -moz-transition: font-size 400ms;
     -o-transition: font-size 400ms;
     transition: font-size 400ms;
 }
 
+.big .current-val {
+    font-size: 5em;
+}
+
 .big .prev-val {
     font-size: 3em;
-    -webkit-transition: font-size 400ms;
-    -moz-transition: font-size 400ms;
-    -o-transition: font-size 400ms;
-    transition: font-size 400ms;
 }
+
+.big .trend {
+    font-size: 9em;
+    margin: 0 auto;
+}
+
 
 p.descript-text {
     visibility: hidden;
@@ -146,6 +154,21 @@ p.descript-text {
 
 .neutral {
     color: #fee08b;
+}
+
+.icon {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+}
+
+.icon-small {
+    /*font-size: 36px;*/
+}
+
+.icon-big {
+
 }
 
 

@@ -1,0 +1,34 @@
+$areas: workforce childhood health housing cross;
+$lightgray: #eee;
+$darkgray: #666;
+
+@mixin area($base-color) {
+    $darker: lighten(mix($darkgray, $base-color, 30%), 20);
+    background: saturate(mix(white, $base-color, 50%), 20);
+    .name {
+        border-bottom: 2px solid $darker;
+    }
+    .descript {
+        border-bottom: 1px solid $darker;
+    }
+}
+
+.workforce {
+    @include area(#760E43);
+}
+
+.childhood {
+    @include area(#77457A);
+}
+
+.health {
+    @include area(#467842);
+}
+
+.housing {
+    @include area(#060679);
+}
+
+.cross {
+    @include area(#666666);
+}

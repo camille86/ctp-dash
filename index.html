@@ -115,6 +115,7 @@
         </ul>
     </div>
 
+
     <!-- <a href='http://www.freepik.com/free-vector/arrow-icon-set_840839.htm'>Designed by Freepik</a> -->
 
 </body>
@@ -126,7 +127,7 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-10">
+            <div class="col-xs-9">
                 <div class="row row-no-gutter">
                     <h1 class="current-val">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
                 </div>
@@ -134,9 +135,15 @@
                     <h3 class="prev-val">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
                 </div>
             </div>
-            <h1 class="trend col-xs-2">
-                <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span>
-            </h1>
+            <div class="col-xs-3">
+                <h1 class="trend">
+                    <!-- <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span> -->
+                    <svg class="icon {{outcome}}" aria-hidden="true">
+                        <use xlink:href="svg/icons.svg#{{arrow}}"></use>
+                    </svg>
+                </h1>
+            </div>
+
         </div>
 
         <div class="row">

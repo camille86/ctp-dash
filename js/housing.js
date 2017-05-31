@@ -47,7 +47,6 @@ function drawTenure2(csv) {
         new dimple.color('#739DD0')
     ];
 
-
     var x = chart.addCategoryAxis('x', ['Location', 'Tenure']);
     x.addOrderRule(['CT', 'GNH', 'New Haven']);
     x.title = null;
@@ -63,71 +62,15 @@ function drawTenure2(csv) {
         return [txt];
     };
 
-    chart.addLegend('15%', '5%', 100, 20, 'left');
+    chart.addLegend('25%', '8%', '10%', '20%', 'right');
     chart.draw();
+
+    // d3.select(window).on('resize', function() {
+    //     chart.draw(0, true);
+    // });
 
     return chart;
 }
-
-// function drawTenure(csv) {
-//     // var width = 400;
-//     // var height = 240;
-//     var percent = d3.format('.0%');
-//
-//     // doing this with d3fc components
-//
-//     var yextent = fc.extentLinear()
-//         .accessors([function(d) { return d.map(function(d) { return d[1]; }); }])
-//         .include([0]);
-//
-//     var group = fc.group()
-//         .key('Location');
-//     var series = group(csv);
-//
-//     var tenures = series.map(function(d) { return d.key; });
-//
-//     var color = d3.scaleOrdinal()
-//         .domain(tenures)
-//         .range(['#992156', '#739DD0']);
-//
-//     var legend = d3.legendColor()
-//         .orient('horizontal')
-//         .shapeWidth(20)
-//         .shapePadding(20)
-//         .labelOffset(6)
-//         .scale(color);
-//
-//     var bars = fc.seriesSvgGrouped(fc.seriesSvgBar())
-//         .crossValue(function(d) { return d[0]; })
-//         .mainValue(function(d) { return d[1]; })
-//         .decorate(function(sel, data, index) {
-//             sel.enter()
-//                 .select('path')
-//                 .attr('fill', color(tenures[index]));
-//         });
-//
-//     var chart = fc.chartSvgCartesian(d3.scalePoint(), d3.scaleLinear())
-//         .xDomain(csv.map(function(d) { return d.Location; }))
-//         .xPadding(0.5)
-//         .yDomain(yextent(series))
-//         .yOrient('left')
-//         .yTickFormat(percent)
-//         .plotArea(bars)
-//         .decorate(function(sel) {
-//             sel.enter()
-//                 .append('svg')
-//                 .attr('class', 'horiz-legend');
-//                 // .attr('transform', 'translate(20,20)');
-//             sel.select('.horiz-legend')
-//                 .call(legend);
-//         });
-//
-//     d3.select('#burden-tenure')
-//         .datum(series)
-//         .call(chart);
-//
-// }
-
 
 
 function drawMap(topo, csv) {
@@ -157,7 +100,6 @@ function drawMap(topo, csv) {
         .attr('id', 'mapSVG')
         .attr('width', width)
         .attr('height', height);
-
 
     var polygons = svg.append('g')
         // .attr('transform', 'translate(12, 12)')
@@ -231,9 +173,28 @@ function colorMap(csv) {
         })
         .on('mouseout', tip.hide);
 
+    var svg = d3.select('#mapSVG');
+    var height = svg.attr('height');
+    svg.append('g')
+        .attr('class', 'legendQuant')
+        .attr('transform', 'translate(30,' + (height - 90) + ')');
+    var legend = d3.legendColor()
+        .labelFormat(d3.format('.0%'))
+        .labels(thresholdLabels)
+        .useClass(false)
+        .scale(color);
+    svg.select('.legendQuant').call(legend);
 }
 
-
+function thresholdLabels(l) {
+    if (l.i === 0) {
+        return l.generatedLabels[l.i].replace('NaN% to', 'Less than');
+    } else if (l.i === l.genLength - 1) {
+        var str = 'More than ' + l.generatedLabels[l.genLength - 1];
+        return str.replace(' to NaN%', '');
+    }
+    return l.generatedLabels[l.i];
+}
 
 
 function mouseOverPoly(poly, hoodMap) {
@@ -243,3 +204,63 @@ function mouseOverPoly(poly, hoodMap) {
 
     return '<span class="tip-label">' + hood + ': </span>' + valText;
 }
+
+
+// function drawTenure(csv) {
+//     // var width = 400;
+//     // var height = 240;
+//     var percent = d3.format('.0%');
+//
+//     // doing this with d3fc components
+//
+//     var yextent = fc.extentLinear()
+//         .accessors([function(d) { return d.map(function(d) { return d[1]; }); }])
+//         .include([0]);
+//
+//     var group = fc.group()
+//         .key('Location');
+//     var series = group(csv);
+//
+//     var tenures = series.map(function(d) { return d.key; });
+//
+//     var color = d3.scaleOrdinal()
+//         .domain(tenures)
+//         .range(['#992156', '#739DD0']);
+//
+//     var legend = d3.legendColor()
+//         .orient('horizontal')
+//         .shapeWidth(20)
+//         .shapePadding(20)
+//         .labelOffset(6)
+//         .scale(color);
+//
+//     var bars = fc.seriesSvgGrouped(fc.seriesSvgBar())
+//         .crossValue(function(d) { return d[0]; })
+//         .mainValue(function(d) { return d[1]; })
+//         .decorate(function(sel, data, index) {
+//             sel.enter()
+//                 .select('path')
+//                 .attr('fill', color(tenures[index]));
+//         });
+//
+//     var chart = fc.chartSvgCartesian(d3.scalePoint(), d3.scaleLinear())
+//         .xDomain(csv.map(function(d) { return d.Location; }))
+//         .xPadding(0.5)
+//         .yDomain(yextent(series))
+//         .yOrient('left')
+//         .yTickFormat(percent)
+//         .plotArea(bars)
+//         .decorate(function(sel) {
+//             sel.enter()
+//                 .append('svg')
+//                 .attr('class', 'horiz-legend');
+//                 // .attr('transform', 'translate(20,20)');
+//             sel.select('.horiz-legend')
+//                 .call(legend);
+//         });
+//
+//     d3.select('#burden-tenure')
+//         .datum(series)
+//         .call(chart);
+//
+// }
