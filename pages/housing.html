@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Housing - City Transformation Plan</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="../js/d3map.js"></script>
 
     <script type="text/javascript" src="../js/housing.js"></script>
 
@@ -146,7 +147,7 @@
                                 Severe housing cost burden by neighborhood, 2015
                             </div>
                             <div class="chart-stage">
-                                <div id="burden-map" class=""></div>
+                                <div id="burden-map" class="mapContainer"></div>
                             </div>
                             <div class="chart-notes">
                                 Source: US Census Bureau, American Community Survey

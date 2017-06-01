@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- TODO: -->
+<!-- * change charts to col-md-* -->
+<html>
+<head>
+    <title>City Transformation Plan</title>
+    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+    <script src="js/d3map.js"></script>
+
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body class="application">
+    <div class="mapContainer" id="chart"></div>
+
+    <script>
+        d3.json('json/nhv_shape2.json', function(error, topo) {
+            if (error) throw error;
+
+            var city = topojson.feature(topo, topo.objects.shapes);
+
+            var nhv = d3map();
+
+            d3.select(window).on('resize', function() {
+                nhv.draw();
+            });
+
+            d3.csv('data/cost_burden_neighborhoods.csv', function(err2, csv) {
+                if (err2) throw err2;
+                var percent = d3.format('.0%');
+
+                d3.select('#chart')
+                    .datum(city)
+                    .call(nhv);
+
+                nhv.color(csv, d3.schemeGnBu[5])
+                    .tip('d3-tip', percent)
+                    .legend(percent, 15, 30);
+
+            });
+
+
+        });
+    </script>
+</body>
+</html>
