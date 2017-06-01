@@ -73,15 +73,26 @@
     height: 400px;
 }
 
-#burden-map .polygon {
-    stroke: #433F52;
-}
-
-
-
 .bar-label {
     text-anchor: middle;
     font-size: 0.8em;
     fill: black;
     font-weight: 600;
+}
+
+/* move to chart styles */
+.polygon {
+    vector-effect: non-scaling-stroke;
+    /*fill: #c8ffed;*/
+    stroke: #555;
+}
+
+
+.legendQuant .label {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+.mapContainer {
+    position: relative;
 }
