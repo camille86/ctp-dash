@@ -150,7 +150,14 @@
             <div class="descript"><p class="descript-text">{{description}}</p></div>
         </div>
         <div class="row">
-            <a class="area" href="pages/{{class}}.html"><span class="hidden learn-more">Learn more about </span>{{area}}</a>
+            {{#if hasLink}}
+            <a class="area" href="pages/{{class}}.html">
+                <span class="hidden learn-more">Learn more about </span>
+                <span>{{area}}</span>
+            </a>
+            {{else}}
+                <span class="area">{{area}}</span>
+            {{/if}}
         </div>
 </script>
 

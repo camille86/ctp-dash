@@ -194,14 +194,14 @@ p.descript-text {
     border-bottom: 1px solid #81a87e; }
 
 .housing {
-  background: #7070cf; }
+  background: #8a8add; }
   .housing .name {
-    border-bottom: 2px solid #3b3bc1; }
+    border-bottom: 2px solid #5e5ec2; }
   .housing .descript {
-    border-bottom: 1px solid #3b3bc1; }
+    border-bottom: 1px solid #5e5ec2; }
 
 .cross {
-  background: #c2a4a4; }
+  background: #b7b0b0; }
   .cross .name {
     border-bottom: 2px solid #999999; }
   .cross .descript {
