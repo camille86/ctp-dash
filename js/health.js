@@ -14,23 +14,6 @@ function init(error, locs, trend) {
         d.value = +d.value;
     });
 
-    // var obesity_loc = locs.filter(function(d) { return d.indicator === 'obesity'; });
-    // var smoking_loc = locs.filter(function(d) { return d.indicator === 'smoking'; });
-    // var obesity_trend = trend.filter(function(d) { return d.indicator === 'obesity'; });
-    // var smoking_trend = trend.filter(function(d) { return d.indicator === 'smoking'; });
-    // var food_trend = trend.filter(function(d) { return d.indicator === 'food_insecurity'; });
-    // var insurance_trend = trend.filter(function(d) { return d.indicator === 'insurance'; });
-
-    // makeObesityBars(obesity_loc);
-    // makeSmokingBars(smoking_loc);
-    // makeObesityTrend(obesity_trend);
-    // makeSmokingTrend(smoking_trend);
-    // makeFoodTrend(food_trend);
-    // makeInsuranceTrend(insurance_trend);
-
-    // var plots = [makeObesityBars(locs), makeSmokingBars(locs), makeObesityTrend(trend),
-    //     makeSmokingTrend(trend), makeFoodTrend(trend), makeInsuranceTrend(trend)
-    // ];
     var barplots = [makeObesityBars(locs), makeSmokingBars(locs)];
     makeObesityTrend(trend);
     makeSmokingTrend(trend);
@@ -69,23 +52,26 @@ function makeObesityBars(locs) {
     y.title = null;
 
     var x = chart.addMeasureAxis('x', 'value');
-    // x.title = '';
     x.tickFormat = '.0%';
     x.ticks = 6;
     x.title = null;
 
     var bars = chart.addSeries(null, dimple.plot.bar);
 
-    bars.getTooltipText = function(e) {
-        var txt = e.y + ': ' + d3.format('.0%')(e.xValue);
-        return [txt];
-    };
-
     chart.draw();
 
-    return chart;
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(barTip);
 
+    svg.selectAll('rect')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    return chart;
 }
+
 
 function makeSmokingBars(locs) {
     var data = locs.filter(function(d) { return d.indicator === 'smoking'; });
@@ -114,12 +100,16 @@ function makeSmokingBars(locs) {
 
     var bars = chart.addSeries(null, dimple.plot.bar);
 
-    bars.getTooltipText = function(e) {
-        var txt = e.y + ': ' + d3.format('.0%')(e.xValue);
-        return [txt];
-    };
-
     chart.draw();
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(barTip);
+
+    svg.selectAll('rect')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
 
     return chart;
 }
@@ -160,23 +150,20 @@ function makeObesityTrend(trend) {
     baseline.data = second;
     colorline.data = base;
 
-    colorline.getTooltipText = function(e) {
-        var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-    baseline.getTooltipText = function(e) {
-        // console.log(e);
-        var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-
     chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
-    // var shapes = baseline.shapes.selectAll('path');
-    // console.log(shapes);
-    d3.select('#obesity-trend #dimple-all')
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTip);
+
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    svg.select('#dimple-all')
         .style('stroke-dasharray', ('5, 5'));
 
     return chart;
@@ -217,21 +204,20 @@ function makeSmokingTrend(trend) {
     baseline.data = second;
     colorline.data = base;
 
-    colorline.getTooltipText = function(e) {
-        var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-    baseline.getTooltipText = function(e) {
-        // console.log(e);
-        var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-
     chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
-    d3.select('#smoking-trend #dimple-all')
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTip);
+
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    svg.select('#dimple-all')
         .style('stroke-dasharray', ('5, 5'));
 
     return chart;
@@ -272,23 +258,20 @@ function makeFoodTrend(trend) {
     baseline.data = second;
     colorline.data = base;
 
-    colorline.getTooltipText = function(e) {
-        var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-    baseline.getTooltipText = function(e) {
-        console.log(e);
-        var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-
     chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
 
     chart.draw();
 
-    // var shapes = baseline.shapes.selectAll('path');
-    // console.log(shapes);
-    d3.select('#food-trend #dimple-all')
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTip);
+
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    svg.select('#dimple-all')
         .style('stroke-dasharray', ('5, 5'));
 
     return chart;
@@ -332,35 +315,31 @@ function makeInsuranceTrend(trend) {
 
     colorline.addOrderRule(['New Haven', 'GNH', 'CT']);
 
-    colorline.getTooltipText = function(e) {
-        // console.log(e);
-        var txt = e.aggField[0] + ', ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-    baseline.getTooltipText = function(e) {
-        var txt = 'Goal, ' + d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
-
     chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
-
-    colorline.afterDraw = function(shp, d) {
-        var paths = d3.select(shp);
-        // console.log(paths.style('stroke'));
-
-        // svg.append('circle')
-        //     .attr('x', shape.attr('x'))
-        //     .attr('y', shape.attr('y'))
-        //     .attr('r')
-    };
-
-    baseline.afterDraw = function(shp, d) {
-        var shape = d3.select(shp);
-        shape.style('stroke-dasharray', ('5, 5'));
-    };
 
     chart.draw();
 
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTip);
+
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    svg.select('#dimple-all')
+        .style('stroke-dasharray', ('5, 5'));
+
     return chart;
 
+}
+
+function barTip(d) {
+    return '<span>' + d.y + ': ' + d3.format('.0%')(d.xValue) + '</span>';
+}
+
+function lineTip(d) {
+    var group = d.aggField[0] === 'All' ? 'Goal' : d.aggField[0];
+    return '<span>' + group + ', ' + d3.timeFormat('%Y')(d.x) + ': ' + d3.format('.0%')(d.yValue) + '</span>';
 }

@@ -8,6 +8,7 @@ d3.queue()
 function init(error, json, hood, tenure) {
     if (error) throw error;
 
+    // map map from d3map
     var city = topojson.feature(json, json.objects.shapes);
     var nhv = d3map();
     d3.select('#burden-map')
@@ -38,9 +39,6 @@ function drawTenure2(csv) {
         .append('svg')
         .attr('width', '100%')
         .attr('height', '100%');
-            // .attr('width', width)
-            // .attr('height', height);
-        // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
 
     var chart = new dimple.chart(svg, csv);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
@@ -59,15 +57,24 @@ function drawTenure2(csv) {
     y.title = null;
 
     var bars = chart.addSeries('Tenure', dimple.plot.bar);
-    bars.getTooltipText = function(e) {
-        var txt = e.xField[0] + ', ' + e.xField[1] + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
 
     chart.addLegend('25%', '8%', '10%', '20%', 'right');
     chart.draw();
 
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(barTip);
+
+    svg.selectAll('rect')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
     return chart;
+}
+
+function barTip(d) {
+    return '<span>' + d.x + ' ' + d.aggField[0] + ': ' + d3.format('.0%')(d.yValue) + '</span>';
 }
 
 

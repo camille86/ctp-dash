@@ -54,16 +54,18 @@ function makeBars3(csv) {
 
 
     var bars = chart.addSeries(null, dimple.plot.bar);
-    bars.getTooltipText = function(e) {
-        var txt = e.y + ': ' + d3.format('.0%')(e.xValue);
-        return [txt];
-    };
 
     chart.draw();
-    // x.titleShape.remove();
-    // window.onresize = function() {
-    //     chart.draw(0, true);
-    // };
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(barTip);
+
+    svg.selectAll('rect')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
     return chart;
 }
 
@@ -96,14 +98,6 @@ function makeTrend(csv) {
     // var baseline = chart.addSeries(null, dimple.plot.line);
     var colorline = chart.addSeries('Type', dimple.plot.line);
     colorline.lineMarkers = true;
-    // colorline.lineMarkers = true;
-    // colorline.lineMarkers = false;
-    // baseline.lineMarkers = false;
-
-    colorline.getTooltipText = function(e) {
-        var txt = d3.timeFormat('%Y')(e.x) + ': ' + d3.format('.0%')(e.y);
-        return [txt];
-    };
 
     chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
     chart.draw();
@@ -111,10 +105,24 @@ function makeTrend(csv) {
     d3.select('#dimple-goal')
         .style('stroke-dasharray', ('5, 5'));
 
-    // window.onresize = function() {
-    //     chart.draw(0, true);
-    // };
+        var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .html(lineTip);
+
+        svg.selectAll('circle')
+            .call(tip)
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+
     return chart;
+}
+
+function barTip(d) {
+    return '<span>' + d.y + ': ' + d3.format('.0%')(d.xValue) + '</span>';
+}
+
+function lineTip(d) {
+    return '<span>' + d3.timeFormat('%Y')(d.x) + ': ' + d3.format('.0%')(d.yValue) + '</span>';
 }
 
 

@@ -50,13 +50,25 @@ function makeRings(data) {
 
     chart.addLegend('5%', '5%', 200, 20, 'left');
 
-    rings.getTooltipText = function(e) {
-        var txt = e.cx + ', ' + e.aggField[0] + ': ' + e.pValue;
-        return [txt];
-    };
+    // rings.getTooltipText = function(e) {
+    //     var txt = e.cx + ', ' + e.aggField[0] + ': ' + e.pValue;
+    //     return [txt];
+    // };
 
     chart.draw();
 
-    return chart;
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(pieTip);
 
+    svg.selectAll('path')
+        .call(tip)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
+
+    return chart;
+}
+
+function pieTip(d) {
+    return '<span>' + d.aggField[0] + ': ' + d3.format(',')(d.pValue) + '</span>';
 }
