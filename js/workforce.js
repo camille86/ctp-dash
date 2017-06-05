@@ -1,33 +1,45 @@
 d3.queue()
     .defer(d3.csv, '../data/underemployment.csv')
     .defer(d3.csv, '../data/underemployment_time.csv')
+    .defer(d3.csv, '../data/unemployment_trend.csv')
     .await(init);
 
 ///////////// INIT
-function init(error, rates, trend) {
+function init(error, rates, under_tr, un_tr) {
     if (error) throw error;
 
     rates.forEach(function(d) {
         d.Underemployment = +d.Underemployment;
     });
 
-    trend.forEach(function(d) {
+    under_tr.forEach(function(d) {
         d.Underemployment = +d.Underemployment;
     });
 
+    un_tr.forEach(function(d) {
+        d.rate = +d.rate;
+    });
+
     var locationChart = makeBars3(rates);
-    var trendChart = makeTrend(trend);
+    var underTrend = makeUnderTrend(under_tr);
+    var unTrend = makeUnTrend(un_tr);
 
     d3.select(window).on('resize', function() {
         locationChart.draw(0, true);
 
-        trendChart = makeTrend(trend);
+        underTrend = makeUnderTrend(under_tr);
     });
 
     d3.selectAll('.dimple-marker')
-        .attr('r', 3);
+        .attr('r', 4)
+        // .style('stroke-width', 1)
+        // .style('fill-opacity', 1.0)
+        // .style('opacity', 1.0)
+        .attr('fill', function(d) {
+            return d3.select(this).attr('stroke');
+        });
+    // d3.selectAll('.dimple-marker-back').style('display', 'none');
 }
-
 
 function makeBars3(csv) {
     var margin = { top: 12, right: 18, bottom: 40, left: 100 };
@@ -63,14 +75,20 @@ function makeBars3(csv) {
 
     svg.selectAll('rect')
         .call(tip)
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        .on('mouseover', function(d) {
+            tip.show(d);
+            barOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            barOut(this);
+        });
 
     return chart;
 }
 
 
-function makeTrend(csv) {
+function makeUnderTrend(csv) {
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
 
     var svg = d3.select('#underemployment-trend')
@@ -78,7 +96,6 @@ function makeTrend(csv) {
         .attr('width', '100%')
         .attr('height', '100%')
         .html('');
-        // .attr('viewBox', '0 0 ' + width + ' ' + height);
 
     var chart = new dimple.chart(svg, csv);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
@@ -91,39 +108,100 @@ function makeTrend(csv) {
     y.ticks = 6;
 
     chart.defaultColors = [
-        new dimple.color('#992156'),
-        new dimple.color('#739DD0')
+        new dimple.color('#739DD0'),
+        new dimple.color('#992156')
+
     ];
 
-    // var baseline = chart.addSeries(null, dimple.plot.line);
-    var colorline = chart.addSeries('Type', dimple.plot.line);
-    colorline.lineMarkers = true;
+    // var colorline = chart.addSeries('Type', dimple.plot.line);
+    // colorline.lineMarkers = true;
+    var past = dimple.filterData(csv, 'type', 'past');
+    var goal = dimple.filterData(csv, 'type', 'goal');
 
-    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
+
+    var goalline = chart.addSeries(['type'], dimple.plot.line);
+    var pastline = chart.addSeries(null, dimple.plot.line);
+    pastline.lineMarkers = true;
+    goalline.lineMarkers = true;
+    pastline.data = past;
+    goalline.data = goal;
+
+    // chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
     chart.draw();
 
     d3.select('#dimple-goal')
         .style('stroke-dasharray', ('5, 5'));
 
-        var tip = d3.tip()
-            .attr('class', 'd3-tip')
-            .html(lineTip);
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTipNhv);
 
-        svg.selectAll('circle')
-            .call(tip)
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide);
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', function(d) {
+            tip.show(d);
+            dotOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            dotOut(this);
+        });
+
+    // svg.selectAll('.dimple-marker.dimple-goal:first-child')
+    //     .attr('display', 'none');
 
     return chart;
 }
 
-function barTip(d) {
-    return '<span>' + d.y + ': ' + d3.format('.0%')(d.xValue) + '</span>';
+function makeUnTrend(csv) {
+    var margin = { top: 24, right: 32, bottom: 48, left: 32 };
+
+    var svg = d3.select('#unemployment-trend')
+        .select('svg')
+        .attr('width', '100%')
+        .attr('height', '100%')
+        .html('');
+
+    var chart = new dimple.chart(svg, csv);
+    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+
+    var x = chart.addTimeAxis('x', 'date', '%Y-%m-%d', '%Y');
+    x.title = null;
+
+    var y = chart.addMeasureAxis('y', 'rate');
+    y.tickFormat = '.0%';
+    y.ticks = 6;
+
+    chart.defaultColors = [
+        new dimple.color('#992156'),
+        new dimple.color('#739DD0')
+    ];
+
+    var colorline = chart.addSeries('name', dimple.plot.line);
+    colorline.lineMarkers = true;
+
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', colorline);
+    chart.draw();
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(lineTip2);
+
+    svg.selectAll('circle')
+        .call(tip)
+        .on('mouseover', function(d) {
+            tip.show(d);
+            dotOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            dotOut(this);
+        });
+
+    return chart;
 }
 
-function lineTip(d) {
-    return '<span>' + d3.timeFormat('%Y')(d.x) + ': ' + d3.format('.0%')(d.yValue) + '</span>';
-}
+
 
 
 // using d3fc

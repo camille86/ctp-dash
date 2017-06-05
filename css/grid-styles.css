@@ -29,6 +29,11 @@
 /*   color: #E8E5ED; */
   color: #333;
   border-radius: 8px;
+  /*cursor: pointer;*/
+}
+
+.grid-item:hover {
+    border-color: #f3f382;
 }
 
 .grid-item > * {
@@ -40,6 +45,11 @@
   font-size: 1.1em;
   font-weight: 700;
   padding: 0;
+}
+
+.grid-item .expand-grid {
+    color: #efefef;
+    font-weight: 900;
 }
 
 .grid-item .current-val {

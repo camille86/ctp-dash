@@ -63,12 +63,16 @@ function makeRings(data) {
 
     svg.selectAll('path')
         .call(tip)
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        // .on('mouseover', tip.show)
+        // .on('mouseout', tip.hide);
+        .on('mouseover', function(d) {
+            tip.show(d);
+            barOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            barOut(this);
+        });
 
     return chart;
-}
-
-function pieTip(d) {
-    return '<span>' + d.aggField[0] + ': ' + d3.format(',')(d.pValue) + '</span>';
 }

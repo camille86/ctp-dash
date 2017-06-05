@@ -48,16 +48,20 @@ function setupIsotope() {
         // $(this).toggleClass('big');
         $('.grid-item').not(this).removeClass('big');
         $(this).toggleClass('big');
+        $('.grid-item .show-more').text('+');
+        $('.big').find('.show-more').text('-');
 
         // redraw
         $grid.isotope('layout');
-    }).on('click', 'a', function(e) {
+    }).on('click', 'a.area', function(e) {
         e.stopPropagation();
     }).on('mouseover', function(e) {
         $(this).find('.learn-more').removeClass('hidden');
     }).on('mouseout', function(e) {
         $(this).find('.learn-more').addClass('hidden');
     });
+
+
 
 
     var $filters = $('#filters');

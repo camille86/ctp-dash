@@ -25,8 +25,6 @@ function init(error, json, hood, tenure) {
         nhv.draw();
     });
 
-    d3.selectAll('.dimple-marker')
-        .attr('r', 3);
 }
 
 function drawTenure2(csv) {
@@ -63,19 +61,22 @@ function drawTenure2(csv) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(barTip);
+        .html(colGroupTip);
 
     svg.selectAll('rect')
         .call(tip)
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        .on('mouseover', function(d) {
+            tip.show(d);
+            barOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            barOut(this);
+        });
 
     return chart;
 }
 
-function barTip(d) {
-    return '<span>' + d.x + ' ' + d.aggField[0] + ': ' + d3.format('.0%')(d.yValue) + '</span>';
-}
 
 
 // function drawMap(topo, csv) {
