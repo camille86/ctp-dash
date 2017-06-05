@@ -65,11 +65,16 @@ function setupIsotope() {
 
 
     var $filters = $('#filters');
-    $filters.on('click', '.btn', function() {
+    $filters.on('click', '.btn', function(e) {
+        e.preventDefault();
+        
+        $('.grid-item').removeClass('big');
+
         var filterVal = $(this).data('filter');
         $grid.isotope({ filter: filterVal });
         $filters.find('.active').removeClass('active');
         $(this).addClass('active');
+
     });
 
 }
