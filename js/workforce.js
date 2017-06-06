@@ -144,6 +144,10 @@ function makeUnderTrend(csv) {
         .on('mouseout', function(d) {
             tip.hide(d);
             dotOut(this);
+        })
+        .on('touchend', function(d) {
+            tip.show(d);
+            dotOver(this);
         });
 
     // svg.selectAll('.dimple-marker.dimple-goal:first-child')
