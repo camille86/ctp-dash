@@ -25,7 +25,7 @@ $(document).ready(function() {
 
         cards.append('div')
             // .classed('grid-item', true)
-            .attr('class', function(d) { return 'grid-item ' + d.class; })
+            .attr('class', function(d) { return 'grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3 ' + d.class; })
             .html(render);
 
         setupIsotope();
@@ -38,7 +38,7 @@ function setupIsotope() {
     var $grid = $('.grid');
     $grid.isotope({
         itemSelector: '.grid-item',
-        // percentPosition: true,
+        percentPosition: true,
         masonry: {
             columnWidth: '.grid-sizer'
         }
@@ -67,7 +67,7 @@ function setupIsotope() {
     var $filters = $('#filters');
     $filters.on('click', '.btn', function(e) {
         e.preventDefault();
-        
+
         $('.grid-item').removeClass('big');
 
         var filterVal = $(this).data('filter');

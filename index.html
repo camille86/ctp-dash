@@ -3,8 +3,11 @@
 <!-- * change charts to col-md-* -->
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>City Transformation Plan</title>
-    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -19,7 +22,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/keen-dashboards.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/grid-styles.css" />
+    <link rel="stylesheet" href="css/grid.css" />
 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -72,7 +75,6 @@
 
     <div class="container" id="intro">
         <div class="row">
-            <div class="col-sm-12">
                 <div class="plank" id="plank">
                     <h2 class="text-uppercase">New Haven City Transformation Plan</h2>
                     <p class="explanation">
@@ -82,7 +84,6 @@
                         <strong>NOTE: </strong>Dashboard and data are in draft stage for planning purposes only--not for distribution or use.
                     </p>
                 </div>
-            </div>
         </div>
     </div>
     <div class="container">
@@ -96,7 +97,7 @@
         </div>
         <div class="row">
             <div class="grid" id="grid-container">
-                <div class="grid-sizer"></div>
+                <div class="grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
             </div>
         </div>
 
@@ -123,11 +124,11 @@
 <script id="card-template" type="text/template">
         <div class="row">
             <!-- <h5 class="name col-xs-12">{{name}}</h5> -->
-            <h5 class="name"><span>{{name}}</span><a href="#" class="expand-grid pull-right" role="button">[<span class="show-more">+</span>]</a></h5>
+            <h5 class="name"><span>{{name}}</span><span class="expand-grid pull-right" role="button">[<span class="show-more">+</span>]</span></h5>
         </div>
 
         <div class="row">
-            <div class="col-xs-10">
+            <div class="col-xs-9">
                 <div class="row row-no-gutter">
                     <h1 class="current-val">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
                 </div>
@@ -135,7 +136,7 @@
                     <h3 class="prev-val">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
                 </div>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-3">
                 <h1 class="trend">
                     <!-- <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span> -->
                     <svg class="icon {{outcome}}" aria-hidden="true">

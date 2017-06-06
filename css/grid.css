@@ -1,36 +1,221 @@
+#filters .btn {
+    border-radius: 4px;
+}
+
+.positive {
+    color: #1a9850;
+}
+
+.negative {
+    color: #a50026;
+}
+
+.neutral {
+    color: #fee08b;
+}
+
+.grid {
+    margin: 12px auto;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    float: left;
+    min-height: 240px;
+    padding: 10px 14px;
+    border: 5px solid white;
+    border-radius: 8px;
+    background: #888;
+    color: #333;
+}
+
+.grid-item:hover {
+    border-color: #f3f382;
+}
+
+.grid-item>* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item .name {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0;
+}
+
+.grid-item .expand-grid {
+    color: #efefef;
+    font-weight: 900;
+}
+
+.grid-item .current-val {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 2px;
+}
+
+.grid-item .current-year {
+    font-size: 50%;
+    color: #444;
+}
+
+.grid-item .prev-val {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #eaeaea;
+    margin: 2px;
+}
+
+.grid-item .prev-year {
+    font-size: 60%;
+    color: #444;
+}
+
+.grid-item .descript {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.25em;
+    width: 90%;
+    color: #333;
+}
+
+.grid-item .area {
+    position: absolute;
+    color: #eee;
+    bottom: 10px;
+}
+
+.grid-item .trend {
+    font-size: 3em;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.grid-item p.descript-text {
+    visibility: hidden;
+}
+
+.grid-item .icon {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+}
+
+.big {
+    height: 320px;
+    -webkit-transition: font-size 400ms;
+    -moz-transition: font-size 400ms;
+    -o-transition: font-size 400ms;
+    transition: font-size 400ms;
+}
+
+.big p.descript-text {
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .big .current-val {
+        font-size: 3.5em;
+    }
+    .big .prev-val {
+        font-size: 2.6em;
+    }
+    .big .trend {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .big .current-val {
+        font-size: 5em;
+    }
+    .big .prev-val {
+        font-size: 3em;
+    }
+    .big .trend {
+        font-size: 9em;
+    }
+}
+
+@media (min-width: 992px) {
+    .big {
+        width: 66.67%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .big {
+        width: 50%;
+    }
+}
+
 .workforce {
-  background: #ce74a1; }
-  .workforce .name {
-    border-bottom: 2px solid #bc4382; }
-  .workforce .descript {
-    border-bottom: 1px solid #bc4382; }
+    background: #d58ab0;
+}
+
+.workforce .name {
+    border-bottom: 2px solid #ce5b96;
+}
+
+.workforce .descript {
+    border-bottom: 1px solid #ce5b96;
+}
 
 .childhood {
-  background: #c992cd; }
-  .childhood .name {
-    border-bottom: 2px solid #a780a9; }
-  .childhood .descript {
-    border-bottom: 1px solid #a780a9; }
+    background: #ca9ecd;
+}
+
+.childhood .name {
+    border-bottom: 2px solid #b87ebb;
+}
+
+.childhood .descript {
+    border-bottom: 1px solid #b87ebb;
+}
 
 .health {
-  background: #95cc91; }
-  .health .name {
-    border-bottom: 2px solid #81a87e; }
-  .health .descript {
-    border-bottom: 1px solid #81a87e; }
+    background: #9dc59a;
+}
+
+.health .name {
+    border-bottom: 2px solid #78b673;
+}
+
+.health .descript {
+    border-bottom: 1px solid #78b673;
+}
 
 .housing {
-  background: #7070cf; }
-  .housing .name {
-    border-bottom: 2px solid #3b3bc1; }
-  .housing .descript {
-    border-bottom: 1px solid #3b3bc1; }
+    background: #9494dc;
+}
+
+.housing .name {
+    border-bottom: 2px solid #7575cc;
+}
+
+.housing .descript {
+    border-bottom: 1px solid #7575cc;
+}
 
 .cross {
-  background: #c2a4a4; }
-  .cross .name {
-    border-bottom: 2px solid #999999; }
-  .cross .descript {
-    border-bottom: 1px solid #999999; }
+    background: #b3b3b3;
+}
+
+.cross .name {
+    border-bottom: 2px solid #999999;
+}
+
+.cross .descript {
+    border-bottom: 1px solid #999999;
+}
+
 
 /*# sourceMappingURL=grid.css.map */
