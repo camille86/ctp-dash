@@ -26,6 +26,13 @@ function barOut(d) {
         .style('stroke-width', 1);
 }
 
+function redrawDots() {
+    d3.selectAll('.dimple-marker')
+        .attr('r', 4)
+        .attr('fill', function(d) { return d3.select(this).attr('stroke'); })
+        .style('stroke-width', 4);
+}
+
 function barTip(d) {
     return '<span>' + d.y + ': ' + d3.format('.0%')(d.xValue) + '</span>';
 }
