@@ -7,11 +7,8 @@
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
-    <!-- <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script> -->
     <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.0/topojson.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/plottable@3.0.0/plottable.min.js"></script> -->
+    <!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
@@ -21,12 +18,10 @@
     <script type="text/javascript" src="../js/housing.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/keen-dashboards.css" />
-    <link rel="stylesheet" href="../css/tooltip.css" />
-    <!-- <link rel="stylesheet" href="../bower_components/plottable/plottable.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" /> -->
-    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/keen-dashboards.css" / />
+    <link rel="stylesheet" href="../css/main-styles.css" />
     <link rel="stylesheet" href="../css/chart-styles.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
 
     <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
@@ -73,10 +68,10 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="chart-wrapper">
-                    <div class="chart-title med-title" id="accordion-title">
+                    <div class="chart-title dark-title" id="accordion-title">
                         <h4>2020 targets</h4>
                     </div>
-                    <div class-"chart-stage">
+                    <div>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="target1">
@@ -137,6 +132,10 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="definition">
+                        <strong>Definition: </strong>Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
+                </div>
             </div>
 
             <div class="col-sm-9">
@@ -159,8 +158,8 @@
                             <div class="chart-title">
                                 Severe housing cost burden by tenure, 2015
                             </div>
-                            <div class="chart-stage chart240">
-                                <div id="burden-tenure" class="chart"></div>
+                            <div class="chart-stage">
+                                <div id="burden-tenure" class="chart240"></div>
                             </div>
                             <div class="chart-notes">
                                 Source: US Census Bureau, American Community Survey
@@ -179,11 +178,11 @@
                     </div>
                 </div>
 
-                <div class="definition">
+                <!-- <div class="definition">
                     <p>
                         <strong>Definition: </strong>Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
                     </p>
-                </div>
+                </div> -->
 
             </div>
         </div>
