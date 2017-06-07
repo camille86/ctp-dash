@@ -26,12 +26,14 @@ function init(error, locs, trend) {
         makeSmokingTrend(trend);
         makeFoodTrend(trend);
         makeInsuranceTrend(trend);
+
+        redrawDots();
     });
 
-    d3.selectAll('.dimple-marker')
-        .attr('r', 4)
-        .attr('fill', function(d) { return d3.select(this).attr('stroke'); });
+    redrawDots();
 }
+
+
 
 function makeObesityBars(locs) {
     var data = locs.filter(function(d) { return d.indicator === 'obesity'; });

@@ -28,17 +28,12 @@ function init(error, rates, under_tr, un_tr) {
         locationChart.draw(0, true);
 
         underTrend = makeUnderTrend(under_tr);
+        unTrend = makeUnTrend(un_tr);
+
+        redrawDots();
     });
 
-    d3.selectAll('.dimple-marker')
-        .attr('r', 4)
-        // .style('stroke-width', 1)
-        // .style('fill-opacity', 1.0)
-        // .style('opacity', 1.0)
-        .attr('fill', function(d) {
-            return d3.select(this).attr('stroke');
-        });
-    // d3.selectAll('.dimple-marker-back').style('display', 'none');
+    redrawDots();
 }
 
 function makeBars3(csv) {
@@ -82,6 +77,10 @@ function makeBars3(csv) {
         .on('mouseout', function(d) {
             tip.hide(d);
             barOut(this);
+        })
+        .on('touchend', function(d) {
+            tip.show(d);
+            barOver(this);
         });
 
     return chart;
@@ -145,6 +144,11 @@ function makeUnderTrend(csv) {
         .on('mouseout', function(d) {
             tip.hide(d);
             dotOut(this);
+        })
+        .on('touchstart', function(d) {
+            d3.event.preventDefault();
+            tip.show(d);
+            dotOver(this);
         });
 
     // svg.selectAll('.dimple-marker.dimple-goal:first-child')

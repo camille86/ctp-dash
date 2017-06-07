@@ -5,11 +5,20 @@ $tablet: 768px;
 $laptop: 992px;
 $lg-laptop: 1200px;
 
+$workforce: #ab1461;
+$childhood: #953d9a;
+$health: #3a8b34;
+$housing: #2929b9;
+$cross: #666666;
+
+
+
 $negative: #a50026;
 $positive: #1a9850;
 $neutral: #fee08b;
 
 $darkgray: #666;
+$hilite: #f3f382;
 
 @mixin area($base-color) {
     $darker: lighten(mix($darkgray, $base-color, 30%), 20);
@@ -62,7 +71,7 @@ $darkgray: #666;
     color: #333;
 
     &:hover {
-        border-color: #f3f382;
+        border-color: $hilite;
     }
 
     & > * {
@@ -190,21 +199,21 @@ $darkgray: #666;
 
 
 .workforce {
-    @include area(#ab1461);
+    @include area($workforce);
 }
 
 .childhood {
-    @include area(#953d9a);
+    @include area($childhood);
 }
 
 .health {
-    @include area(#3a8b34);
+    @include area($health);
 }
 
 .housing {
-    @include area(#2929b9);
+    @include area($housing);
 }
 
 .cross {
-    @include area(#666666);
+    @include area($cross);
 }
