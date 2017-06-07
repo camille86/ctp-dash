@@ -145,7 +145,8 @@ function makeUnderTrend(csv) {
             tip.hide(d);
             dotOut(this);
         })
-        .on('touchend', function(d) {
+        .on('touchstart', function(d) {
+            d3.event.preventDefault();
             tip.show(d);
             dotOver(this);
         });
