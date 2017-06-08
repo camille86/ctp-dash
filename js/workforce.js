@@ -34,6 +34,7 @@ function init(error, rates, under_tr, un_tr) {
     });
 
     redrawDots();
+
 }
 
 function makeBars3(csv) {
