@@ -13,10 +13,8 @@
     <script type="text/javascript" src="../js/health.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
     <link rel="stylesheet" href="../css/main-styles.css" />
-    <link rel="stylesheet" href="../css/chart-styles.css" />
-    <link rel="stylesheet" href="../css/tooltip.css" />
 
     <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
@@ -47,7 +45,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="top">
 
         <div class="row">
             <div class="col-sm-12">
@@ -134,88 +132,100 @@
             </div>
 
             <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Obesity rates among adults by location, 2015
-                            </div>
-                            <div class="chart-stage">
-                                <div id="obesity-loc" class="chart220"></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
+
+                <ul class="nav nav-pills">
+                    <li role="link"><a href="#goal-charts" class="jump-link">Target indicators</a></li>
+                    <li role="link"><a href="#other-charts" class="jump-link">Other indicators</a></li>
+                </ul>
+
+                <div class="goal-charts" id="goal-charts">
+                    <h5>Target indicators</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Smoking rates among adults by location, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="smoking-loc" class="chart220"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Obesity rates among adults over time
-                            </div>
-                            <div class="chart-stage">
-                                <div id="obesity-trend" class="chart220"><svg></svg></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Smoking rates among adults over time
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="smoking-trend" class="chart220"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Smoking rates among adults by location, 2015
+                <div class="other-charts" id="other-charts">
+                    <h5>Other indicators</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Obesity rates among adults by location, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="obesity-loc" class="chart220"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
-                            <div class="chart-stage">
-                                <div id="smoking-loc" class="chart220"></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Obesity rates among adults over time
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="obesity-trend" class="chart220"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Smoking rates among adults over time
-                            </div>
-                            <div class="chart-stage">
-                                <div id="smoking-trend" class="chart220"><svg></svg></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Adults lacking health insurance over time
-                            </div>
-                            <div class="chart-stage">
-                                <div id="insurance-trend" class="chart220"><svg></svg></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Adults lacking health insurance over time
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="insurance-trend" class="chart220"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-                                Food insecurity over time
-                            </div>
-                            <div class="chart-stage">
-                                <div id="food-trend" class="chart220"><svg></svg></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Food insecurity over time
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="food-trend" class="chart220"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source:
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,6 +241,11 @@
                     </div>
                 </div>
             </div>
+
+            <p class="pull-right">
+                <a href="#top" class="jump-link">Back to top</a>
+            </p>
+
         </div>
 
     </div>
@@ -244,6 +259,19 @@
             <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
         </ul>
     </div>
+
+    <script>
+        var nav_gap = 64;
+        $('.jump-link').on('click', function() {
+            var target = $(this).attr('href');
+            var offset = $(target).offset().top - nav_gap;
+
+            $('html, body').animate({
+                scrollTop: offset
+            }, 'slow');
+            return false;
+        });
+    </script>
 
 </body>
 </html>
