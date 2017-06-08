@@ -1,38 +1,39 @@
-@import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+// @import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+//
+//
+// $workforce: #ab1461;
+// $childhood: #953d9a;
+// $health: #3a8b34;
+// $housing: #2929b9;
+// $cross: #666666;
+//
+// $negative: #a50026;
+// $positive: #1a9850;
+// $neutral: #fee08b;
+//
+// $gray6: #666;
+// $hilite: #f3f382;
+//
+// @mixin gridcolors($base-color) {
+//     $darker: lighten(mix($gray6, $base-color, 30%), 20);
+//     background: mix(white, $base-color, 50%);
+//     .name {
+//         border-bottom: 2px solid $darker;
+//     }
+//     .descript {
+//         border-bottom: 1px solid $darker;
+//     }
+// }
+//
+// @mixin transition($args...) {
+//     -webkit-transition: $args;
+//     -moz-transition: $args;
+//     -ms-transition: $args;
+//     transition: $args;
+// }
 
-$phone: max-width 768px;
-$tablet: 768px;
-$laptop: 992px;
-$lg-laptop: 1200px;
-
-$workforce: #ab1461;
-$childhood: #953d9a;
-$health: #3a8b34;
-$housing: #2929b9;
-$cross: #666666;
-
-
-
-$negative: #a50026;
-$positive: #1a9850;
-$neutral: #fee08b;
-
-$darkgray: #666;
-$hilite: #f3f382;
-
-@mixin area($base-color) {
-    $darker: lighten(mix($darkgray, $base-color, 30%), 20);
-    background: mix(white, $base-color, 50%);
-    .name {
-        border-bottom: 2px solid $darker;
-    }
-    .descript {
-        border-bottom: 1px solid $darker;
-    }
-}
-
-#filters .btn {
-    border-radius: 4px;
+.filter-btns .btn {
+    @include border-radius(4px);
 }
 
 .positive {
@@ -66,7 +67,7 @@ $hilite: #f3f382;
     min-height: 240px;
     padding: 10px 14px;
     border: 5px solid white;
-    border-radius: 8px;
+    @include border-radius(8px);
     background: #888;
     color: #333;
 
@@ -190,30 +191,27 @@ $hilite: #f3f382;
         width: 50%;
     }
 
-    -webkit-transition: font-size 400ms;
-    -moz-transition: font-size 400ms;
-    -o-transition: font-size 400ms;
-    transition: font-size 400ms;
+    @include transition(font-size 400ms);
 }
 
 
 
 .workforce {
-    @include area($workforce);
+    @include gridcolors($workforce);
 }
 
 .childhood {
-    @include area($childhood);
+    @include gridcolors($childhood);
 }
 
 .health {
-    @include area($health);
+    @include gridcolors($health);
 }
 
 .housing {
-    @include area($housing);
+    @include gridcolors($housing);
 }
 
 .cross {
-    @include area($cross);
+    @include gridcolors($cross);
 }
