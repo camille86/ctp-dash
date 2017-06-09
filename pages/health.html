@@ -9,6 +9,10 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+    <script src="../js/d3map.js"></script>
     <script src="../js/mouseevents.js"></script>
     <script type="text/javascript" src="../js/health.js"></script>
 
@@ -144,6 +148,22 @@
                         <div class="col-md-6">
                             <div class="chart-wrapper">
                                 <div class="chart-title">
+                                    Current adult asthma rate by census tract, 2014
+                                </div>
+                                <div class="chart-state">
+                                    <div id="asthma-map" class="chart400 mapContainer"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: BRFSS via 500 Cities Project
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
                                     Smoking rates among adults by location, 2015
                                 </div>
                                 <div class="chart-stage">
@@ -170,8 +190,27 @@
                     </div>
                 </div>
 
+                <div class="text-right">
+                    <a href="#top" class="jump-link">Back to top</a>
+                </div>
+
                 <div class="other-charts" id="other-charts">
                     <h5>Other indicators</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Adults with recent dental visit by census tract, 2014
+                                </div>
+                                <div class="chart-state">
+                                    <div id="dental-map" class="chart400 mapContainer"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: BRFSS via 500 Cities Project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="chart-wrapper">
@@ -242,9 +281,9 @@
                 </div>
             </div>
 
-            <p class="pull-right">
+            <div class="text-right">
                 <a href="#top" class="jump-link">Back to top</a>
-            </p>
+            </div>
 
         </div>
 

@@ -51,12 +51,13 @@ var d3map = function() {
         chart.draw();
     };
 
-    function mouseOverPoly(poly, format) {
+    function mouseOverPoly(poly, format, hasName) {
         var name = poly.datum().properties.name;
         var value = mapData[name];
         var valText = typeof value === 'undefined' ? 'N/A' : format(value);
 
-        return '<span class="tip-label">' + name + ': </span>' + valText;
+        var nametag = hasName ? '<span class="tip-label">' + name + ': </span>' : '';
+        return nametag + valText;
     }
 
     /////////// PUBLIC FUNCTIONS /////////////
@@ -118,7 +119,7 @@ var d3map = function() {
         return chart;
     };
 
-    chart.tip = function(tipClass, format) {
+    chart.tip = function(tipClass, format, hasName) {
         tipClass = tipClass || 'd3-tip';
         format = format || d3.format('');
         var tip = d3.tip()
@@ -127,7 +128,7 @@ var d3map = function() {
         parent.selectAll('.polygon')
             .call(tip)
             .on('mouseover', function() {
-                tip.html(mouseOverPoly(d3.select(this), format));
+                tip.html(mouseOverPoly(d3.select(this), format, hasName));
                 tip.show();
             })
             .on('mouseout', tip.hide);

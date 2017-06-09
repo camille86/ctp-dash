@@ -252,6 +252,9 @@ body {
 .chart320 {
   height: 320px; }
 
+.chart350 {
+  height: 350px; }
+
 .chart400 {
   height: 400px; }
 
@@ -284,8 +287,8 @@ body {
   border-color: #d3d6e4; }
 
 .other-charts {
-  background-color: #dbdce4;
-  border-color: #cfd1db; }
+  background-color: #dbdbdb;
+  border-color: #d1d1d1; }
 
 .jump-link {
   color: #a80e55;

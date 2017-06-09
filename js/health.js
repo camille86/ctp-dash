@@ -1,11 +1,32 @@
 d3.queue()
     .defer(d3.csv, '../data/health_bars.csv')
     .defer(d3.tsv, '../data/health_trends.csv')
+    .defer(d3.csv, '../data/asthma_tract.csv')
+    .defer(d3.csv, '../data/dental_tract.csv')
+    .defer(d3.json, '../json/nhv_tracts.json')
     .await(init);
 
 ///////////// INIT
-function init(error, locs, trend) {
+function init(error, locs, trend, asthma, dental, json) {
     if (error) throw error;
+
+    console.log(json);
+
+    var asthmaMap = d3map();
+    d3.select('#asthma-map')
+        .datum(topojson.feature(json, json.objects.New_Haven))
+        .call(asthmaMap);
+    asthmaMap.color(asthma, ['#e8e5ed','#d8b6c5','#c6879e','#b15879','#992156'])
+        .tip('d3-tip', d3.format('.1%'), false)
+        .legend(d3.format('.0%'), 20, 20);
+
+    var dentalMap = d3map();
+    d3.select('#dental-map')
+        .datum(topojson.feature(json, json.objects.New_Haven))
+        .call(dentalMap);
+    dentalMap.color(dental, ['#e8e5ed','#d8b6c5','#c6879e','#b15879','#992156'])
+        .tip('d3-tip', d3.format('.0%'), false)
+        .legend(d3.format('.0%'), 20, 20);
 
     locs.forEach(function(d) {
         d.value = +d.value;
@@ -13,6 +34,7 @@ function init(error, locs, trend) {
     trend.forEach(function(d) {
         d.value = +d.value;
     });
+
 
     var barplots = [makeObesityBars(locs), makeSmokingBars(locs)];
     makeObesityTrend(trend);
@@ -26,6 +48,9 @@ function init(error, locs, trend) {
         makeSmokingTrend(trend);
         makeFoodTrend(trend);
         makeInsuranceTrend(trend);
+
+        asthmaMap.draw();
+        dentalMap.draw();
 
         redrawDots();
     });
