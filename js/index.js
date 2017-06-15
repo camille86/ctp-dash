@@ -101,7 +101,8 @@ function render(d, i) {
     var card = d;
     card.current_val = makeFormat(d.format, d.current_val);
     card.prev_val = d.prev_val.length ? makeFormat(d.format, d.prev_val) : '';
-    card.hasLink = card.class === 'cross' ? false : true;
+    // card.hasLink = card.class === 'cross' ? false : true;
+    card.hasLink = true;
     // card.area = '<a class="area" href="pages/' + d.class + '.html"><span class="hidden learn-more">Learn more about </span>' + d.area + '</a>';
     // card.arrow = '<span class="glyphicon glyphicon-arrow-' + d.arrow + '"></span>';
     console.log(card);

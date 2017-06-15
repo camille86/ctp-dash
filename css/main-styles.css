@@ -56,6 +56,10 @@ body {
   margin-bottom: 16px; }
   .definition strong {
     font-weight: 600; }
+  .definition h4 {
+    font-size: 1.1em; }
+  .definition dl {
+    margin-bottom: 10px; }
 
 .chart-wrapper .dark-title {
   background-color: #4c516d;
@@ -122,7 +126,8 @@ body {
   -ms-border-radius: 8px;
   border-radius: 8px;
   background: #888;
-  color: #333; }
+  color: #333;
+  cursor: pointer; }
   .grid-item:hover {
     border-color: #f3f382; }
   .grid-item > * {
@@ -298,8 +303,7 @@ body {
   line-height: 1;
   font-weight: 400;
   padding: 8px;
-  background: #262937;
-  opacity: 0.8;
+  background: rgba(38, 41, 55, 0.9);
   color: white;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

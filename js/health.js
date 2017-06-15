@@ -1,8 +1,8 @@
 d3.queue()
-    .defer(d3.csv, '../data/health_bars.csv')
-    .defer(d3.tsv, '../data/health_trends.csv')
-    .defer(d3.csv, '../data/asthma_tract.csv')
-    .defer(d3.csv, '../data/dental_tract.csv')
+    .defer(d3.csv, '../data/health/health_bars.csv')
+    .defer(d3.tsv, '../data/health/health_trends.csv')
+    .defer(d3.csv, '../data/health/asthma_tract.csv')
+    .defer(d3.csv, '../data/health/dental_tract.csv')
     .defer(d3.json, '../json/nhv_tracts.json')
     .await(init);
 
@@ -14,7 +14,7 @@ function init(error, locs, trend, asthma, dental, json) {
 
     var asthmaMap = d3map();
     d3.select('#asthma-map')
-        .datum(topojson.feature(json, json.objects.New_Haven))
+        .datum(topojson.feature(json, json.objects.nhv_tracts))
         .call(asthmaMap);
     asthmaMap.color(asthma, ['#e8e5ed','#d8b6c5','#c6879e','#b15879','#992156'])
         .tip('d3-tip', d3.format('.1%'), false)
@@ -22,7 +22,7 @@ function init(error, locs, trend, asthma, dental, json) {
 
     var dentalMap = d3map();
     d3.select('#dental-map')
-        .datum(topojson.feature(json, json.objects.New_Haven))
+        .datum(topojson.feature(json, json.objects.nhv_tracts))
         .call(dentalMap);
     dentalMap.color(dental, ['#e8e5ed','#d8b6c5','#c6879e','#b15879','#992156'])
         .tip('d3-tip', d3.format('.0%'), false)
@@ -70,9 +70,7 @@ function makeObesityBars(locs) {
 
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#992156')
-    ];
+    chart.defaultColors = [ pink ];
 
     var y = chart.addCategoryAxis('y', 'name');
 
@@ -81,7 +79,7 @@ function makeObesityBars(locs) {
 
     var x = chart.addMeasureAxis('x', 'value');
     x.tickFormat = '.0%';
-    x.ticks = 6;
+    x.ticks = 4;
     x.title = null;
 
     var bars = chart.addSeries(null, dimple.plot.bar);
@@ -90,9 +88,9 @@ function makeObesityBars(locs) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(barTip);
+        .html(horizTip);
 
-    svg.selectAll('rect')
+    svg.selectAll('rect.dimple-bar')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -117,9 +115,7 @@ function makeSmokingBars(locs) {
         // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#992156')
-    ];
+    chart.defaultColors = [ pink ];
 
     var y = chart.addCategoryAxis('y', 'name');
 
@@ -138,9 +134,9 @@ function makeSmokingBars(locs) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(barTip);
+        .html(horizTip);
 
-    svg.selectAll('rect')
+    svg.selectAll('rect.dimple-bar')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -169,18 +165,14 @@ function makeObesityTrend(trend) {
 
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#739DD0'),
-        new dimple.color('#992156'),
-        new dimple.color('#2F588B')
-    ];
+    chart.defaultColors = [ ltblue, pink, dkblue ];
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
 
     var y = chart.addMeasureAxis('y', 'value');
     y.tickFormat = '.0%';
-    y.ticks = 6;
+    y.ticks = 4;
     y.title = null;
 
     var baseline = chart.addSeries(null, dimple.plot.line);
@@ -196,9 +188,9 @@ function makeObesityTrend(trend) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTip2);
+        .html(trendGroupTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -229,11 +221,7 @@ function makeSmokingTrend(trend) {
 
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#739DD0'),
-        new dimple.color('#992156'),
-        new dimple.color('#2F588B')
-    ];
+    chart.defaultColors = [ ltblue, pink, dkblue ];
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
@@ -256,9 +244,9 @@ function makeSmokingTrend(trend) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTip2);
+        .html(trendGroupTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -289,18 +277,14 @@ function makeFoodTrend(trend) {
         // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#739DD0'),
-        new dimple.color('#992156'),
-        new dimple.color('#2F588B')
-    ];
+    chart.defaultColors = [ ltblue, pink, dkblue ];
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
 
     var y = chart.addMeasureAxis('y', 'value');
     y.tickFormat = '.0%';
-    y.ticks = 6;
+    y.ticks = 5;
     y.title = null;
 
     var baseline = chart.addSeries(null, dimple.plot.line);
@@ -316,9 +300,9 @@ function makeFoodTrend(trend) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTip2);
+        .html(trendGroupTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -349,19 +333,14 @@ function makeInsuranceTrend(trend) {
         // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#739DD0'),
-        new dimple.color('#992156'),
-        new dimple.color('#2F588B'),
-        new dimple.color('#359957')
-    ];
+    chart.defaultColors = [ ltblue, pink, dkblue, green ];
 
     var x = chart.addTimeAxis('x', 'year', '%Y', '%Y');
     x.title = null;
 
     var y = chart.addMeasureAxis('y', 'value');
     y.tickFormat = '.0%';
-    y.ticks = 6;
+    y.ticks = 5;
     y.title = null;
 
     var baseline = chart.addSeries(null, dimple.plot.line);
@@ -379,9 +358,9 @@ function makeInsuranceTrend(trend) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTip2);
+        .html(trendGroupTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);

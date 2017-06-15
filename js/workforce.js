@@ -1,7 +1,7 @@
 d3.queue()
-    .defer(d3.csv, '../data/underemployment.csv')
-    .defer(d3.csv, '../data/underemployment_time.csv')
-    .defer(d3.csv, '../data/unemployment_trend.csv')
+    .defer(d3.csv, '../data/workforce/underemployment.csv')
+    .defer(d3.csv, '../data/workforce/underemployment_time.csv')
+    .defer(d3.csv, '../data/workforce/unemployment_trend.csv')
     .await(init);
 
 ///////////// INIT
@@ -20,7 +20,7 @@ function init(error, rates, under_tr, un_tr) {
         d.rate = +d.rate;
     });
 
-    var locationChart = makeBars3(rates);
+    var locationChart = makeUnderLocation(rates);
     var underTrend = makeUnderTrend(under_tr);
     var unTrend = makeUnTrend(un_tr);
 
@@ -37,18 +37,16 @@ function init(error, rates, under_tr, un_tr) {
 
 }
 
-function makeBars3(csv) {
+function makeUnderLocation(data) {
     var margin = { top: 12, right: 18, bottom: 40, left: 100 };
     var svg = d3.select('#underemployment-chart')
         .append('svg')
         .attr('width', '100%')
         .attr('height', '100%');
         // .attr('viewBox', '0 0 ' + fullwidth + ' ' + fullheight);
-    var chart = new dimple.chart(svg, csv);
+    var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [
-        new dimple.color('#992156')
-    ];
+    chart.defaultColors = [ pink ];
 
     var y = chart.addCategoryAxis('y', 'Location');
     y.addOrderRule(['CT', 'GNH', 'New Haven', 'NHV low-income', 'Other NHV'], true);
@@ -67,9 +65,9 @@ function makeBars3(csv) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(barTip);
+        .html(horizTip);
 
-    svg.selectAll('rect')
+    svg.selectAll('rect.dimple-bar')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -88,7 +86,7 @@ function makeBars3(csv) {
 }
 
 
-function makeUnderTrend(csv) {
+function makeUnderTrend(data) {
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
 
     var svg = d3.select('#underemployment-trend')
@@ -97,7 +95,7 @@ function makeUnderTrend(csv) {
         .attr('height', '100%')
         .html('');
 
-    var chart = new dimple.chart(svg, csv);
+    var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
 
     var x = chart.addTimeAxis('x', 'Year', '%Y', '%Y');
@@ -107,16 +105,12 @@ function makeUnderTrend(csv) {
     y.tickFormat = '.0%';
     y.ticks = 6;
 
-    chart.defaultColors = [
-        new dimple.color('#739DD0'),
-        new dimple.color('#992156')
-
-    ];
+    chart.defaultColors = [ ltblue, pink ];
 
     // var colorline = chart.addSeries('Type', dimple.plot.line);
     // colorline.lineMarkers = true;
-    var past = dimple.filterData(csv, 'type', 'past');
-    var goal = dimple.filterData(csv, 'type', 'goal');
+    var past = dimple.filterData(data, 'type', 'past');
+    var goal = dimple.filterData(data, 'type', 'goal');
 
 
     var goalline = chart.addSeries(['type'], dimple.plot.line);
@@ -134,9 +128,9 @@ function makeUnderTrend(csv) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTipNhv);
+        .html(trendTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -158,7 +152,7 @@ function makeUnderTrend(csv) {
     return chart;
 }
 
-function makeUnTrend(csv) {
+function makeUnTrend(data) {
     var margin = { top: 24, right: 32, bottom: 48, left: 32 };
 
     var svg = d3.select('#unemployment-trend')
@@ -167,7 +161,7 @@ function makeUnTrend(csv) {
         .attr('height', '100%')
         .html('');
 
-    var chart = new dimple.chart(svg, csv);
+    var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
 
     var x = chart.addTimeAxis('x', 'date', '%Y-%m-%d', '%Y');
@@ -177,10 +171,7 @@ function makeUnTrend(csv) {
     y.tickFormat = '.0%';
     y.ticks = 6;
 
-    chart.defaultColors = [
-        new dimple.color('#992156'),
-        new dimple.color('#739DD0')
-    ];
+    chart.defaultColors = [ pink, ltblue ];
 
     var colorline = chart.addSeries('name', dimple.plot.line);
     colorline.lineMarkers = true;
@@ -190,9 +181,9 @@ function makeUnTrend(csv) {
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(lineTip2);
+        .html(trendGroupTip);
 
-    svg.selectAll('circle')
+    svg.selectAll('circle.dimple-marker')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
@@ -205,71 +196,3 @@ function makeUnTrend(csv) {
 
     return chart;
 }
-
-
-
-
-// using d3fc
-// function makeBars(csv) {
-//     var bars = fc.seriesSvgBar()
-//         // .orient('horizontal')
-//         .crossValue(function(d) { return d.Location; })
-//         .mainValue(function(d) { return d.Underemployment; })
-//         .decorate(function(sel) {
-//             sel.enter()
-//                 .append('text')
-//                 .attr('class', 'bar-label')
-//                 .attr('transform', 'translate(0, -5)')
-//                 .text(function(d) { return d3.format('.0%')(d.Underemployment); });
-//         });
-//
-//     var yExtent = fc.extentLinear()
-//         .include([0])
-//         .pad([0, 0.1])
-//         .accessors([function(d) { return d.Underemployment; }]);
-//
-//     // var xaxis = fc.axisBottom(d3.scaleBand())
-//     //     .decorate(function(sel) {
-//     //         sel.enter()
-//     //             .select('text')
-//     //             .style('text-anchor', 'start')
-//     //             .attr('transform', 'rotate(45 -10 10)');
-//     //     });
-//
-//     var chart = fc.chartSvgCartesian(d3.scalePoint(), d3.scaleLinear())
-//         .xDomain(csv.map(function(d) { return d.Location; }))
-//         .xPadding(0.5)
-//         .yDomain(yExtent(csv))
-//         .yOrient('none')
-//         // .xDecorate(function(sel) {
-//         //     sel.enter()
-//         //         .select('text')
-//         //         .style('text-anchor', 'start')
-//         //         .attr('transform', 'rotate(45 -10 10)');
-//         // })
-//         .plotArea(bars);
-//     //
-//     // var series = fc.seriesSvgBar()
-//     //     .orient('horizontal')
-//     //     .crossValue(function(d) { return d.Location; })
-//     //     .mainValue(function(d) { return d.Underemployment; });
-//     //
-//     // var xextent = fc.extentLinear()
-//     //     .include([0])
-//     //     .pad([0, 0.1])
-//     //     .accessors([function(d) { return d.Underemployment; }]);
-//     //
-//     // var chart = fc.chartSvgCartesian(d3.scaleLinear(), d3.scalePoint())
-//     //     .xDomain(xextent(csv))
-//     //     .yDomain(csv.map(function(d) { return d.Location; }))
-//     //     .yOrient('left')
-//     //     .yPadding([0.5])
-//     //     .xTicks(6)
-//     //     .xTickFormat(d3.format('.0%'))
-//     //     .plotArea(series);
-//
-//
-//     d3.select('#underemployment-chart')
-//         .datum(csv)
-//         .call(chart);
-// }

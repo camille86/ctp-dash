@@ -1,0 +1,20 @@
+race,age,value
+All races,All ages,0.28
+Black,All ages,0.28
+Hispanic,All ages,0.17
+White,All ages,0.37
+Black,Ages 35-44,0.25
+Hispanic,Ages 35-44,0.27
+White,Ages 35-44,0.42
+Black,Ages 45-54,0.33
+Hispanic,Ages 45-54,0.18
+White,Ages 45-54,0.47
+Black,Ages 55-64,0.33
+Hispanic,Ages 55-64,0.25
+White,Ages 55-64,0.57
+Black,Ages 65+,0.42
+Hispanic,Ages 65+,0.16
+White,Ages 65+,0.51
+Black,Under 35,0.081
+Hispanic,Under 35,0.043
+White,Under 35,0.12

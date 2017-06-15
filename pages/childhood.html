@@ -9,7 +9,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
-    <script src="../js/mouseevents.js"></script>
+    <script src="../js/globals.js"></script>
     <script type="text/javascript" src="../js/childhood.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -112,8 +112,25 @@
                     </div>
                 </div>
 
-                <div class="definition">
+                <!-- <div class="definition">
                         <strong>Definition: </strong>A student is considered chronically absent if they miss at least 10% of school days for any reason.
+                </div> -->
+                <div class="definition">
+                    <h4>Definitions</h4>
+                    <dl>
+                        <dt>Chronic absenteeism</dt>
+                        <dd>
+                            A student is considered chronically absent if they miss at least 10% of school days for any reason.
+                        </dd>
+                        <dt>Low-income</dt>
+                        <dd>
+                            Low-income means a person lives in a household with an income of less than 2 times the federal poverty level.
+                        </dd>
+                        <dt>Preschool enrollment</dt>
+                        <dd>
+                            Pre-K enrollment is measured as the share of children ages 3 and 4 enrolled in school.
+                        </dd>
+                    </dl>
                 </div>
 
             </div>
@@ -128,6 +145,34 @@
                 <div class="goal-charts" id="goal-charts">
                     <h5>Target indicators</h5>
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Preschool enrollment by location, 2010-2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="prek-trend" class="chart240"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Preschool enrollment by school type, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="prek-type" class="chart240"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-5">
                             <div class="chart-wrapper">
                                 <div class="chart-title">
@@ -141,35 +186,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Preschool enrollment by location, 2015
-                                </div>
-                                <div class="chart-stage">
-                                    <div id="prek-chart" class="chart320"></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: US Census Bureau, American Community Survey
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                </div>
+
+                <div class="text-right">
+                    <a href="#top" class="jump-link">Back to top</a>
                 </div>
 
                 <div class="other-charts" id="other-charts">
                     <h5>Other indicators</h5>
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="chart-wrapper">
                                 <div class="chart-title">
-                                    Chronic absenteeism in NHPS, grades k-3
+                                    Chronic absenteeism in NHPS, grades K-3
                                 </div>
                                 <div class="chart-stage">
                                     <div id="absence-bars" class="chart320"></div>
                                 </div>
                                 <div class="chart-notes">
                                     Source: CT State Dept. of Education
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Low-income rate by race, ages 0-5, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="low-inc-bars" class="chart320"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
                                 </div>
                             </div>
                         </div>
