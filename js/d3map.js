@@ -169,10 +169,10 @@ var d3map = function() {
 
     function thresholdLabels(l) {
         if (l.i === 0) {
-            return l.generatedLabels[l.i].replace('NaN% to', 'Less than');
+            return l.generatedLabels[l.i].replace('NaN% to', 'Less than').replace('$NaN to', 'Less than');
         } else if (l.i === l.genLength - 1) {
             var str = 'More than ' + l.generatedLabels[l.genLength - 1];
-            return str.replace(' to NaN%', '');
+            return str.replace(' to NaN%', '').replace(' to $NaN', '');
         }
         return l.generatedLabels[l.i];
     }

@@ -1,11 +1,15 @@
 d3.queue()
+    .defer(d3.json, '../json/nhv_shape2.json')
+    .defer(d3.json, '../json/nhv_tracts.json')
     .defer(d3.csv, '../data/workforce/underemployment.csv')
     .defer(d3.csv, '../data/workforce/underemployment_time.csv')
     .defer(d3.csv, '../data/workforce/unemployment_trend.csv')
+    .defer(d3.csv, '../data/workforce/public_transit_neighborhood.csv')
+    .defer(d3.csv, '../data/workforce/median_household_income_tract.csv')
     .await(init);
 
 ///////////// INIT
-function init(error, rates, under_tr, un_tr) {
+function init(error, hoods, tracts, rates, under_tr, un_tr, transit, income) {
     if (error) throw error;
 
     rates.forEach(function(d) {
@@ -20,6 +24,30 @@ function init(error, rates, under_tr, un_tr) {
         d.rate = +d.rate;
     });
 
+    transit.forEach(function(d) {
+        d.value = +d.value;
+    });
+
+    income.forEach(function(d) {
+        d.value = +d.value;
+    });
+
+    var commuteMap = d3map();
+    d3.select('#commute-map')
+        .datum(topojson.feature(hoods, hoods.objects.shapes))
+        .call(commuteMap);
+    commuteMap.color(transit, choroscale)
+        .tip('d3-tip', d3.format('.2p'), true)
+        .legend(d3.format('.0%'), 15, 0);
+
+    var incomeMap = d3map();
+    d3.select('#income-map')
+        .datum(topojson.feature(tracts, tracts.objects.nhv_tracts))
+        .call(incomeMap);
+    incomeMap.color(income, choroscale)
+        .tip('d3-tip', d3.format('$,'), false)
+        .legend(d3.format('$,'), 15, 0);
+
     var locationChart = makeUnderLocation(rates);
     var underTrend = makeUnderTrend(under_tr);
     var unTrend = makeUnTrend(un_tr);
@@ -29,6 +57,9 @@ function init(error, rates, under_tr, un_tr) {
 
         underTrend = makeUnderTrend(under_tr);
         unTrend = makeUnTrend(un_tr);
+
+        commuteMap.draw();
+        incomeMap.draw();
 
         redrawDots();
     });

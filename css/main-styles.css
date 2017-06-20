@@ -263,6 +263,9 @@ body {
 .chart400 {
   height: 400px; }
 
+.chart600 {
+  height: 600px; }
+
 /* map styling */
 .polygon {
   stroke: #2c3569;
@@ -276,7 +279,8 @@ body {
   font-weight: normal; }
 
 .mapContainer {
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .goal-charts, .other-charts {
   padding: 12px;
@@ -298,6 +302,9 @@ body {
 .jump-link {
   color: #a80e55;
   font-weight: 600; }
+
+.blankchart {
+  opacity: 0; }
 
 .d3-tip {
   line-height: 1;

@@ -29,8 +29,8 @@ function init(error, json, hood, burden, age, age_race) {
     d3.select('#burden-map')
         .datum(city)
         .call(nhv);
-    nhv.color(hood, ['#e8e5ed','#d8b6c5','#c6879e','#b15879','#992156'])
-        .tip('d3-tip', d3.format('.0%'), true)
+    nhv.color(hood, choroscale)
+        .tip('d3-tip', d3.format('.2p'), true)
         .legend(d3.format('.0%'), 15, 0);
 
     // var homeTrend = drawTenureTrend(trend);

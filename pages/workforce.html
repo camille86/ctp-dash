@@ -7,8 +7,12 @@
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="../js/d3map.js"></script>
     <script src="../js/globals.js"></script>
     <script type="text/javascript" src="../js/workforce.js"></script>
 
@@ -181,6 +185,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Share of workers commuting by public transit, biking, or walking, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="commute-map" class="mapContainer">
+
+                                    </div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Median household income, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="income-map" class="mapContainer">
+
+                                    </div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -199,6 +235,10 @@
             <li><strong>NHV low-income: </strong>Low-income neighborhoods in New Haven</li>
             <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
         </ul>
+    </div>
+
+    <div class="plank">
+
     </div>
 
     <script>

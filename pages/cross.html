@@ -10,10 +10,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="../js/globals.js"></script>
-    <!-- <script type="text/javascript" src="../js/cross.js"></script> -->
+    <script type="text/javascript" src="../js/cross.js"></script>
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/vendor/billboard.min.css" />
     <link rel="stylesheet" href="../css/main-styles.css" />
 
     <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
@@ -111,21 +112,16 @@
                     </div>
                 </div>
 
-                <!-- <div class="definition">
-                        <strong>Definition: </strong>A student is considered chronically absent if they miss at least 10% of school days for any reason.
-                </div> -->
+
                 <div class="definition">
                     <h4>Definitions</h4>
-                    <!-- <dl>
-                        <dt>Chronic absenteeism</dt>
+                    <dl>
+                        <dt>Personal wellbeing index</dt>
                         <dd>
-                            A student is considered chronically absent if they miss at least 10% of school days for any reason.
+                            The personal wellbeing index is calculated by DataHaven on a scale of 0 to 100, based on residents' self-reported happiness, health, anxiety, depression, life satisfaction, and time to enjoy their lives.
                         </dd>
-                        <dt>Low-income</dt>
-                        <dd>
-                            Low-income means a person lives in a household with an income of less than 2 times the federal poverty level.
-                        </dd>
-                    </dl> -->
+
+                    </dl>
                 </div>
 
             </div>
@@ -138,13 +134,53 @@
                 </ul> -->
 
                 <div class="goal-charts" id="goal-charts">
-                    <h5>Target indicators</h5>
+                    <!-- <h5>Target indicators</h5> -->
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Total population, 1980-2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="total-pop-trend" class="chart300"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Personal wellbeing index, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="per-wellbeing" class="chart300"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: 2015 DataHaven Community Wellbeing Survey
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="row">
 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Financial wellbeing, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="fin-wellbeing" class="mapContainer"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: 2015 DataHaven Community Wellbeing Survey
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="text-right">
