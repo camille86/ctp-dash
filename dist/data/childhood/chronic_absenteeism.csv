@@ -1,0 +1,41 @@
+name,indicator,year,type,value
+Grade 1,chronic absenteeism,2011-2012,CT,0.084
+Grade 2,chronic absenteeism,2011-2012,CT,0.069
+Grade 3,chronic absenteeism,2011-2012,CT,0.062
+Kindergarten,chronic absenteeism,2011-2012,CT,0.11800000000000001
+Grade 1,chronic absenteeism,2012-2013,CT,0.09
+Grade 2,chronic absenteeism,2012-2013,CT,0.077
+Grade 3,chronic absenteeism,2012-2013,CT,0.065
+Kindergarten,chronic absenteeism,2012-2013,CT,0.125
+Grade 1,chronic absenteeism,2013-2014,CT,0.087
+Grade 2,chronic absenteeism,2013-2014,CT,0.07200000000000001
+Grade 3,chronic absenteeism,2013-2014,CT,0.068
+Kindergarten,chronic absenteeism,2013-2014,CT,0.11800000000000001
+Grade 1,chronic absenteeism,2014-2015,CT,0.086
+Grade 2,chronic absenteeism,2014-2015,CT,0.073
+Grade 3,chronic absenteeism,2014-2015,CT,0.067
+Kindergarten,chronic absenteeism,2014-2015,CT,0.12
+Grade 1,chronic absenteeism,2015-2016,CT,0.07400000000000001
+Grade 2,chronic absenteeism,2015-2016,CT,0.062
+Grade 3,chronic absenteeism,2015-2016,CT,0.055999999999999994
+Kindergarten,chronic absenteeism,2015-2016,CT,0.098
+Grade 1,chronic absenteeism,2011-2012,NHPS,0.156
+Grade 2,chronic absenteeism,2011-2012,NHPS,0.127
+Grade 3,chronic absenteeism,2011-2012,NHPS,0.126
+Kindergarten,chronic absenteeism,2011-2012,NHPS,0.203
+Grade 1,chronic absenteeism,2012-2013,NHPS,0.10300000000000001
+Grade 2,chronic absenteeism,2012-2013,NHPS,0.105
+Grade 3,chronic absenteeism,2012-2013,NHPS,0.086
+Kindergarten,chronic absenteeism,2012-2013,NHPS,0.127
+Grade 1,chronic absenteeism,2013-2014,NHPS,0.19899999999999998
+Grade 2,chronic absenteeism,2013-2014,NHPS,0.168
+Grade 3,chronic absenteeism,2013-2014,NHPS,0.182
+Kindergarten,chronic absenteeism,2013-2014,NHPS,0.249
+Grade 1,chronic absenteeism,2014-2015,NHPS,0.21899999999999997
+Grade 2,chronic absenteeism,2014-2015,NHPS,0.201
+Grade 3,chronic absenteeism,2014-2015,NHPS,0.191
+Kindergarten,chronic absenteeism,2014-2015,NHPS,0.294
+Grade 1,chronic absenteeism,2015-2016,NHPS,0.16
+Grade 2,chronic absenteeism,2015-2016,NHPS,0.158
+Grade 3,chronic absenteeism,2015-2016,NHPS,0.125
+Kindergarten,chronic absenteeism,2015-2016,NHPS,0.203

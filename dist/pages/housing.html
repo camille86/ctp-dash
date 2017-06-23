@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing - City Transformation Plan</title>
+    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="../js/d3map.js"></script>
+    <script src="../js/globals.js"></script>
+    <script type="text/javascript" src="../js/housing.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/main-styles.css" />
+
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body class="application">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <div class="navbar-brand">DRAFT - Housing</div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../">Dashboard home</a></li>
+                    <li><a href="http://www.transformnewhaven.org/housing-and-physical-environment">Housing in the CTP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="top">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="plank" id="plank">
+                    <h2 class="text-uppercase">Housing and physical environment</h2>
+                    <p class="goal">
+                        <strong>Vision: </strong> All residents have access to quality housing, infrastructure, and neighborhood spaces that promote community cohesion and are affordable
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="chart-wrapper">
+                    <div class="chart-title dark-title" id="accordion-title">
+                        <h4>2020 targets</h4>
+                    </div>
+                    <div>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target1">
+                                    <h5 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            Affordable housing
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="target1">
+                                    <div class="panel-body">
+                                        Reduce percentage of cost-burdened residents down to 43% from 53%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target2">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            Development
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target2">
+                                    <div class="panel-body">
+                                        Build 800 units of affordable housing
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target3">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            Homelessness
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target3">
+                                    <div class="panel-body">
+                                        Reduce the number of homeless residents by 50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target4">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            Complete Streets
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target4">
+                                    <div class="panel-body">
+                                        Design and implement 20 Complete Streets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition">
+                    <h4>Definitions</h4>
+                    <dl>
+                        <dt>Severe cost burden</dt>
+                        <dd>
+                            Severe housing cost burden refers to households that spend at least 50% of their income on housing costs.
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+
+            <div class="col-sm-9">
+
+                <ul class="nav nav-pills">
+                    <li role="link"><a href="#goal-charts" class="jump-link">Target indicators</a></li>
+                    <li role="link"><a href="#other-charts" class="jump-link">Other indicators</a></li>
+                </ul>
+
+                <div class="goal-charts" id="goal-charts">
+                    <h5>Target indicators</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Severe housing cost burden by neighborhood, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="burden-map" class="mapContainer"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Severe housing cost burden by tenure, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="burden-tenure" class="chart240"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <a href="#top" class="jump-link">Back to top</a>
+                </div>
+
+                <div class="other-charts" id="other-charts">
+                    <h5>Other indicators</h5>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Homeownership rate by age of householder, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="age-bars" class="chart240"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau, American Community Survey
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Homeownership rate age and race, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="tenure-age-race" class="chart240">
+
+                                    </div>
+                                    <div class="chart-notes">
+                                        Source: US Census Bureau, American Community Survey
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-right">
+                <a href="#top" class="jump-link">Back to top</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="plank">
+        <h4>Key</h4>
+        <ul class="list-inline key">
+            <li><strong>CT: </strong>Connecticut</li>
+            <li><strong>GNH: </strong>Greater New Haven region</li>
+            <li><strong>NHV low-income: </strong>Low-income neighborhoods in New Haven</li>
+            <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
+        </ul>
+    </div>
+
+    <script>
+        var nav_gap = 64;
+        $('.jump-link').on('click', function() {
+            var target = $(this).attr('href');
+            var offset = $(target).offset().top - nav_gap;
+
+            $('html, body').animate({
+                scrollTop: offset
+            }, 'slow');
+            return false;
+        });
+    </script>
+
+</body>
+</html>

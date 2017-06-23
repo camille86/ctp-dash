@@ -1,0 +1,897 @@
+﻿Year,CityName,GeographicLevel,Category,Measure,Data_Value,Low_Confidence_Limit,High_Confidence_Limit,CityFIPS,TractFIPS,Short_Question_Text
+2014,New Haven,City,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,68.1,67.9,68.3,0952000,NA,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,64.6,63.7,65.5,0952000,09009140100,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,71.1,70.1,72.2,0952000,09009140200,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.0,64.1,66.0,0952000,09009140300,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,66.8,65.9,67.9,0952000,09009140400,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.5,64.5,66.7,0952000,09009140500,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,68.6,67.6,69.6,0952000,09009140600,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.8,64.7,66.8,0952000,09009140700,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,72.8,72.0,73.6,0952000,09009140800,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,70.2,69.3,70.9,0952000,09009140900,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,70.9,70.0,71.8,0952000,09009141000,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,75.3,74.7,75.9,0952000,09009141100,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,72.5,71.6,73.3,0952000,09009141200,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.9,64.2,67.4,0952000,09009141300,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,72.1,71.3,72.9,0952000,09009141400,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,74.9,73.8,75.9,0952000,09009141500,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,70.7,69.8,71.6,0952000,09009141600,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,68.9,68.1,69.7,0952000,09009141800,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,66.5,65.4,67.6,0952000,09009141900,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,64.4,63.2,65.4,0952000,09009142000,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,63.6,62.4,64.7,0952000,09009142100,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,67.4,66.1,68.4,0952000,09009142200,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.0,63.9,66.1,0952000,09009142300,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,64.0,62.9,65.1,0952000,09009142400,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,65.5,64.5,66.4,0952000,09009142500,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,68.5,67.8,69.2,0952000,09009142601,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,75.4,74.8,76.0,0952000,09009142603,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,69.8,69.0,70.6,0952000,09009142604,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,66.5,65.8,67.1,0952000,09009142700,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,72.0,71.1,72.9,0952000,09009142800,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,61.8,60.2,63.3,0952000,09009361401,Annual Checkup
+2014,New Haven,Census Tract,Prevention,Visits to doctor for routine checkup within the past Year among adults aged >=18 Years,60.6,58.9,62.4,0952000,09009361402,Annual Checkup
+2014,New Haven,City,Health Outcomes,Arthritis among adults aged >=18 Years,20.8,20.7,21.0,0952000,NA,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,11.5,11.1,12.0,0952000,09009140100,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,35.9,34.5,37.2,0952000,09009140200,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,21.8,21.1,22.5,0952000,09009140300,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,22.1,21.4,22.9,0952000,09009140400,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,24.1,23.2,24.9,0952000,09009140500,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,26.1,25.1,27.0,0952000,09009140600,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,19.2,18.4,20.2,0952000,09009140700,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,28.8,27.8,29.7,0952000,09009140800,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,22.6,21.5,23.5,0952000,09009140900,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,21.6,20.4,22.9,0952000,09009141000,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,25.3,24.2,26.6,0952000,09009141100,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,23.8,22.7,24.8,0952000,09009141200,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,15.5,15.0,16.1,0952000,09009141300,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,23.9,22.9,24.9,0952000,09009141400,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,27.7,26.5,28.9,0952000,09009141500,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,23.8,22.9,24.8,0952000,09009141600,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,16.3,15.7,17.0,0952000,09009141800,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,13.6,13.0,14.3,0952000,09009141900,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,13.1,12.5,13.8,0952000,09009142000,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,19.0,18.2,19.9,0952000,09009142100,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,17.8,16.8,18.8,0952000,09009142200,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,21.9,21.1,22.7,0952000,09009142300,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,20.9,20.3,21.6,0952000,09009142400,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,22.3,21.6,22.9,0952000,09009142500,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,22.5,21.8,23.2,0952000,09009142601,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,35.1,33.7,36.3,0952000,09009142603,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,23.3,22.5,24.1,0952000,09009142604,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,20.9,20.2,21.5,0952000,09009142700,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,24.9,23.6,26.3,0952000,09009142800,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,9.8,9.3,10.3,0952000,09009361401,Arthritis
+2014,New Haven,Census Tract,Health Outcomes,Arthritis among adults aged >=18 Years,4.8,4.4,5.1,0952000,09009361402,Arthritis
+2014,New Haven,City,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,14.7,14.6,14.8,0952000,NA,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,19.5,18.8,20.0,0952000,09009140100,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,8.1,7.6,8.5,0952000,09009140200,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,12.3,11.8,12.8,0952000,09009140300,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.5,12.9,14.0,0952000,09009140400,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,11.9,11.3,12.4,0952000,09009140500,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,11.6,11.1,12.1,0952000,09009140600,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,14.0,13.5,14.6,0952000,09009140700,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,10.8,10.4,11.2,0952000,09009140800,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.7,13.2,14.1,0952000,09009140900,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,16.3,15.8,16.8,0952000,09009141000,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.5,13.2,13.8,0952000,09009141100,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.2,12.8,13.6,0952000,09009141200,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,16.7,15.7,17.6,0952000,09009141300,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,12.7,12.3,13.2,0952000,09009141400,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,10.7,10.2,11.3,0952000,09009141500,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,14.0,13.4,14.5,0952000,09009141600,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,15.4,15.0,15.8,0952000,09009141800,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,19.6,18.9,20.4,0952000,09009141900,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,18.4,17.8,19.1,0952000,09009142000,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,14.4,13.8,15.0,0952000,09009142100,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,19.1,18.4,19.9,0952000,09009142200,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.4,12.8,14.0,0952000,09009142300,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.8,13.1,14.4,0952000,09009142400,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.9,13.3,14.4,0952000,09009142500,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,13.6,13.2,14.0,0952000,09009142601,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,10.0,9.7,10.3,0952000,09009142603,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,15.0,14.5,15.4,0952000,09009142604,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,15.0,14.6,15.3,0952000,09009142700,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,16.0,15.5,16.5,0952000,09009142800,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,18.9,17.8,20.0,0952000,09009361401,Binge Drinking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Binge drinking among adults aged >=18 Years,21.6,20.4,22.8,0952000,09009361402,Binge Drinking
+2014,New Haven,City,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.6,4.6,4.7,0952000,NA,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.2,3.1,3.3,0952000,09009140100,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,8.4,7.6,9.3,0952000,09009140200,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.5,3.4,3.6,0952000,09009140300,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.2,4.0,4.3,0952000,09009140400,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.7,3.6,3.9,0952000,09009140500,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.7,4.5,4.9,0952000,09009140600,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.5,3.4,3.6,0952000,09009140700,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,5.5,5.3,5.7,0952000,09009140800,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.4,4.2,4.5,0952000,09009140900,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,6.6,6.3,6.9,0952000,09009141000,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,7.6,7.2,7.9,0952000,09009141100,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,5.2,5.0,5.4,0952000,09009141200,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.5,3.4,3.7,0952000,09009141300,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.8,4.6,5.0,0952000,09009141400,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.8,4.5,5.1,0952000,09009141500,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.4,4.2,4.6,0952000,09009141600,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.5,4.4,4.7,0952000,09009141800,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.7,4.4,4.9,0952000,09009141900,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.1,3.9,4.2,0952000,09009142000,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.4,3.3,3.5,0952000,09009142100,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,5.6,5.4,5.9,0952000,09009142200,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.1,3.9,4.2,0952000,09009142300,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,3.6,3.5,3.7,0952000,09009142400,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.4,4.2,4.5,0952000,09009142500,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.6,4.5,4.8,0952000,09009142601,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,9.3,8.8,9.8,0952000,09009142603,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,5.7,5.5,6.0,0952000,09009142604,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,4.7,4.6,4.9,0952000,09009142700,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,8.1,7.7,8.6,0952000,09009142800,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,2.4,2.3,2.4,0952000,09009361401,Cancer (except skin)
+2014,New Haven,Census Tract,Health Outcomes,Cancer (excluding skin cancer) among adults aged >=18 Years,1.2,1.1,1.2,0952000,09009361402,Cancer (except skin)
+2013,New Haven,City,Prevention,Cholesterol screening among adults aged >=18 Years,70.2,69.7,70.7,0952000,NA,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,65.8,62.8,68.4,0952000,09009140100,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,72.0,69.8,74.3,0952000,09009140200,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,64.4,62.2,66.6,0952000,09009140300,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,69.4,67.2,71.4,0952000,09009140400,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,68.5,66.1,70.8,0952000,09009140500,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,71.3,69.1,73.4,0952000,09009140600,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,65.5,63.1,68.0,0952000,09009140700,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,76.0,74.1,77.7,0952000,09009140800,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,73.7,71.6,75.6,0952000,09009140900,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,79.8,77.8,81.7,0952000,09009141000,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,82.6,81.4,83.8,0952000,09009141100,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,76.6,74.8,78.4,0952000,09009141200,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,58.0,53.3,62.6,0952000,09009141300,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,74.0,72.1,75.9,0952000,09009141400,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,74.6,72.0,77.0,0952000,09009141500,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,71.4,69.2,73.5,0952000,09009141600,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,72.0,69.8,74.2,0952000,09009141800,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,72.4,69.4,75.6,0952000,09009141900,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,68.1,64.9,70.9,0952000,09009142000,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,65.4,63.0,67.8,0952000,09009142100,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,75.9,72.9,78.6,0952000,09009142200,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,69.6,67.2,72.1,0952000,09009142300,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,67.0,64.5,69.4,0952000,09009142400,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,70.7,68.5,72.9,0952000,09009142500,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,73.3,71.6,75.0,0952000,09009142601,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,82.4,81.0,83.5,0952000,09009142603,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,77.3,75.7,78.9,0952000,09009142604,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,73.6,72.1,75.1,0952000,09009142700,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,82.6,81.0,84.2,0952000,09009142800,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,51.5,46.8,55.8,0952000,09009361401,Cholesterol Screening
+2013,New Haven,Census Tract,Prevention,Cholesterol screening among adults aged >=18 Years,45.1,39.4,50.5,0952000,09009361402,Cholesterol Screening
+2014,New Haven,City,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.5,2.4,2.5,0952000,NA,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.4,1.3,1.5,0952000,09009140100,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,4.7,4.2,5.4,0952000,09009140200,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.0,2.8,3.2,0952000,09009140300,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.9,2.7,3.1,0952000,09009140400,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.2,3.0,3.4,0952000,09009140500,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.4,3.2,3.7,0952000,09009140600,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.3,2.2,2.5,0952000,09009140700,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.4,3.2,3.7,0952000,09009140800,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.5,2.4,2.7,0952000,09009140900,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.0,1.9,2.2,0952000,09009141000,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.6,2.4,2.8,0952000,09009141100,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.6,2.5,2.8,0952000,09009141200,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.0,1.8,2.1,0952000,09009141300,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.7,2.5,2.9,0952000,09009141400,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.5,3.2,3.8,0952000,09009141500,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.0,2.8,3.3,0952000,09009141600,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.7,1.6,1.8,0952000,09009141800,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.4,1.3,1.5,0952000,09009141900,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.4,1.3,1.5,0952000,09009142000,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.3,2.2,2.5,0952000,09009142100,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.8,1.7,1.9,0952000,09009142200,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.9,2.7,3.1,0952000,09009142300,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.9,2.7,3.1,0952000,09009142400,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.8,2.6,3.0,0952000,09009142500,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.5,2.4,2.7,0952000,09009142601,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,3.8,3.5,4.1,0952000,09009142603,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.7,2.5,2.9,0952000,09009142604,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.3,2.2,2.4,0952000,09009142700,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,2.4,2.2,2.6,0952000,09009142800,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,1.3,1.2,1.4,0952000,09009361401,Chronic Kidney Disease
+2014,New Haven,Census Tract,Health Outcomes,Chronic kidney disease among adults aged >=18 Years,0.7,0.7,0.8,0952000,09009361402,Chronic Kidney Disease
+2014,New Haven,City,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",62.9,62.3,63.5,0952000,NA,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",71.4,69.0,73.3,0952000,09009140100,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",50.0,46.8,53.2,0952000,09009140200,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",50.0,46.9,53.3,0952000,09009140300,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",55.5,52.2,58.5,0952000,09009140400,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",49.5,46.5,52.5,0952000,09009140500,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",53.0,49.5,56.5,0952000,09009140600,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",57.0,52.8,60.5,0952000,09009140700,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",58.2,54.9,61.3,0952000,09009140800,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",61.2,57.9,64.2,0952000,09009140900,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",74.1,70.7,76.8,0952000,09009141000,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",74.9,72.1,77.0,0952000,09009141100,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",65.9,62.4,69.1,0952000,09009141200,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",63.6,60.9,65.7,0952000,09009141300,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",63.6,60.0,67.1,0952000,09009141400,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",61.2,57.1,65.1,0952000,09009141500,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",62.2,58.2,66.0,0952000,09009141600,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",72.2,69.3,74.2,0952000,09009141800,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",76.4,73.6,78.1,0952000,09009141900,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",72.3,69.5,74.4,0952000,09009142000,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",55.0,51.1,58.7,0952000,09009142100,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",74.1,70.6,76.9,0952000,09009142200,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",52.5,49.3,55.7,0952000,09009142300,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",51.5,48.7,54.5,0952000,09009142400,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",54.9,51.9,57.6,0952000,09009142500,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",59.7,56.9,62.4,0952000,09009142601,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",66.5,64.0,69.0,0952000,09009142603,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",66.0,63.2,69.0,0952000,09009142604,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",61.0,58.8,63.1,0952000,09009142700,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",74.3,70.9,77.3,0952000,09009142800,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",62.4,59.9,64.5,0952000,09009361401,Colorectal Cancer Screening
+2014,New Haven,Census Tract,Prevention,"Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",64.3,61.9,66.5,0952000,09009361402,Colorectal Cancer Screening
+2014,New Haven,City,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,5.9,5.7,6.0,0952000,NA,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,2.6,2.3,3.0,0952000,09009140100,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,12.5,10.6,14.6,0952000,09009140200,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,7.4,6.7,8.0,0952000,09009140300,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.6,6.1,7.2,0952000,09009140400,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,8.3,7.5,9.1,0952000,09009140500,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,8.3,7.5,9.1,0952000,09009140600,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.1,5.4,7.0,0952000,09009140700,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,8.7,7.9,9.6,0952000,09009140800,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.5,5.8,7.2,0952000,09009140900,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,4.5,3.8,5.3,0952000,09009141000,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,4.8,4.1,5.7,0952000,09009141100,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.2,5.3,7.1,0952000,09009141200,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,4.9,4.4,5.6,0952000,09009141300,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.6,5.8,7.4,0952000,09009141400,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,8.2,7.1,9.5,0952000,09009141500,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,7.1,6.2,8.2,0952000,09009141600,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,3.4,3.0,3.9,0952000,09009141800,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,2.5,2.2,2.9,0952000,09009141900,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,2.8,2.4,3.4,0952000,09009142000,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.5,5.7,7.2,0952000,09009142100,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,3.8,3.1,4.6,0952000,09009142200,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.6,6.0,7.4,0952000,09009142300,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.7,6.3,7.2,0952000,09009142400,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.8,6.2,7.4,0952000,09009142500,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,6.5,5.9,7.1,0952000,09009142601,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,9.4,8.2,10.7,0952000,09009142603,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,5.9,5.3,6.5,0952000,09009142604,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,5.8,5.3,6.3,0952000,09009142700,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,5.2,4.4,6.2,0952000,09009142800,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,3.3,2.8,3.8,0952000,09009361401,COPD
+2014,New Haven,Census Tract,Health Outcomes,Chronic obstructive pulmonary disease among adults aged >=18 Years,2.2,1.8,2.5,0952000,09009361402,COPD
+2014,New Haven,City,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",30.7,29.8,31.6,0952000,NA,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",35.2,30.6,38.9,0952000,09009140100,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",27.3,21.4,33.1,0952000,09009140200,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",23.7,20.4,27.3,0952000,09009140300,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",28.9,25.2,32.6,0952000,09009140400,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",22.3,19.2,25.7,0952000,09009140500,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",24.5,21.2,28.0,0952000,09009140600,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",26.4,22.9,30.2,0952000,09009140700,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",24.8,21.8,28.1,0952000,09009140800,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",27.5,23.3,31.3,0952000,09009140900,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",38.1,32.5,43.1,0952000,09009141000,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",36.5,31.8,40.8,0952000,09009141100,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",29.4,25.1,33.4,0952000,09009141200,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",30.7,26.7,34.4,0952000,09009141300,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",28.0,24.3,32.5,0952000,09009141400,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",23.3,18.9,28.1,0952000,09009141500,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",24.5,20.3,29.2,0952000,09009141600,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",36.7,32.5,40.8,0952000,09009141800,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",40.4,35.8,44.5,0952000,09009141900,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",37.9,34.0,41.2,0952000,09009142000,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",25.0,20.6,29.6,0952000,09009142100,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",37.2,32.6,41.4,0952000,09009142200,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",27.2,23.5,31.0,0952000,09009142300,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",24.8,21.9,27.9,0952000,09009142400,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",27.5,24.0,31.3,0952000,09009142500,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",30.1,25.8,34.2,0952000,09009142601,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",31.2,27.2,35.5,0952000,09009142603,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",32.7,28.3,36.9,0952000,09009142604,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",31.8,27.9,35.8,0952000,09009142700,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",39.1,33.9,44.5,0952000,09009142800,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",31.5,28.0,34.8,0952000,09009361401,Core preventive services for older men
+2014,New Haven,Census Tract,Prevention,"Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",34.3,30.1,38.7,0952000,09009361402,Core preventive services for older men
+2014,New Haven,City,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",31.4,30.5,32.3,0952000,NA,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",37.7,34.8,40.3,0952000,09009140100,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",20.9,16.7,26.0,0952000,09009140200,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",22.6,19.8,26.1,0952000,09009140300,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",28.5,25.3,31.6,0952000,09009140400,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",22.1,18.9,25.7,0952000,09009140500,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",23.5,20.5,26.7,0952000,09009140600,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",26.7,22.0,31.2,0952000,09009140700,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",25.3,22.0,28.9,0952000,09009140800,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",29.6,25.8,33.2,0952000,09009140900,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",41.5,36.1,46.0,0952000,09009141000,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",40.2,35.7,44.3,0952000,09009141100,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",32.4,28.3,36.6,0952000,09009141200,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",29.5,26.3,32.6,0952000,09009141300,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",30.1,26.1,34.0,0952000,09009141400,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",26.2,21.8,30.4,0952000,09009141500,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",27.7,23.6,31.9,0952000,09009141600,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",39.2,35.3,42.7,0952000,09009141800,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",43.9,39.2,47.3,0952000,09009141900,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",40.7,36.8,43.9,0952000,09009142000,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",25.3,21.4,29.3,0952000,09009142100,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",41.4,36.0,45.8,0952000,09009142200,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",26.0,22.9,29.2,0952000,09009142300,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",25.0,22.7,27.6,0952000,09009142400,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",26.8,23.5,30.3,0952000,09009142500,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",31.0,27.4,34.4,0952000,09009142601,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",31.7,27.8,35.6,0952000,09009142603,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",35.3,31.0,39.9,0952000,09009142604,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",31.7,28.6,34.9,0952000,09009142700,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",42.6,37.3,48.0,0952000,09009142800,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",32.8,29.4,36.0,0952000,09009361401,Core preventive services for older women
+2014,New Haven,Census Tract,Prevention,"Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",36.4,31.2,41.5,0952000,09009361402,Core preventive services for older women
+2014,New Haven,City,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.9,4.8,5.0,0952000,NA,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,2.1,2.0,2.3,0952000,09009140100,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,12.2,10.7,13.8,0952000,09009140200,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.7,5.3,6.1,0952000,09009140300,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.3,5.0,5.7,0952000,09009140400,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,6.2,5.7,6.6,0952000,09009140500,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,7.1,6.6,7.6,0952000,09009140600,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.3,3.9,4.6,0952000,09009140700,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,7.2,6.7,7.8,0952000,09009140800,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.8,4.4,5.1,0952000,09009140900,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.6,4.2,5.2,0952000,09009141000,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.7,5.2,6.3,0952000,09009141100,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.2,4.7,5.6,0952000,09009141200,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,3.6,3.4,3.9,0952000,09009141300,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.3,4.9,5.7,0952000,09009141400,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,6.5,5.9,7.1,0952000,09009141500,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.7,5.1,6.2,0952000,09009141600,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,3.3,3.1,3.5,0952000,09009141800,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,2.6,2.4,2.8,0952000,09009141900,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,2.7,2.5,2.9,0952000,09009142000,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.3,4.0,4.6,0952000,09009142100,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,3.9,3.5,4.3,0952000,09009142200,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.5,5.1,5.9,0952000,09009142300,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.2,4.9,5.5,0952000,09009142400,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.6,5.2,5.9,0952000,09009142500,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.0,4.7,5.4,0952000,09009142601,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,9.9,9.0,10.8,0952000,09009142603,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.5,5.1,5.9,0952000,09009142604,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,4.8,4.6,5.1,0952000,09009142700,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,5.8,5.2,6.5,0952000,09009142800,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,2.3,2.1,2.4,0952000,09009361401,Coronary Heart Disease
+2014,New Haven,Census Tract,Health Outcomes,Coronary heart disease among adults aged >=18 Years,0.9,0.8,0.9,0952000,09009361402,Coronary Heart Disease
+2014,New Haven,City,Health Outcomes,Current asthma among adults aged >=18 Years,11.1,11.0,11.3,0952000,NA,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,8.9,8.5,9.5,0952000,09009140100,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.9,12.0,14.0,0952000,09009140200,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.2,11.5,12.9,0952000,09009140300,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,11.5,10.9,12.3,0952000,09009140400,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,13.2,12.4,14.1,0952000,09009140500,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.7,11.9,13.6,0952000,09009140600,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.2,11.4,13.0,0952000,09009140700,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,13.3,12.5,14.2,0952000,09009140800,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.3,11.6,13.1,0952000,09009140900,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,9.2,8.7,9.8,0952000,09009141000,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,9.5,9.1,10.0,0952000,09009141100,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.0,11.3,12.8,0952000,09009141200,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.2,11.3,13.6,0952000,09009141300,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.5,11.8,13.3,0952000,09009141400,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,13.9,12.9,15.1,0952000,09009141500,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.5,11.7,13.4,0952000,09009141600,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,9.2,8.8,9.7,0952000,09009141800,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,8.3,8.0,8.9,0952000,09009141900,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,8.6,8.1,9.4,0952000,09009142000,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,12.3,11.4,13.3,0952000,09009142100,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,8.8,8.3,9.6,0952000,09009142200,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,11.2,10.5,12.0,0952000,09009142300,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,11.7,11.0,12.4,0952000,09009142400,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,11.4,10.8,12.1,0952000,09009142500,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,11.4,10.8,12.0,0952000,09009142601,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,10.7,10.2,11.3,0952000,09009142603,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,10.2,9.7,10.7,0952000,09009142604,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,10.3,9.9,10.8,0952000,09009142700,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,8.8,8.3,9.4,0952000,09009142800,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,10.3,9.6,11.1,0952000,09009361401,Current Asthma
+2014,New Haven,Census Tract,Health Outcomes,Current asthma among adults aged >=18 Years,10.4,9.7,11.0,0952000,09009361402,Current Asthma
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,24.3,21.2,27.0,0952000,09009141600,Current Smoking
+2014,New Haven,City,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,19.9,19.4,20.4,0952000,NA,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,13.2,10.9,16.4,0952000,09009140100,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,21.8,19.6,24.0,0952000,09009140200,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,25.7,23.0,28.2,0952000,09009140300,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,22.3,20.0,24.6,0952000,09009140400,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,27.7,25.1,30.1,0952000,09009140500,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,25.2,22.6,27.6,0952000,09009140600,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,23.3,19.5,27.1,0952000,09009140700,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,24.8,22.3,27.2,0952000,09009140800,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,23.1,20.2,25.8,0952000,09009140900,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,13.4,10.7,16.3,0952000,09009141000,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,12.2,10.4,14.2,0952000,09009141100,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,20.4,17.7,23.3,0952000,09009141200,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,19.6,15.8,23.8,0952000,09009141300,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,21.7,19.0,24.6,0952000,09009141400,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,25.3,22.0,28.5,0952000,09009141500,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,12.7,10.6,15.0,0952000,09009141800,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,10.1,8.4,13.2,0952000,09009141900,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,12.7,10.1,16.7,0952000,09009142000,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,25.1,21.4,28.7,0952000,09009142100,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,13.6,10.3,17.9,0952000,09009142200,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,22.8,20.3,25.2,0952000,09009142300,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,25.1,22.8,27.2,0952000,09009142400,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,23.2,21.1,25.2,0952000,09009142500,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,22.4,20.5,24.5,0952000,09009142601,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,17.8,16.2,19.4,0952000,09009142603,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,18.6,16.7,20.5,0952000,09009142604,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,20.2,18.5,21.8,0952000,09009142700,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,14.0,11.6,16.6,0952000,09009142800,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,16.9,13.4,20.8,0952000,09009361401,Current Smoking
+2014,New Haven,Census Tract,Unhealthy Behaviors,Current smoking among adults aged >=18 Years,16.8,13.1,19.7,0952000,09009361402,Current Smoking
+2014,New Haven,City,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,64.5,63.9,65.2,0952000,NA,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,77.8,74.2,80.6,0952000,09009140100,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,46.6,41.9,51.2,0952000,09009140200,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,49.2,45.7,52.9,0952000,09009140300,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,57.5,53.8,61.2,0952000,09009140400,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,45.8,42.3,49.7,0952000,09009140500,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,49.6,45.9,53.4,0952000,09009140600,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,57.6,53.1,62.3,0952000,09009140700,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,53.9,50.4,57.4,0952000,09009140800,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,61.5,58.0,65.1,0952000,09009140900,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,80.7,77.5,83.4,0952000,09009141000,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,79.8,77.4,82.1,0952000,09009141100,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,65.4,61.7,69.0,0952000,09009141200,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,66.9,61.8,71.3,0952000,09009141300,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,62.0,58.2,66.1,0952000,09009141400,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,54.2,49.6,58.7,0952000,09009141500,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,56.9,52.7,60.8,0952000,09009141600,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,77.7,74.9,80.1,0952000,09009141800,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,84.2,80.7,86.0,0952000,09009141900,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,78.9,74.6,81.7,0952000,09009142000,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,55.5,51.0,60.2,0952000,09009142100,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,80.1,75.7,83.5,0952000,09009142200,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,54.2,50.1,58.2,0952000,09009142300,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,51.2,47.7,54.7,0952000,09009142400,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,55.8,52.5,59.3,0952000,09009142500,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,61.7,58.7,64.4,0952000,09009142601,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,65.6,62.9,68.6,0952000,09009142603,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,69.0,66.2,71.6,0952000,09009142604,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,64.7,62.3,67.0,0952000,09009142700,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,80.9,77.9,83.4,0952000,09009142800,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,71.0,66.4,75.1,0952000,09009361401,Dental Visit
+2014,New Haven,Census Tract,Prevention,Visits to dentist or dental clinic among adults aged >=18 Years,73.2,69.5,77.2,0952000,09009361402,Dental Visit
+2014,New Haven,City,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,10.0,9.9,10.1,0952000,NA,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,4.4,4.2,4.6,0952000,09009140100,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,18.7,17.5,20.0,0952000,09009140200,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,13.4,12.8,14.1,0952000,09009140300,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,11.8,11.2,12.3,0952000,09009140400,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,14.9,14.3,15.7,0952000,09009140500,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,15.5,14.6,16.3,0952000,09009140600,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,10.1,9.5,10.8,0952000,09009140700,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,15.5,14.8,16.3,0952000,09009140800,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,11.0,10.3,11.8,0952000,09009140900,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,7.2,6.6,7.8,0952000,09009141000,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,9.7,9.0,10.5,0952000,09009141100,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,11.1,10.3,11.8,0952000,09009141200,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,6.9,6.6,7.3,0952000,09009141300,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,11.9,11.1,12.7,0952000,09009141400,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,15.8,14.6,16.8,0952000,09009141500,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,13.2,12.2,14.2,0952000,09009141600,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,6.3,6.0,6.7,0952000,09009141800,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,4.0,3.8,4.3,0952000,09009141900,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,4.4,4.1,4.7,0952000,09009142000,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,9.9,9.3,10.5,0952000,09009142100,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,5.9,5.4,6.5,0952000,09009142200,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,12.4,11.8,13.1,0952000,09009142300,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,12.2,11.7,12.6,0952000,09009142400,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,11.8,11.3,12.3,0952000,09009142500,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,10.6,10.1,11.1,0952000,09009142601,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,15.5,14.5,16.3,0952000,09009142603,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,10.2,9.7,10.7,0952000,09009142604,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,9.4,9.1,9.8,0952000,09009142700,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,7.9,7.3,8.7,0952000,09009142800,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,4.2,3.9,4.4,0952000,09009361401,Diabetes
+2014,New Haven,Census Tract,Health Outcomes,Diagnosed diabetes among adults aged >=18 Years,1.8,1.6,1.8,0952000,09009361402,Diabetes
+2014,New Haven,City,Prevention,Current lack of health insurance among adults aged 18–64 Years,19.0,18.4,19.6,0952000,NA,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,9.2,7.5,11.6,0952000,09009140100,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,39.0,34.5,43.2,0952000,09009140200,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,32.0,28.5,35.5,0952000,09009140300,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,25.9,22.4,29.5,0952000,09009140400,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,36.3,32.3,40.2,0952000,09009140500,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,31.4,27.7,35.2,0952000,09009140600,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,21.6,18.3,25.3,0952000,09009140700,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,23.7,21.0,26.6,0952000,09009140800,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,18.0,15.7,20.6,0952000,09009140900,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,7.3,5.9,9.0,0952000,09009141000,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,7.6,6.3,9.1,0952000,09009141100,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,15.9,13.3,18.4,0952000,09009141200,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,16.4,13.0,20.5,0952000,09009141300,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,17.2,14.7,19.9,0952000,09009141400,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,20.9,17.7,24.1,0952000,09009141500,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,21.1,18.0,24.0,0952000,09009141600,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,9.0,7.5,10.8,0952000,09009141800,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,5.8,4.9,7.8,0952000,09009141900,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,8.4,6.7,11.1,0952000,09009142000,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,25.9,22.0,29.9,0952000,09009142100,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,8.1,6.1,11.1,0952000,09009142200,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,30.8,26.5,35.1,0952000,09009142300,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,33.4,29.8,37.0,0952000,09009142400,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,29.1,25.5,32.6,0952000,09009142500,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,20.3,18.1,22.5,0952000,09009142601,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,17.8,15.8,19.8,0952000,09009142603,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,17.0,14.9,19.3,0952000,09009142604,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,20.6,18.6,22.6,0952000,09009142700,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,8.0,6.6,9.5,0952000,09009142800,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,13.7,11.0,17.2,0952000,09009361401,Health Insurance
+2014,New Haven,Census Tract,Prevention,Current lack of health insurance among adults aged 18–64 Years,13.6,11.2,16.1,0952000,09009361402,Health Insurance
+2013,New Haven,City,Health Outcomes,High blood pressure among adults aged >=18 Years,30.5,30.3,30.7,0952000,NA,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,20.7,20.0,21.4,0952000,09009140100,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,45.4,43.8,46.8,0952000,09009140200,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,34.2,33.1,35.1,0952000,09009140300,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,32.7,31.8,33.7,0952000,09009140400,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,33.9,32.8,35.1,0952000,09009140500,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,37.1,36.0,38.3,0952000,09009140600,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,31.4,30.4,32.3,0952000,09009140700,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,40.5,39.3,41.5,0952000,09009140800,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,33.8,32.7,34.9,0952000,09009140900,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,29.6,28.4,30.9,0952000,09009141000,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,36.6,35.4,37.7,0952000,09009141100,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,34.6,33.4,35.7,0952000,09009141200,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,24.2,23.2,25.1,0952000,09009141300,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,37.1,36.0,38.3,0952000,09009141400,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,43.5,42.0,45.1,0952000,09009141500,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,38.1,36.9,39.3,0952000,09009141600,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,25.6,24.8,26.4,0952000,09009141800,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,21.3,20.3,22.3,0952000,09009141900,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,21.0,20.2,21.8,0952000,09009142000,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,28.8,27.8,29.7,0952000,09009142100,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,25.0,24.0,26.1,0952000,09009142200,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,30.5,29.5,31.6,0952000,09009142300,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,30.4,29.4,31.4,0952000,09009142400,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,29.9,29.0,30.8,0952000,09009142500,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,31.5,30.5,32.4,0952000,09009142601,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,44.0,42.6,45.2,0952000,09009142603,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,31.6,30.7,32.5,0952000,09009142604,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,28.0,27.3,28.6,0952000,09009142700,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,31.3,29.9,32.6,0952000,09009142800,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,18.1,17.2,19.0,0952000,09009361401,High Blood Pressure
+2013,New Haven,Census Tract,Health Outcomes,High blood pressure among adults aged >=18 Years,10.2,9.3,11.3,0952000,09009361402,High Blood Pressure
+2013,New Haven,City,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,32.7,32.5,33.0,0952000,NA,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,25.3,24.5,26.3,0952000,09009140100,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,42.3,40.6,44.0,0952000,09009140200,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,35.0,33.8,36.1,0952000,09009140300,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,34.5,33.5,35.5,0952000,09009140400,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,34.8,33.7,36.0,0952000,09009140500,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,35.9,34.8,37.1,0952000,09009140600,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,30.9,29.9,32.0,0952000,09009140700,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,35.9,34.9,36.9,0952000,09009140800,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,32.4,31.5,33.5,0952000,09009140900,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,34.9,33.9,36.1,0952000,09009141000,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,37.5,36.5,38.4,0952000,09009141100,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.1,32.1,34.2,0952000,09009141200,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,27.4,25.7,29.3,0952000,09009141300,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.9,32.9,35.0,0952000,09009141400,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,35.4,34.0,36.9,0952000,09009141500,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.8,32.7,35.0,0952000,09009141600,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,30.1,29.1,31.1,0952000,09009141800,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,27.9,26.7,29.2,0952000,09009141900,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,27.4,26.3,28.4,0952000,09009142000,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,30.9,29.9,31.9,0952000,09009142100,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,31.2,29.9,32.4,0952000,09009142200,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,34.3,33.2,35.6,0952000,09009142300,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.5,32.4,34.6,0952000,09009142400,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.6,32.6,34.6,0952000,09009142500,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,33.7,32.8,34.6,0952000,09009142601,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,43.4,42.3,44.5,0952000,09009142603,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,35.3,34.3,36.1,0952000,09009142604,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,32.7,32.1,33.4,0952000,09009142700,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,37.5,36.3,38.7,0952000,09009142800,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,23.2,21.8,24.8,0952000,09009361401,High Cholesterol
+2013,New Haven,Census Tract,Health Outcomes,High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years,13.5,12.5,14.7,0952000,09009361402,High Cholesterol
+2014,New Haven,City,Prevention,Mammography use among women aged 50–74 Years,79.8,79.3,80.3,0952000,NA,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,84.3,82.3,85.6,0952000,09009140100,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,72.0,68.7,75.1,0952000,09009140200,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,75.8,72.7,78.4,0952000,09009140300,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,77.6,74.8,80.0,0952000,09009140400,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,75.0,72.1,77.9,0952000,09009140500,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,76.0,73.2,78.8,0952000,09009140600,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,78.8,75.6,81.5,0952000,09009140700,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,79.1,76.5,81.4,0952000,09009140800,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,80.8,78.1,83.2,0952000,09009140900,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,83.5,80.2,85.8,0952000,09009141000,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,84.4,82.0,86.3,0952000,09009141100,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,82.0,79.3,84.2,0952000,09009141200,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,79.4,77.1,81.2,0952000,09009141300,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,81.4,78.6,83.7,0952000,09009141400,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,81.0,77.7,83.8,0952000,09009141500,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,80.5,77.2,83.4,0952000,09009141600,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,83.5,81.3,85.2,0952000,09009141800,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,84.3,81.9,86.0,0952000,09009141900,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,81.9,79.1,83.8,0952000,09009142000,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,77.9,74.6,80.9,0952000,09009142100,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,82.9,79.8,85.2,0952000,09009142200,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,76.0,73.1,78.8,0952000,09009142300,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,75.8,72.9,78.2,0952000,09009142400,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,76.8,74.3,79.1,0952000,09009142500,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,79.1,76.7,81.3,0952000,09009142601,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,78.1,75.5,80.5,0952000,09009142603,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,80.5,78.2,83.0,0952000,09009142604,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,79.0,77.0,80.8,0952000,09009142700,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,82.6,79.5,85.0,0952000,09009142800,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,79.1,77.0,81.0,0952000,09009361401,Mammography
+2014,New Haven,Census Tract,Prevention,Mammography use among women aged 50–74 Years,82.4,80.3,84.2,0952000,09009361402,Mammography
+2014,New Haven,City,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,13.5,13.3,13.8,0952000,NA,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,9.0,8.1,10.4,0952000,09009140100,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,17.5,16.0,19.2,0952000,09009140200,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,17.4,16.1,18.9,0952000,09009140300,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,15.5,14.3,17.0,0952000,09009140400,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,19.1,17.5,20.6,0952000,09009140500,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,17.2,15.7,18.7,0952000,09009140600,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,15.4,13.5,17.3,0952000,09009140700,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,16.6,15.2,18.0,0952000,09009140800,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,14.9,13.6,16.3,0952000,09009140900,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,9.3,8.2,10.7,0952000,09009141000,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,8.9,8.1,9.9,0952000,09009141100,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,13.7,12.4,15.1,0952000,09009141200,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,14.4,12.3,16.7,0952000,09009141300,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,14.4,13.0,16.0,0952000,09009141400,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,16.5,14.8,18.3,0952000,09009141500,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,15.2,13.8,16.8,0952000,09009141600,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,9.1,8.2,10.2,0952000,09009141800,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,7.6,6.9,9.0,0952000,09009141900,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,8.7,7.7,10.4,0952000,09009142000,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,16.7,14.7,18.6,0952000,09009142100,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,9.0,7.6,10.7,0952000,09009142200,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,15.9,14.5,17.4,0952000,09009142300,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,17.0,15.8,18.3,0952000,09009142400,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,15.9,14.7,17.1,0952000,09009142500,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,14.6,13.5,15.8,0952000,09009142601,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,12.4,11.5,13.3,0952000,09009142603,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,12.3,11.4,13.3,0952000,09009142604,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,13.4,12.5,14.3,0952000,09009142700,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,9.3,8.2,10.4,0952000,09009142800,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,12.0,10.1,13.8,0952000,09009361401,Mental Health
+2014,New Haven,Census Tract,Health Outcomes,Mental health not good for >=14 days among adults aged >=18 Years,12.1,10.3,13.3,0952000,09009361402,Mental Health
+2014,New Haven,City,Unhealthy Behaviors,Obesity among adults aged >=18 Years,28.8,28.7,28.9,0952000,NA,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,23.2,22.3,24.3,0952000,09009140100,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,40.0,38.8,41.1,0952000,09009140200,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,41.0,39.9,42.1,0952000,09009140300,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,38.3,37.1,39.4,0952000,09009140400,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,43.6,42.5,44.6,0952000,09009140500,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,41.9,40.7,43.0,0952000,09009140600,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,36.7,35.2,38.2,0952000,09009140700,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,41.8,40.6,42.7,0952000,09009140800,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,38.3,37.0,39.5,0952000,09009140900,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,26.1,24.7,27.6,0952000,09009141000,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,28.5,27.4,29.7,0952000,09009141100,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,35.9,34.6,37.1,0952000,09009141200,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,28.3,26.7,29.6,0952000,09009141300,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,38.3,36.9,39.5,0952000,09009141400,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,43.8,42.3,45.2,0952000,09009141500,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,39.6,38.3,40.9,0952000,09009141600,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,24.4,23.4,25.4,0952000,09009141800,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,21.0,20.1,22.3,0952000,09009141900,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,21.6,20.5,22.9,0952000,09009142000,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,37.4,35.9,38.7,0952000,09009142100,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,24.5,23.0,26.2,0952000,09009142200,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,39.0,37.7,40.2,0952000,09009142300,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,40.0,38.9,40.9,0952000,09009142400,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,37.8,36.8,38.6,0952000,09009142500,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,35.5,34.5,36.5,0952000,09009142601,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,34.0,32.9,34.9,0952000,09009142603,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,32.6,31.6,33.6,0952000,09009142604,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,34.2,33.3,35.1,0952000,09009142700,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,25.6,24.3,27.0,0952000,09009142800,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,22.1,20.6,23.6,0952000,09009361401,Obesity
+2014,New Haven,Census Tract,Unhealthy Behaviors,Obesity among adults aged >=18 Years,17.2,15.8,18.4,0952000,09009361402,Obesity
+2014,New Haven,City,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,80.5,80.1,81.0,0952000,NA,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,85.0,82.7,86.8,0952000,09009140100,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,72.7,69.5,75.7,0952000,09009140200,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,72.1,69.5,74.7,0952000,09009140300,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,78.8,76.6,80.9,0952000,09009140400,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,73.7,71.1,76.3,0952000,09009140500,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,76.1,73.5,78.6,0952000,09009140600,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,76.4,73.3,79.4,0952000,09009140700,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,78.8,76.3,80.9,0952000,09009140800,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,81.2,79.0,83.3,0952000,09009140900,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,87.2,84.8,89.0,0952000,09009141000,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,87.6,85.9,89.2,0952000,09009141100,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,83.6,81.6,85.7,0952000,09009141200,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,77.9,75.0,80.4,0952000,09009141300,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,81.9,79.6,84.2,0952000,09009141400,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,80.2,77.5,82.8,0952000,09009141500,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,80.5,77.9,83.0,0952000,09009141600,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,84.1,82.0,85.8,0952000,09009141800,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,88.5,86.4,89.7,0952000,09009141900,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,84.5,81.4,86.4,0952000,09009142000,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,76.2,73.1,79.2,0952000,09009142100,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,87.4,84.5,89.3,0952000,09009142200,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,77.0,74.5,79.6,0952000,09009142300,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,76.6,74.4,78.7,0952000,09009142400,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,78.7,76.5,80.7,0952000,09009142500,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,79.7,77.9,81.5,0952000,09009142601,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,80.6,78.7,82.6,0952000,09009142603,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,84.3,82.6,86.0,0952000,09009142604,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,81.5,79.9,82.9,0952000,09009142700,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,87.3,84.9,89.2,0952000,09009142800,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,73.5,69.3,76.9,0952000,09009361401,Pap Smear Test
+2014,New Haven,Census Tract,Prevention,Papanicolaou smear use among adult women aged 21–65 Years,71.0,67.2,74.5,0952000,09009361402,Pap Smear Test
+2014,New Haven,City,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,26.2,25.7,26.6,0952000,NA,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,14.4,12.8,16.4,0952000,09009140100,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,44.5,40.5,47.6,0952000,09009140200,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,36.2,33.6,38.7,0952000,09009140300,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,31.4,28.9,33.9,0952000,09009140400,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,39.4,36.7,41.9,0952000,09009140500,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,37.3,34.7,39.9,0952000,09009140600,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,28.1,24.8,31.0,0952000,09009140700,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,35.3,32.8,37.7,0952000,09009140800,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,27.6,25.2,30.1,0952000,09009140900,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,16.4,14.3,18.7,0952000,09009141000,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,18.1,16.3,20.2,0952000,09009141100,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,26.3,23.8,28.8,0952000,09009141200,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,22.5,19.7,25.6,0952000,09009141300,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,27.7,25.0,30.2,0952000,09009141400,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,33.7,30.6,36.6,0952000,09009141500,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,30.2,27.7,33.0,0952000,09009141600,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,16.7,15.0,18.5,0952000,09009141800,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,11.5,10.3,13.4,0952000,09009141900,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,14.2,12.4,16.6,0952000,09009142000,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,29.9,26.9,32.9,0952000,09009142100,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,15.0,12.8,17.6,0952000,09009142200,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,34.2,31.4,36.8,0952000,09009142300,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,35.4,33.1,37.7,0952000,09009142400,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,33.0,30.8,35.1,0952000,09009142500,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,29.3,27.2,31.4,0952000,09009142601,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,31.9,29.0,34.1,0952000,09009142603,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,25.5,23.5,27.5,0952000,09009142604,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,27.0,25.3,28.7,0952000,09009142700,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,18.3,15.8,20.8,0952000,09009142800,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,17.8,15.4,20.5,0952000,09009361401,Physical Activity
+2014,New Haven,Census Tract,Unhealthy Behaviors,No leisure-time physical activity among adults aged >=18 Years,16.1,13.7,18.7,0952000,09009361402,Physical Activity
+2014,New Haven,City,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,11.6,11.4,11.8,0952000,NA,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,5.6,5.1,6.3,0952000,09009140100,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,22.3,20.0,24.9,0952000,09009140200,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,16.4,15.1,17.7,0952000,09009140300,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,14.2,13.1,15.4,0952000,09009140400,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,18.6,17.1,20.0,0952000,09009140500,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,17.5,16.1,18.9,0952000,09009140600,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,12.5,11.1,13.9,0952000,09009140700,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,16.4,15.1,17.8,0952000,09009140800,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,12.6,11.4,13.8,0952000,09009140900,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,7.8,6.8,8.9,0952000,09009141000,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,8.5,7.6,9.5,0952000,09009141100,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,11.8,10.6,13.0,0952000,09009141200,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,9.4,8.5,10.5,0952000,09009141300,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,12.7,11.4,14.0,0952000,09009141400,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,15.3,13.7,17.0,0952000,09009141500,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,13.6,12.3,15.0,0952000,09009141600,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,6.8,6.1,7.4,0952000,09009141800,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,4.9,4.5,5.7,0952000,09009141900,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,5.7,5.1,6.7,0952000,09009142000,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,13.7,12.2,15.1,0952000,09009142100,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,6.8,5.9,7.9,0952000,09009142200,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,15.3,14.0,16.7,0952000,09009142300,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,15.7,14.6,16.9,0952000,09009142400,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,14.8,13.8,15.9,0952000,09009142500,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,12.8,11.8,13.8,0952000,09009142601,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,15.0,13.6,16.3,0952000,09009142603,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,11.2,10.4,12.2,0952000,09009142604,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,11.8,11.0,12.6,0952000,09009142700,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,8.5,7.4,9.7,0952000,09009142800,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,6.7,6.0,7.6,0952000,09009361401,Physical Health
+2014,New Haven,Census Tract,Health Outcomes,Physical health not good for >=14 days among adults aged >=18 Years,4.8,4.2,5.4,0952000,09009361402,Physical Health
+2014,New Haven,City,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,42.3,42.0,42.5,0952000,NA,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,36.6,35.2,38.2,0952000,09009140100,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,43.8,42.3,45.1,0952000,09009140200,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,47.0,45.6,48.2,0952000,09009140300,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,45.1,43.6,46.4,0952000,09009140400,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,48.2,46.9,49.3,0952000,09009140500,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,47.3,46.0,48.6,0952000,09009140600,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,45.0,43.2,46.7,0952000,09009140700,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,48.5,47.2,49.6,0952000,09009140800,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,46.5,45.0,47.8,0952000,09009140900,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,35.5,33.8,37.3,0952000,09009141000,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,37.0,35.7,38.5,0952000,09009141100,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,44.8,43.3,46.3,0952000,09009141200,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,40.3,37.8,42.2,0952000,09009141300,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,46.0,44.4,47.5,0952000,09009141400,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,51.0,49.2,52.4,0952000,09009141500,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,48.1,46.6,49.6,0952000,09009141600,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,37.7,36.2,39.1,0952000,09009141800,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,32.9,31.7,34.8,0952000,09009141900,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,35.0,33.4,36.9,0952000,09009142000,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,44.6,42.9,46.2,0952000,09009142100,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,34.6,32.7,36.7,0952000,09009142200,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,44.4,42.9,45.8,0952000,09009142300,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,46.1,44.8,47.1,0952000,09009142400,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,44.5,43.3,45.5,0952000,09009142500,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,44.8,43.7,46.0,0952000,09009142601,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,39.7,38.5,40.8,0952000,09009142603,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,41.1,39.9,42.3,0952000,09009142604,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,42.0,40.9,43.0,0952000,09009142700,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,34.6,32.9,36.3,0952000,09009142800,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,37.8,35.2,40.1,0952000,09009361401,Sleep
+2014,New Haven,Census Tract,Unhealthy Behaviors,Sleeping less than 7 hours among adults aged >=18 Years,37.8,35.0,39.8,0952000,09009361402,Sleep
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.8,1.6,1.9,0952000,09009141800,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.8,2.6,3.1,0952000,09009142100,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.2,1.1,1.3,0952000,09009141900,Stroke
+2014,New Haven,City,Health Outcomes,Stroke among adults aged >=18 Years,3.0,2.9,3.0,0952000,NA,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.2,1.1,1.3,0952000,09009140100,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,7.8,6.7,9.1,0952000,09009140200,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.7,3.5,4.0,0952000,09009140300,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.2,3.0,3.5,0952000,09009140400,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,4.1,3.8,4.5,0952000,09009140500,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,4.7,4.3,5.1,0952000,09009140600,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.0,2.7,3.4,0952000,09009140700,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,5.1,4.7,5.6,0952000,09009140800,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.2,2.9,3.6,0952000,09009140900,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.1,1.9,2.4,0952000,09009141000,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.9,2.6,3.2,0952000,09009141100,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.4,3.0,3.7,0952000,09009141200,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.3,2.1,2.5,0952000,09009141300,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.6,3.3,4.0,0952000,09009141400,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,5.0,4.5,5.6,0952000,09009141500,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,4.1,3.7,4.6,0952000,09009141600,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.3,1.2,1.4,0952000,09009142000,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.8,1.6,2.1,0952000,09009142200,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.2,2.9,3.4,0952000,09009142300,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.2,3.0,3.4,0952000,09009142400,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.2,3.0,3.5,0952000,09009142500,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,3.0,2.7,3.2,0952000,09009142601,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,5.1,4.6,5.7,0952000,09009142603,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.8,2.6,3.1,0952000,09009142604,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.6,2.4,2.8,0952000,09009142700,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,2.5,2.1,2.8,0952000,09009142800,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,1.2,1.2,1.3,0952000,09009361401,Stroke
+2014,New Haven,Census Tract,Health Outcomes,Stroke among adults aged >=18 Years,0.5,0.5,0.6,0952000,09009361402,Stroke
+2013,New Haven,City,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,71.6,71.4,71.9,0952000,NA,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,59.8,58.7,60.9,0952000,09009140100,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,82.3,81.2,83.3,0952000,09009140200,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,71.1,70.1,72.2,0952000,09009140300,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,71.5,70.4,72.5,0952000,09009140400,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,71.9,70.8,73.0,0952000,09009140500,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,74.9,73.9,75.8,0952000,09009140600,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,68.9,67.8,70.1,0952000,09009140700,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,77.6,76.7,78.5,0952000,09009140800,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,72.1,71.0,73.0,0952000,09009140900,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,73.9,72.7,75.0,0952000,09009141000,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,78.7,78.0,79.5,0952000,09009141100,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,74.5,73.5,75.5,0952000,09009141200,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,65.7,64.1,67.4,0952000,09009141300,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,74.6,73.6,75.6,0952000,09009141400,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,77.6,76.4,78.8,0952000,09009141500,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,74.5,73.3,75.5,0952000,09009141600,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,68.9,67.9,69.9,0952000,09009141800,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,64.1,62.7,65.7,0952000,09009141900,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,62.4,61.1,63.6,0952000,09009142000,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,66.7,65.6,67.7,0952000,09009142100,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,69.5,68.1,70.8,0952000,09009142200,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,70.2,69.2,71.3,0952000,09009142300,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,68.8,67.7,69.9,0952000,09009142400,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,70.5,69.5,71.4,0952000,09009142500,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,71.8,70.9,72.7,0952000,09009142601,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,83.2,82.5,83.9,0952000,09009142603,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,74.0,73.1,74.8,0952000,09009142604,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,69.7,68.9,70.3,0952000,09009142700,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,76.6,75.6,77.7,0952000,09009142800,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,53.8,52.1,55.6,0952000,09009361401,Taking BP Medication
+2013,New Haven,Census Tract,Prevention,Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure,28.6,27.2,30.0,0952000,09009361402,Taking BP Medication
+2014,New Haven,City,Health Outcomes,All teeth lost among adults aged >=65 Years,16.6,15.5,17.6,0952000,NA,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,6.8,4.6,10.1,0952000,09009140100,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,31.9,22.0,42.8,0952000,09009140200,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,25.4,19.6,30.9,0952000,09009140300,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,19.9,15.5,25.0,0952000,09009140400,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,27.6,22.1,33.3,0952000,09009140500,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,25.2,19.8,30.7,0952000,09009140600,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,20.0,13.3,28.0,0952000,09009140700,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,23.9,18.1,30.2,0952000,09009140800,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,16.8,12.1,22.0,0952000,09009140900,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,7.2,4.3,11.4,0952000,09009141000,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,7.7,4.8,11.9,0952000,09009141100,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,15.5,11.0,20.2,0952000,09009141200,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,16.6,12.7,21.2,0952000,09009141300,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,17.6,12.3,23.1,0952000,09009141400,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,22.9,16.8,30.8,0952000,09009141500,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,21.6,14.8,29.2,0952000,09009141600,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,7.4,5.0,10.6,0952000,09009141800,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,4.5,3.2,7.7,0952000,09009141900,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,6.7,4.5,10.0,0952000,09009142000,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,20.9,14.8,27.5,0952000,09009142100,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,7.1,4.3,11.2,0952000,09009142200,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,20.7,16.5,25.1,0952000,09009142300,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,23.7,19.9,27.7,0952000,09009142400,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,20.7,16.1,26.0,0952000,09009142500,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,16.8,12.8,21.4,0952000,09009142601,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,16.4,12.3,21.3,0952000,09009142603,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,13.3,9.3,17.6,0952000,09009142604,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,15.3,11.4,19.5,0952000,09009142700,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,8.1,4.9,12.3,0952000,09009142800,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,11.6,8.8,15.3,0952000,09009361401,Teeth Loss
+2014,New Haven,Census Tract,Health Outcomes,All teeth lost among adults aged >=65 Years,11.5,8.4,14.7,0952000,09009361402,Teeth Loss

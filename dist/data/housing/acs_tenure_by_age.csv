@@ -1,0 +1,10 @@
+name,indicator,year,type,value,raw
+CT,tenure by age,2015,Ages 15-34,0.332,68725
+CT,tenure by age,2015,Ages 35-64,0.719,586348
+CT,tenure by age,2015,Ages 65+,0.761,251154
+GNH,tenure by age,2015,Ages 15-34,0.242,7665
+GNH,tenure by age,2015,Ages 35-64,0.672,68183
+GNH,tenure by age,2015,Ages 65+,0.721,31916
+New Haven,tenure by age,2015,Ages 15-34,0.098,1552
+New Haven,tenure by age,2015,Ages 35-64,0.357,8919
+New Haven,tenure by age,2015,Ages 65+,0.438,3903
