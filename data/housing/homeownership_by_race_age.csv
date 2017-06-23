@@ -1,0 +1,21 @@
+name,indicator,year,type,value
+All races,homeownership by age and race,2015,All ages,0.28
+Black,homeownership by age and race,2015,All ages,0.28
+Hispanic,homeownership by age and race,2015,All ages,0.17
+Other,homeownership by age and race,2015,All ages,0.17
+White,homeownership by age and race,2015,All ages,0.37
+Black,homeownership by age and race,2015,Ages 35-44,0.25
+Hispanic,homeownership by age and race,2015,Ages 35-44,0.27
+White,homeownership by age and race,2015,Ages 35-44,0.42
+Black,homeownership by age and race,2015,Ages 45-54,0.33
+Hispanic,homeownership by age and race,2015,Ages 45-54,0.18
+White,homeownership by age and race,2015,Ages 45-54,0.47
+Black,homeownership by age and race,2015,Ages 55-64,0.33
+Hispanic,homeownership by age and race,2015,Ages 55-64,0.25
+White,homeownership by age and race,2015,Ages 55-64,0.57
+Black,homeownership by age and race,2015,Ages 65+,0.42
+Hispanic,homeownership by age and race,2015,Ages 65+,0.16
+White,homeownership by age and race,2015,Ages 65+,0.51
+Black,homeownership by age and race,2015,Under 35,0.081
+Hispanic,homeownership by age and race,2015,Under 35,0.043
+White,homeownership by age and race,2015,Under 35,0.12

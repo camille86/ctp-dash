@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cross-Sector Measures - City Transformation Plan</title>
+    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+    <script src="../js/globals.js"></script>
+    <script type="text/javascript" src="../js/cross.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
+    <link rel="stylesheet" href="../css/main-styles.css" />
+
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body class="application">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <div class="navbar-brand">DRAFT - Cross-Sector Measures</div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../">Dashboard home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="top">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="plank" id="plank">
+                    <h2 class="text-uppercase">Cross-sector measures</h2>
+                    <p class="goal">
+                        <!-- <strong>Vision: </strong> All New Haven children, birth through age 8, will be healthy, safe, thriving in nurturing families, and prepared to be successful, lifelong learners -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="chart-wrapper">
+                    <div class="chart-title dark-title" id="accordion-title">
+                        <h4>2020 targets</h4>
+                    </div>
+                    <div>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target1">
+                                    <h5 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="target1">
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target2">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target2">
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="target3">
+                                    <h5 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="target3">
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="definition">
+                    <h4>Definitions</h4>
+                    <dl>
+                        <dt>Personal wellbeing index</dt>
+                        <dd>
+                            The personal wellbeing index is calculated by DataHaven on a scale of 0 to 100, based on residents' self-reported happiness, health, anxiety, depression, life satisfaction, and time to enjoy their lives.
+                        </dd>
+
+                    </dl>
+                </div>
+
+            </div>
+
+            <div class="col-sm-9">
+
+                <!-- <ul class="nav nav-pills">
+                    <li role="link"><a href="#goal-charts" class="jump-link">Target indicators</a></li>
+                    <li role="link"><a href="#other-charts" class="jump-link">Other indicators</a></li>
+                </ul> -->
+
+                <div class="goal-charts" id="goal-charts">
+                    <!-- <h5>Target indicators</h5> -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Total population, 1980-2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="total-pop-trend" class="chart300"><svg></svg></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: US Census Bureau
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Personal wellbeing index, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="per-wellbeing" class="chart300"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: 2015 DataHaven Community Wellbeing Survey
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Financial wellbeing, 2015
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="fin-wellbeing" class="mapContainer"></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: 2015 DataHaven Community Wellbeing Survey
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-right">
+                    <a href="#top" class="jump-link">Back to top</a>
+                </div>
+
+                <!-- <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+
+                            </div>
+                            <div class="chart-stage">
+                                <div id=""></div>
+                            </div>
+                            <div class="chart-notes">
+                                Source:
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="plank">
+        <h4>Key</h4>
+        <ul class="list-inline key">
+            <li><strong>CT: </strong>Connecticut</li>
+            <li><strong>GNH: </strong>Greater New Haven region</li>
+            <li><strong>NHV low-income: </strong>Low-income neighborhoods in New Haven</li>
+            <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
+        </ul>
+    </div>
+
+    <script>
+        var nav_gap = 64;
+        $('.jump-link').on('click', function() {
+            var target = $(this).attr('href');
+            var offset = $(target).offset().top - nav_gap;
+
+            $('html, body').animate({
+                scrollTop: offset
+            }, 'slow');
+            return false;
+        });
+    </script>
+
+</body>
+</html>
