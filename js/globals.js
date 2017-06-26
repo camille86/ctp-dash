@@ -96,6 +96,13 @@ var scale5 = [
     new dimple.color('#555')
 ];
 
+var scale3 = [
+    new dimple.color('#b92868'),
+    new dimple.color('#a16ba4'),
+    new dimple.color('#5d9be6'),
+    new dimple.color('#555')
+];
+
 var demoscale = [
     new dimple.color('#992156'),
     new dimple.color('#9d526c'),

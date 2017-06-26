@@ -7,17 +7,10 @@
 
     <title>City Transformation Plan</title>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/vendor/keen-dashboards.css" />
     <link rel="stylesheet" href="css/main-styles.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -93,6 +86,10 @@
         </div>
         <div class="row">
             <div class="grid" id="grid-container">
+                <div class="spinner lds-css"><div class="lds-default" style="100%;height:100%">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div></div>
+
                 <div class="grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
             </div>
         </div>
@@ -110,56 +107,66 @@
             <li><span class="glyphicon glyphicon-stop negative"></span> negative change</li>
             <li><span class="glyphicon glyphicon-stop neutral"></span> neutral / no change</li>
         </ul>
-
-        <p class="text-muted">
-            Icons designed by <a href="https://www.alfredocreates.com/">Alfredo Hernandez</a> from Flaticon.
-        </p>
     </div>
 
+    <div class="plank">
+        <h4>Sources</h4>
+        <ul id="source-list"></ul>
+    </div>
 
-    <!-- <a href='http://www.freepik.com/free-vector/arrow-icon-set_840839.htm'>Designed by Freepik</a> -->
+    <p class="text-muted">
+        Icons designed by <a href="https://www.alfredocreates.com/">Alfredo Hernandez</a> from Flaticon.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 
 <script id="card-template" type="text/template">
-        <div class="row">
-            <!-- <h5 class="name col-xs-12">{{name}}</h5> -->
-            <h5 class="name"><span>{{name}}</span><span class="expand-grid pull-right" role="button">[<span class="show-more">+</span>]</span></h5>
-        </div>
+    <div class="row">
+        <!-- <h5 class="name col-xs-12">{{name}}</h5> -->
+        <h5 class="name"><span>{{name}}</span><span class="expand-grid pull-right" role="button">[<span class="show-more">+</span>]</span></h5>
+    </div>
 
-        <div class="row">
-            <div class="col-xs-9">
-                <div class="row row-no-gutter">
-                    <h1 class="current-val">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
-                </div>
-                <div class="row row-no-gutter">
-                    <h3 class="prev-val">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
-                </div>
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="row row-no-gutter">
+                <h1 class="current-val">{{current_val}} <small class="current-year">{{current_year}}</small></h1>
             </div>
-            <div class="col-xs-3">
-                <h1 class="trend">
-                    <!-- <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span> -->
-                    <svg class="icon {{outcome}}" aria-hidden="true">
-                        <use xlink:href="svg/icons.svg#{{arrow}}"></use>
-                    </svg>
-                </h1>
+            <div class="row row-no-gutter">
+                <h3 class="prev-val">{{prev_val}} <small class="prev-year">{{prev_year}}</small></h3>
             </div>
-
+        </div>
+        <div class="col-xs-3">
+            <h1 class="trend">
+                <!-- <span class="glyphicon glyphicon-{{arrow}} {{outcome}}"></span> -->
+                <svg class="icon {{outcome}}" aria-hidden="true">
+                    <use xlink:href="svg/icons.svg#{{arrow}}"></use>
+                </svg>
+            </h1>
         </div>
 
-        <div class="row">
-            <div class="descript"><p class="descript-text">{{description}}</p></div>
-        </div>
-        <div class="row">
-            {{#if hasLink}}
-            <a class="area" href="pages/{{class}}.html">
-                <span class="hidden learn-more">Learn more about </span>
-                <span>{{area}}</span>
-            </a>
-            {{else}}
-                <span class="area">{{area}}</span>
-            {{/if}}
-        </div>
+    </div>
+
+    <div class="row">
+        <div class="descript"><p class="descript-text">{{description}}. <em>({{source}})</em></p></div>
+    </div>
+    <div class="row">
+        {{#if hasLink}}
+        <a class="area" href="pages/{{class}}.html">
+            <span class="hidden learn-more">Learn more about </span><span>{{area}}</span>
+        </a>
+        {{else}}
+            <span class="area">{{area}}</span>
+        {{/if}}
+    </div>
 </script>
+
 
 </html>

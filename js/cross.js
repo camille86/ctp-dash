@@ -2,10 +2,11 @@ d3.queue()
     .defer(d3.csv, '../data/cross/financial_wellbeing.csv')
     .defer(d3.csv, '../data/cross/personal_wellbeing_index.csv')
     .defer(d3.csv, '../data/cross/total_population.csv')
+    .defer(d3.csv, '../data/cross/poverty_by_age_race.csv')
     .await(init);
 
 //////////////////// INIT
-function init(error, financial, personal, pop) {
+function init(error, financial, personal, pop, poverty) {
     if (error) throw error;
 
     financial.forEach(function(d) {
@@ -20,6 +21,10 @@ function init(error, financial, personal, pop) {
         d.value = +d.value;
     });
 
+    poverty.forEach(function(d) {
+        d.value = +d.value;
+    });
+
     var finNested = nestData(financial);
     var rows = finNested.length;
     var plots = [];
@@ -29,6 +34,7 @@ function init(error, financial, personal, pop) {
     });
 
     plots.push(makePersonalBars(personal));
+    plots.push(makeAgeRace(poverty));
 
     makePopTrend(pop);
 
@@ -136,38 +142,6 @@ function makeMultiples(dataAll) {
             .call(makeRow);
 }
 
-function makeRow(div) {
-    var data = div.data();
-
-    var group = fc.group()
-        .key('type');
-    var series = group(data);
-    var yscale = fc.extentLinear()
-        .accessors([function(d) { return d.map(function(d) { return d[1]; });}])
-        .include([0]);
-
-    var names = series.map(function(d) { return d.name; });
-
-    var bars = fc.seriesSvgGrouped(fc.seriesSvgBar())
-        .crossValue(function(d) { return d[0]; })
-        .mainValue(function(d) { return d[1]; })
-        .decorate(function(sel, dat, idx) {
-            sel.enter()
-                .select('path')
-                .attr('fill', 'slateblue');
-        });
-
-    var chart = fc.chartSvgCartesian(
-        d3.scalePoint(),
-        d3.scaleLinear()
-    )
-        .xDomain(data.map(function(d) { return d.name; }))
-        .yDomain(yscale(series))
-        .plotArea(bars);
-
-    div.datum(series).call(chart);
-}
-
 function makePersonalBars(data) {
     var margin = { top: 12, right: 18, bottom: 40, left: 100 };
     // var width = fullwidth - margin.left - margin.right;
@@ -212,7 +186,6 @@ function makePersonalBars(data) {
 }
 
 function makePopTrend(data) {
-    console.log(data);
     var margin = { top: 12, right: 18, bottom: 40, left: 40 };
 
     var svg = d3.select('#total-pop-trend')
@@ -257,6 +230,53 @@ function makePopTrend(data) {
             d3.event.preventDefault();
             tip.show(d);
             dotOver(this);
+        });
+
+    return chart;
+}
+
+function makeAgeRace(data) {
+    var margin = { top: 12, right: 18, bottom: 50, left: 60 };
+    var svg = d3.select('#poverty-age-race')
+        .append('svg')
+        .attr('width', '100%')
+        .attr('height', '100%');
+
+    var chart = new dimple.chart(svg, data);
+    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
+    chart.defaultColors = scale3;
+
+    var y = chart.addCategoryAxis('y', 'name');
+    y.title = null;
+    y.addOrderRule(['All races', 'White', 'Black', 'Hispanic'], true);
+
+    var x = chart.addMeasureAxis('x', 'value');
+    x.tickFormat = '.0%';
+    x.ticks = 6;
+    x.title = null;
+
+    var dots = chart.addSeries('type', dimple.plot.bubble);
+    dots.addOrderRule(['Under 18', 'Ages 18-64', 'Ages 65+', 'All ages']);
+    chart.addLegend('8%', '95%', '100%', '20%', 'left', dots);
+
+    chart.draw();
+
+    svg.selectAll('circle.dimple-bubble')
+        .attr('r', 9);
+
+        var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .html(horizGroupTip);
+
+    svg.selectAll('circle.dimple-bubble')
+        .call(tip)
+        .on('mouseover', function(d) {
+            tip.show(d);
+            barOver(this);
+        })
+        .on('mouseout', function(d) {
+            tip.hide(d);
+            barOut(this);
         });
 
     return chart;
