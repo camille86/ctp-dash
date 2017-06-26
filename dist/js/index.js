@@ -1,38 +1,52 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
     var key = '1icln5UH_PknOUcvVenErNrjAR7MDoixmX733iq4NSHE';
 
     Tabletop.init({
         key: key,
         callback: showInfo,
-        simpleSheet: true
+        simpleSheet: false,
+        wanted: ['data', 'sources']
     });
 
+// });
 
-    function showInfo(data) {
+function showInfo(data, tabletop) {
+    var cardData = tabletop.sheets('data').all();
+    var sourceData = tabletop.sheets('sources').all().sort(function(a, b) {
+        return a.name < b.name ? -1 : 1;
+    });
+    makeCards(cardData);
+    makeSources(sourceData);
+}
 
-        // data.forEach(function(d) {
-        //     d.current_val = +d.current_val;
-        //     d.prev_val = d.prev_val ? +d.prev_val : '';
-        //     d.prev_year = d.prev_year ? d.prev_year : '';
-        // });
+function makeCards(data) {
+    var cards = d3.select('.grid')
+        .selectAll('.grid-item')
+        .data(data)
+        .enter();
 
-        // bind data to make grid items
-        var cards = d3.select('.grid')
-            .selectAll('.grid-item')
-            .data(data)
-            .enter();
+    cards.append('div')
+        // .classed('grid-item', true)
+        .attr('class', function(d) { return 'grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3 ' + d.class; })
+        .html(renderCard);
 
-        cards.append('div')
-            // .classed('grid-item', true)
-            .attr('class', function(d) { return 'grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3 ' + d.class; })
-            .html(render);
+    $('.spinner div').removeClass('lds-default');
 
-        setupIsotope();
+    setupIsotope();
+}
 
-    }
-
-});
+function makeSources(data) {
+    // probably not worth it to use Handlebars template since these are so small
+    d3.select('#source-list')
+        .selectAll('li')
+        .data(data)
+        .enter()
+        .append('li')
+        .append('a')
+        .attr('href', function(d) { return d.url; })
+        .text(function(d) { return d.name; });
+}
 
 function setupIsotope() {
     var $grid = $('.grid');
@@ -60,9 +74,6 @@ function setupIsotope() {
     }).on('mouseout', function(e) {
         $(this).find('.learn-more').addClass('hidden');
     });
-
-
-
 
     var $filters = $('#filters');
     $filters.on('click', '.btn', function(e) {
@@ -96,7 +107,7 @@ function makeFormat(format, number) {
     }
 }
 
-function render(d, i) {
+function renderCard(d, i) {
     var template = Handlebars.compile(d3.select('#card-template').html());
     var card = d;
     card.current_val = makeFormat(d.format, d.current_val);
@@ -105,7 +116,6 @@ function render(d, i) {
     card.hasLink = true;
     // card.area = '<a class="area" href="pages/' + d.class + '.html"><span class="hidden learn-more">Learn more about </span>' + d.area + '</a>';
     // card.arrow = '<span class="glyphicon glyphicon-arrow-' + d.arrow + '"></span>';
-    console.log(card);
 
     return template(card);
 }

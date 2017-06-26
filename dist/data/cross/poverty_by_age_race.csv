@@ -1,0 +1,17 @@
+name,indicator,year,type,value
+All races,poverty by age and race,2015,All ages,0.26
+Black,poverty by age and race,2015,All ages,0.28
+Hispanic,poverty by age and race,2015,All ages,0.34
+White,poverty by age and race,2015,All ages,0.17
+All races,poverty by age and race,2015,Ages 18-64,0.24
+All races,poverty by age and race,2015,Ages 65+,0.16
+All races,poverty by age and race,2015,Under 18,0.38
+Black,poverty by age and race,2015,Ages 18-64,0.24
+Hispanic,poverty by age and race,2015,Ages 18-64,0.29
+White,poverty by age and race,2015,Ages 18-64,0.19
+Black,poverty by age and race,2015,Ages 65+,0.19
+Hispanic,poverty by age and race,2015,Ages 65+,0.39
+White,poverty by age and race,2015,Ages 65+,0.092
+Black,poverty by age and race,2015,Under 18,0.4
+Hispanic,poverty by age and race,2015,Under 18,0.46
+White,poverty by age and race,2015,Under 18,0.14

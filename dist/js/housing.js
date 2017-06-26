@@ -156,7 +156,7 @@ function makeAgeRace(data) {
     x.title = null;
 
     var dots = chart.addSeries('type', dimple.plot.bubble);
-    dots.addOrderRule(['Under 35', 'Ages 35-44', 'Ages 45-54', 'Ages 55-64', 'Ages 65+']);
+    dots.addOrderRule(['Under 35', 'Ages 35-44', 'Ages 45-54', 'Ages 55-64', 'Ages 65+', 'All ages']);
     chart.addLegend('8%', '85%', '100%', '20%', 'left', dots);
 
     chart.draw();

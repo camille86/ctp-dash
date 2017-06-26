@@ -4,18 +4,6 @@
     <title>Health - City Transformation Plan</title>
     <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
-    <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
-    <script src="../js/d3map.js"></script>
-    <script src="../js/globals.js"></script>
-    <script type="text/javascript" src="../js/health.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
     <link rel="stylesheet" href="../css/main-styles.css" />
@@ -207,6 +195,21 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Childhood asthma hospitalization rate, 2012-2014
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="asthma-jpg"><img src="../img/child_asthma.jpg" /></div>
+                                </div>
+                                <div class="chart-notes">
+                                    Source: Greater New Haven Community Index 2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="text-right">
@@ -273,11 +276,18 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
-
-                        </div>
-                        <div class="col-md-6">
-
+                        <div class="col-md-12">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Heart disease hospitalization rate, 2012-2014
+                                </div>
+                                <div class="chart-stage">
+                                    <img src="../img/heart_disease.jpg" />
+                                </div>
+                                <div class="chart-notes">
+                                    Source: Greater New Haven Community Index 2016
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,6 +320,18 @@
             <li><strong>Other NHV: </strong>Non-low-income neighborhoods in New Haven</li>
         </ul>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@2.2.0/dist/simple-statistics.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+    <script src="../js/d3map.js"></script>
+    <script src="../js/globals.js"></script>
+    <script src="../js/health.js"></script>
 
     <script>
         var nav_gap = 64;
