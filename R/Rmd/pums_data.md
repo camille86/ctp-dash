@@ -14,8 +14,8 @@ library(forcats)
 nhv_puma <- "905"
 ```
 
-Working with PUMS files for low-income kids, tenure
----------------------------------------------------
+Working with PUMS files for low-income kids, poverty rate by race & age, tenure
+-------------------------------------------------------------------------------
 
 This script calculates low-income rates for kids ages 0-5 by race, and tenure and severe cost burden by race. It uses the `survey` package for analyzing survey data.
 
@@ -30,8 +30,10 @@ kids_pums <- read_csv("../input/low_income_kids_by_race_pums.csv") %>%
   mutate(race_comb = ifelse(hispan == "Hispanic", "Hispanic", paste(race, hispan))) %>%
   mutate(age_grp1 = ifelse(age < 6, "Ages 0-5", "Ages 6+")) %>%
   mutate(age_grp2 = ifelse(age < 18, "Ages 0-17", "Ages 18+")) %>%
+  mutate(age_grp3 = ifelse(age < 18, "Under 18", ifelse(age >= 65, "Ages 65+", "Ages 18-64"))) %>%
   filter(poverty > 0) %>%
-  mutate(low_inc = ifelse(poverty < 200, "Low-income", "Not low-income"))
+  mutate(low_inc = ifelse(poverty < 200, "Low-income", "Not low-income")) %>%
+  mutate(pov_rate = ifelse(poverty < 100, "Below poverty line", "At or above poverty line"))
 ```
 
 ``` r
@@ -73,6 +75,38 @@ low_inc_df %>%
   write_csv("../output/low_income_kids_by_race.csv")
 
 rm(all_df, race_df, under6_df, age_race_df)
+```
+
+### Poverty rates by race & age group
+
+``` r
+all_df <- svyby(~pov_rate, ~total, nhv_kids, svymean) %>%
+  mutate(age = "All ages", race = "All races") %>%
+  select(race, age, `pov_rateBelow poverty line`) %>%
+  setNames(c("name", "type", "value"))
+
+race_df <- svyby(~pov_rate, ~race_comb, nhv_kids, svymean) %>%
+  mutate(age = "All ages") %>%
+  select(race_comb, age, `pov_rateBelow poverty line`) %>%
+  setNames(c("name", "type", "value"))
+
+age_df <- svyby(~pov_rate, ~age_grp3, nhv_kids, svymean) %>%
+  mutate(race = "All races") %>%
+  select(race, age_grp3, `pov_rateBelow poverty line`) %>%
+  setNames(c("name", "type", "value"))
+
+age_race_df <- svyby(~pov_rate, ~race_comb + ~age_grp3, nhv_kids, svymean) %>%
+  select(race_comb, age_grp3, `pov_rateBelow poverty line`) %>%
+  setNames(c("name", "type", "value"))
+
+bind_rows(all_df, race_df, age_df, age_race_df) %>%
+  filter(name != "Other non-Hispanic") %>%
+  mutate(name = str_replace(name, " non-Hispanic", "")) %>%
+  mutate(indicator = "poverty by age and race", year = 2015, value = signif(value, 2)) %>%
+  select(name, indicator, year, type, value) %>%
+  write_csv("../output/poverty_by_age_race.csv")
+
+rm(all_df, race_df, age_df, age_race_df)
 ```
 
 ### Homeownership rate by race & age group
