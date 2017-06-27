@@ -236,7 +236,7 @@ function makePopTrend(data) {
 }
 
 function makeAgeRace(data) {
-    var margin = { top: 12, right: 18, bottom: 50, left: 60 };
+    var margin = { top: 12, right: 18, bottom: 60, left: 60 };
     var svg = d3.select('#poverty-age-race')
         .append('svg')
         .attr('width', '100%')
@@ -257,7 +257,7 @@ function makeAgeRace(data) {
 
     var dots = chart.addSeries('type', dimple.plot.bubble);
     dots.addOrderRule(['Under 18', 'Ages 18-64', 'Ages 65+', 'All ages']);
-    chart.addLegend('8%', '95%', '100%', '20%', 'left', dots);
+    chart.addLegend('8%', '95%', '100%', '40%', 'left', dots);
 
     chart.draw();
 
