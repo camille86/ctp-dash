@@ -1,2 +1,4 @@
 R/output
 R/Rmd/*.Rmd
+dist/css/.sass-cache
+node_modules
