@@ -66,3 +66,12 @@ Because of data sharing agreements, a few health maps are shown as static image 
 Icons for the front page are included in a SVG sprite sheet in the `svg` folder.
 
 As of June 2017, the shapefiles used here give breakdowns of New Haven by neighborhood, tract, and block group. Each is stored in its own topojson file.
+
+## Improvements / long-term to-do
+
+* Find an *actual* web designer to improve styling
+* Move to a build tool such as Gulp---would allow to build libraries from node modules, including custom smaller builds of D3, instead of pulling everything from CDNs
+* Encapsulate creation of dimple charts into reusable functions
+* Build html files from templates for more flexibility
+* There are probably plenty of small UI/UX tweaks to make, especially in charts
+* Add cute touches like icons
