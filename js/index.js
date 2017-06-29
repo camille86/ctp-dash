@@ -1,5 +1,4 @@
-// $(document).ready(function() {
-
+(function() {
     var key = '1icln5UH_PknOUcvVenErNrjAR7MDoixmX733iq4NSHE';
 
     Tabletop.init({
@@ -8,9 +7,9 @@
         simpleSheet: false,
         wanted: ['data', 'sources']
     });
+})();
 
-// });
-
+    
 function showInfo(data, tabletop) {
     var cardData = tabletop.sheets('data').all();
     var sourceData = tabletop.sheets('sources').all().sort(function(a, b) {
