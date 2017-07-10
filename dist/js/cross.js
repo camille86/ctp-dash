@@ -2,13 +2,11 @@ d3.queue()
     .defer(d3.csv, '../data/cross/financial_wellbeing.csv')
     .defer(d3.csv, '../data/cross/personal_wellbeing_index.csv')
     .defer(d3.csv, '../data/cross/total_population.csv')
-    .defer(d3.csv, '../data/cross/gcc_grads_by_residency_trend.csv')
-    .defer(d3.csv, '../data/cross/gcc_grads_by_race.csv')
     .defer(d3.csv, '../data/cross/poverty_by_age_race.csv')
     .await(init);
 
 //////////////////// INIT
-function init(error, financial, personal, pop, gccRes, gccRace, poverty) {
+function init(error, financial, personal, pop, poverty) {
     if (error) throw error;
 
     financial.forEach(function(d) {
@@ -20,14 +18,6 @@ function init(error, financial, personal, pop, gccRes, gccRace, poverty) {
     });
 
     pop.forEach(function(d) {
-        d.value = +d.value;
-    });
-
-    gccRes.forEach(function(d) {
-        d.value = +d.value;
-    });
-
-    gccRace.forEach(function(d) {
         d.value = +d.value;
     });
 
@@ -43,7 +33,8 @@ function init(error, financial, personal, pop, gccRes, gccRace, poverty) {
         plots.push(chart);
     });
 
-    plots.push(makePersonalBars(personal), makeAgeRace(poverty), makeGccRes(gccRes), makeGccRace(gccRace));
+    plots.push(makePersonalBars(personal));
+    plots.push(makeAgeRace(poverty));
 
     makePopTrend(pop);
 
@@ -200,8 +191,7 @@ function makePopTrend(data) {
     var svg = d3.select('#total-pop-trend')
         .select('svg')
         .attr('width', '100%')
-        .attr('height', '100%')
-        .html('');
+        .attr('height', '100%');
 
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
@@ -279,92 +269,6 @@ function makeAgeRace(data) {
             .html(horizGroupTip);
 
     svg.selectAll('circle.dimple-bubble')
-        .call(tip)
-        .on('mouseover', function(d) {
-            tip.show(d);
-            barOver(this);
-        })
-        .on('mouseout', function(d) {
-            tip.hide(d);
-            barOut(this);
-        });
-
-    return chart;
-}
-
-function makeGccRes(data) {
-    var margin = { top: 12, right: 18, bottom: 90, left: 40 };
-    var svg = d3.select('#gcc-res')
-        .append('svg')
-        .attr('width', '100%')
-        .attr('height', '100%');
-
-    var chart = new dimple.chart(svg, data);
-    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [ pink, ltblue ];
-
-    var x = chart.addCategoryAxis('x', 'name');
-    x.title = null;
-    x.addOrderRule(function(a, b) {
-        return a.name < b.name ? -1 : 1;
-    }, false);
-
-    var y = chart.addMeasureAxis('y', 'value');
-    y.title = null;
-
-    var bars = chart.addSeries('type', dimple.plot.bar);
-    bars.addOrderRule(['New Haven', 'Other towns']);
-    chart.addLegend('8%', '95%', '100%', '40%', 'left', bars);
-
-    chart.draw();
-
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .html(vertGroupTip2);
-
-    svg.selectAll('rect.dimple-bar')
-        .call(tip)
-        .on('mouseover', function(d) {
-            tip.show(d);
-            barOver(this);
-        })
-        .on('mouseout', function(d) {
-            tip.hide(d);
-            barOut(this);
-        });
-
-    return chart;
-}
-
-function makeGccRace(data) {
-    var margin = { top: 12, right: 18, bottom: 80, left: 60 };
-    var svg = d3.select('#gcc-race')
-        .append('svg')
-        .attr('width', '100%')
-        .attr('height', '100%');
-
-    var chart = new dimple.chart(svg, data);
-    chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
-    chart.defaultColors = [ pink, green, dkblue, ltblue ];
-
-    var x = chart.addMeasureAxis('x', 'value');
-    x.title = null;
-    x.tickFormat = '.0%';
-    x.ticks = 5;
-
-    var y = chart.addCategoryAxis('y', 'name');
-    y.title = null;
-
-    var bars = chart.addSeries('type', dimple.plot.bar);
-    chart.addLegend('8%', '85%', '100%', '40%', 'left', bars);
-
-    chart.draw();
-
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .html(horizGroupTip);
-
-    svg.selectAll('rect.dimple-bar')
         .call(tip)
         .on('mouseover', function(d) {
             tip.show(d);
