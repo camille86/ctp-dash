@@ -191,7 +191,8 @@ function makePopTrend(data) {
     var svg = d3.select('#total-pop-trend')
         .select('svg')
         .attr('width', '100%')
-        .attr('height', '100%');
+        .attr('height', '100%')
+        .html('');
 
     var chart = new dimple.chart(svg, data);
     chart.setMargins(margin.left, margin.top, margin.right, margin.bottom);
