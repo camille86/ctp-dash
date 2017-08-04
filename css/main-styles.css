@@ -75,7 +75,8 @@ body {
 .plank {
   padding: 16px;
   margin-bottom: 2px;
-  color: #333; }
+  color: #333;
+  max-width: 768px; }
   .plank p.goal {
     font-size: 1.1em; }
     @media (min-width: 768px) {
