@@ -63,6 +63,10 @@ function vertGroupTip(d) {
     return span( d.cx + ', ' + d.aggField[0] + ': ' + p(d.yValue) );
 }
 
+function vertGroupTip2(d) {
+    return span( d.cx + ', ' + d.aggField[0] + ': ' + d.yValue );
+}
+
 function trendTip(d) {
     return span( yr(d.x) + ': ' + p(d.yValue) );
 }

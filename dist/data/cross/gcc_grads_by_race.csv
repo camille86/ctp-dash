@@ -1,0 +1,9 @@
+name,indicator,year,type,value,raw
+All grads,gateway grads by residency and race,2016,Black,0.1889400921658986,164
+New Haven,gateway grads by residency and race,2016,Black,0.3532608695652174,65
+All grads,gateway grads by residency and race,2016,Latino,0.22580645161290322,196
+New Haven,gateway grads by residency and race,2016,Latino,0.375,69
+All grads,gateway grads by residency and race,2016,White,0.4539170506912442,394
+New Haven,gateway grads by residency and race,2016,White,0.14130434782608695,26
+All grads,gateway grads by residency and race,2016,Other/Unknown,0.1313364055299539,114
+New Haven,gateway grads by residency and race,2016,Other/Unknown,0.13043478260869565,24

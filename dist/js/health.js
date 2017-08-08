@@ -11,8 +11,6 @@ d3.queue()
 function init(error, locs, trend, asthmaDental, json) {
     if (error) throw error;
 
-    console.log(json);
-
     var asthmaMap = d3map();
     d3.select('#asthma-map')
         .datum(topojson.feature(json, json.objects.nhv_tracts))
