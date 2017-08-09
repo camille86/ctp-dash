@@ -1,36 +1,24 @@
-ACS pt 2
-================
+## ----setup, include=FALSE------------------------------------------------
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
 
-``` r
+## ------------------------------------------------------------------------
 library(acsprofiles)
 library(tidyverse)
 library(stringr)
-```
 
-More ACS data
--------------
+## ---- eval=FALSE, include=TRUE, echo=TRUE--------------------------------
+## devtools::install_github("CT-Data-Haven/acsprofiles")
 
-Previous file got data for first 4 platforms. This file preps data for additional 4 platforms (education, adult literacy, community cohesion, economic activity).
-
-Uses the package `acsprofiles` developed by DataHaven.
-
-To install:
-
-``` r
-devtools::install_github("CT-Data-Haven/acsprofiles")
-```
-
-Note that this package requires a Census API key.
-
-Files will be split by which page they go with for faster loading times.
-
-``` r
+## ------------------------------------------------------------------------
 denom <- function(tbl, cols, agg) {
   apply(X = tbl[, cols], FUN = sum, MARGIN = 2, agg.term = agg)
 }
-```
 
-``` r
+## ------------------------------------------------------------------------
 year <- 2015
 
 nhv_geo <- geo.make(state = 09, county = 09, county.subdivision = "New Haven")
@@ -38,9 +26,8 @@ ct_geo <- geo.make(state = 09)
 gnh_geo <- make_regional_geo(regions$`Greater New Haven`, name = "GNH", get_town_names())
 hood_geo <- nhv_neighborhoods %>% map2(names(.), ~make_neighborhood(.x, .y, blocks = T)) %>% reduce(c)
 geos <- c(ct_geo, gnh_geo, nhv_geo)
-```
 
-``` r
+## ------------------------------------------------------------------------
 bg_nums <- list(
   edu = "B15002"
 )
@@ -50,14 +37,9 @@ region_nums <- list(
   b_edu = "C15002B",
   h_edu = "C15002I"
 )
-```
 
-### By block group (neighborhood)
 
--   Less than high school diploma
--   tbd
-
-``` r
+## ------------------------------------------------------------------------
 fetch_bg <- bg_nums %>%
   map(function(num) {
     f <- acs.fetch(geography = hood_geo, endyear = year, table.number = num, col.names = "pretty")
@@ -78,18 +60,14 @@ fetch_bg <- bg_nums %>%
     
     return(f)
   })
-```
 
-#### Analysis: neighborhood level
-
-``` r
+## ------------------------------------------------------------------------
 # EDUCATIONAL ATTAINMENT: SHARE OF NEIGHBORHOOD WITH LESS THAN HIGH SCHOOL DIPLOMA
 edu <- fetch_bg$edu
 no_diploma <- cbind(edu[, 1], calc_acs_table(list(no_diploma = c(3:10, 20:27)), edu[, 1], edu))
 acs.colnames(no_diploma) <- c("num_ages25plus", "num_no_diploma", "per_no_diploma")
-```
 
-``` r
+## ------------------------------------------------------------------------
 diploma_df <- data.frame(name = no_diploma@geography$NAME, no_diploma@estimate) %>%
   tbl_df() %>%
   mutate(year = year, indicator = "less than high school diploma") %>%
@@ -102,21 +80,12 @@ diploma_df$name[diploma_df$name == "Wooster Square"] <- "Wooster Square/Mill Riv
 
 write_csv(diploma_df, "../output/acs_no_high_school_diploma_by_neighborhood.csv")
 rm(edu, no_diploma, diploma_df)
-```
 
-### By city / region
-
--   Less than high school diploma by race
--   tbd
-
-``` r
+## ------------------------------------------------------------------------
 fetch_reg <- region_nums %>%
   map(~acs.fetch(geography = geos, endyear = year, table.number = ., col.names = "pretty"))
-```
 
-#### Analysis: city / region
-
-``` r
+## ------------------------------------------------------------------------
 edu1 <- fetch_reg$edu
 no_diploma <- cbind(edu1[, 1], calc_acs_table(list(no_diploma = c(3:10, 20:27)), edu1[, 1], edu1))
 acs.colnames(no_diploma) <- c("num_all_25plus", "num_all_no_diploma", "per_all_no_diploma")
@@ -135,9 +104,8 @@ acs.colnames(black) <- c("num_black_25plus", "num_black_no_diploma", "per_black_
 acs.colnames(hispanic) <- c("num_hispanic_25plus", "num_hispanic_no_diploma", "per_hispanic_no_diploma")
 
 by_race <- list(no_diploma, white, black, hispanic) %>% reduce(cbind)
-```
 
-``` r
+## ------------------------------------------------------------------------
 diploma_df <- data.frame(name = by_race@geography$NAME, by_race@estimate) %>%
   tbl_df() %>%
   select(name, 3, 4, 6, 7, 9, 10, 12, 13) %>%
@@ -154,18 +122,13 @@ diploma_df %>%
 diploma_df %>% 
   filter(name == "New Haven") %>% 
   write_csv("../output/acs_no_high_school_diploma_by_race.csv")
-```
 
-Trend from decennial + ACS
---------------------------
-
-``` r
+## ------------------------------------------------------------------------
 fetch00 <- acs.fetch(geography = c(nhv_geo, ct_geo), endyear = 2000, dataset = "sf3", table.number = "P37", col.names = "pretty")
 fetch10 <- acs.fetch(geography = c(nhv_geo, ct_geo), endyear = 2010, table.number = "B15002", col.names = "pretty") 
 fetch15 <- acs.fetch(geography = c(nhv_geo, ct_geo), endyear = 2015, table.number = "B15002", col.names = "pretty") 
-```
 
-``` r
+## ------------------------------------------------------------------------
 edu_time <- list(fetch00, fetch10, fetch15) %>%
   map(~calc_acs_table(list(no_diploma = c(3:10, 20:27)), .[, 1], .))
 
@@ -182,4 +145,4 @@ edu_time_df <- edu_time %>%
   select(name, indicator, year, value = per, raw = num)
 
 write_csv(edu_time_df, "../output/acs_no_high_school_diploma_trend.csv")
-```
+

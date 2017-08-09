@@ -1,3 +1,10 @@
+## ----setup, include=FALSE------------------------------------------------
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+
 ## ------------------------------------------------------------------------
 library(tidyverse)
 library(blscrapeR)
@@ -14,7 +21,7 @@ series <- c("03", "05") %>% map(~paste0("LAU", codes$area_code, .)) %>% reduce(c
 
 ## ------------------------------------------------------------------------
 fetch <- bls_api(series, startyear = "2002", endyear = "2017", 
-                 registrationKey = "bfb8685e11d0498199bf744dfea0f1f4",
+                 # registrationKey = "",
                  annualaverage = T)
 
 ## ------------------------------------------------------------------------
@@ -38,8 +45,7 @@ emp <- df %>%
   select(name, indicator, year, value) %>%
   arrange(year, name)
 
-
 ## ------------------------------------------------------------------------
-write_csv(unemp, "../output/unemployment_rate_by_year.csv")
-write_csv(emp, "../output/total_employment_by_year.csv")
+# write_csv(unemp, "../output/unemployment_rate_by_year.csv")
+# write_csv(emp, "../output/total_employment_by_year.csv")
 
