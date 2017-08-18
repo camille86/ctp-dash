@@ -11,7 +11,8 @@
 
 body {
   font-family: 'Karla', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.4; }
   body.application {
     font-family: 'Karla', sans-serif;
     max-width: 1200px;
@@ -83,11 +84,23 @@ h5 {
 
 .definition {
   padding: 16px;
-  background-color: #f1efd5;
+  background-color: #feecbb;
   color: #444;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  font-size: 1.5rem; }
   .definition dl {
     margin-bottom: 10px; }
+  .definition dd {
+    margin-bottom: 1rem; }
+  .definition h4 {
+    margin-bottom: 1.5rem; }
+
+.targets {
+  background-color: #ffffff; }
+  .targets dl {
+    margin-bottom: 10px; }
+  .targets dd {
+    margin-bottom: 1rem; }
 
 .chart-wrapper .dark-title {
   background-color: #4c516d; }

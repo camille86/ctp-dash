@@ -44,6 +44,7 @@
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
+    line-height: 1.4;
     &.application {
         font-family: 'Karla', sans-serif;
         max-width: 1200px;
@@ -132,12 +133,28 @@ h5 {
 
 .definition {
     padding: $widepad;
-    background-color: $softhilite;
+    background-color: #feecbb;
     color: $lightblack;
     margin-bottom: $widepad;
-
+    font-size: 1.5rem;
     dl {
         margin-bottom: 10px;
+    }
+    dd {
+        margin-bottom: 1rem;
+    }
+    h4 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.targets {
+    background-color: #ffffff;
+    dl {
+        margin-bottom: 10px;
+    }
+    dd {
+        margin-bottom: 1rem;
     }
 }
 
