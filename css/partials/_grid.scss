@@ -64,17 +64,13 @@
 
 .grid-item {
     float: left;
-    min-height: 240px;
+    min-height: 320px;
     padding: 10px 14px;
-    border: 5px solid white;
-    @include border-radius(8px);
     background: #888;
     color: #333;
     cursor: pointer;
-
-    &:hover {
-        border-color: $hilite;
-    }
+    border-right: 5px solid #f2f2f2;
+    margin-bottom: 5px;
 
     & > * {
         margin: 0;
@@ -85,6 +81,9 @@
         font-size: 1.1em;
         font-weight: 700;
         padding: 0;
+        color: #ffffff;
+        line-height: 2;
+        margin-top: 0;
     }
 
     .expand-grid {

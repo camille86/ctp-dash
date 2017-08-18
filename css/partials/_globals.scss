@@ -35,15 +35,58 @@
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 9pt;
-
-    .application {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    &.application {
+        font-family: 'Open Sans', sans-serif;
         max-width: 1200px;
         margin: auto;
         padding-bottom: $widepad * 5;
     }
 }
+
+p {
+    margin: 2rem 0;
+}
+p.explanation {
+    padding: 10px;
+    font-size: 14px;
+}
+
+h2, h4, h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $bright;
+}
+h2 {
+    font-size: 3.5rem;
+    text-transform: none;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.navbar-brand {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 0.09rem;
+}
+.key {
+    margin: 1rem 0 2rem 0;
+    h4 {
+        color: $bright;
+        display: inline-block;
+    }
+    ul {
+        display: inline-block;
+    }
+}
+
 
 .navbar-inverse {
     background-color: $darkheader;
@@ -65,7 +108,7 @@ body {
 
 .chart-wrapper {
     border-color: $grayborder;
-
+    margin-bottom: 2rem;
     .chart-title {
         border-bottom: 1px solid darken($grayborder, 8);
     }
@@ -84,20 +127,12 @@ body {
 
 .definition {
     padding: $widepad;
-    font-size: 1.2em;
-    font-weight: 300;
     background-color: $softhilite;
-    border: 1px solid darken($softhilite, 12);
-    @include border-radius(8px);
     color: $lightblack;
     margin-bottom: $widepad;
 
     strong {
         font-weight: 600;
-    }
-
-    h4 {
-        font-size: 1.1em;
     }
 
     dl {
@@ -107,10 +142,6 @@ body {
 
 .chart-wrapper .dark-title {
     background-color: $darkheader;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom: 2px solid $lightblack;
-
     h4 {
         color: $whitetxt;
     }
@@ -121,8 +152,22 @@ body {
     }
 }
 
+.panel-group {
+    margin-bottom: 0;
+}
+.panel-group .panel {
+    border: 0;
+    border-radius: 0;
+}
+.panel-group .panel + .panel {
+    margin-top: 0;
+    border: 0;
+}
+.panel-default > .panel-heading {
+    border: 0;
+}
+
 .plank {
-    padding: $widepad;
     margin-bottom: 2px;
     color: $medblack;
     max-width: 768px;
@@ -134,23 +179,9 @@ body {
         }
     }
 
-    p.explanation {
-        font-size: small;
-    }
-
-    h2 {
-        font-size: 1.9em;
-
-        @include breakpoint($tablet) {
-            font-size: 2.2em;
-        }
-    }
-
-    h2, h4 {
-        color: $bright;
-    }
 }
 
 .bg-danger {
     background-color: $danger;
 }
+
