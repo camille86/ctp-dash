@@ -6,12 +6,48 @@
     padding-right: 0; }
 
 body {
-  font-family: sans-serif;
-  font-size: 9pt; }
-  body .application {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+  body.application {
+    font-family: 'Open Sans', sans-serif;
     max-width: 1200px;
     margin: auto;
     padding-bottom: 80px; }
+
+p {
+  margin: 2rem 0; }
+
+p.explanation {
+  padding: 10px;
+  font-size: 14px; }
+
+h2, h4, h5 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bb105f; }
+
+h2 {
+  font-size: 3.5rem;
+  text-transform: none; }
+
+h4 {
+  font-size: 2.5rem; }
+
+h5 {
+  font-size: 2rem; }
+
+.navbar-brand {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.09rem; }
+
+.key {
+  margin: 1rem 0 2rem 0; }
+  .key h4 {
+    color: #bb105f;
+    display: inline-block; }
+  .key ul {
+    display: inline-block; }
 
 .navbar-inverse {
   background-color: #4c516d;
@@ -26,7 +62,8 @@ body {
       font-size: 1.2em; } }
 
 .chart-wrapper {
-  border-color: #cecfdd; }
+  border-color: #cecfdd;
+  margin-bottom: 2rem; }
   .chart-wrapper .chart-title {
     border-bottom: 1px solid #b6b7cc; }
 
@@ -44,36 +81,37 @@ body {
 
 .definition {
   padding: 16px;
-  font-size: 1.2em;
-  font-weight: 300;
   background-color: #f1efd5;
-  border: 1px solid #e2dea7;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
   color: #444;
   margin-bottom: 16px; }
   .definition strong {
     font-weight: 600; }
-  .definition h4 {
-    font-size: 1.1em; }
   .definition dl {
     margin-bottom: 10px; }
 
 .chart-wrapper .dark-title {
-  background-color: #4c516d;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom: 2px solid #444; }
+  background-color: #4c516d; }
   .chart-wrapper .dark-title h4 {
     color: #ececec; }
   .chart-wrapper .dark-title .panel-heading {
     background-color: #edeef2;
     border-color: #d5d8e1; }
 
+.panel-group {
+  margin-bottom: 0; }
+
+.panel-group .panel {
+  border: 0;
+  border-radius: 0; }
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+  border: 0; }
+
+.panel-default > .panel-heading {
+  border: 0; }
+
 .plank {
-  padding: 16px;
   margin-bottom: 2px;
   color: #333;
   max-width: 768px; }
@@ -82,15 +120,6 @@ body {
     @media (min-width: 768px) {
       .plank p.goal {
         font-size: 1.4em; } }
-  .plank p.explanation {
-    font-size: small; }
-  .plank h2 {
-    font-size: 1.9em; }
-    @media (min-width: 768px) {
-      .plank h2 {
-        font-size: 2.2em; } }
-  .plank h2, .plank h4 {
-    color: #bb105f; }
 
 .bg-danger {
   background-color: #ecd0d3; }
@@ -119,25 +148,23 @@ body {
 
 .grid-item {
   float: left;
-  min-height: 240px;
+  min-height: 320px;
   padding: 10px 14px;
-  border: 5px solid white;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
   background: #888;
   color: #333;
-  cursor: pointer; }
-  .grid-item:hover {
-    border-color: #f3f382; }
+  cursor: pointer;
+  border-right: 5px solid #f2f2f2;
+  margin-bottom: 5px; }
   .grid-item > * {
     margin: 0;
     padding: 0; }
   .grid-item .name {
     font-size: 1.1em;
     font-weight: 700;
-    padding: 0; }
+    padding: 0;
+    color: #ffffff;
+    line-height: 2;
+    margin-top: 0; }
   .grid-item .expand-grid {
     color: #efefef;
     font-weight: 900; }
@@ -284,7 +311,7 @@ body {
   height: 100%; }
 
 .goal-charts, .other-charts {
-  padding: 12px;
+  padding: 2rem 3rem;
   border: 1px solid;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -294,15 +321,32 @@ body {
 
 .goal-charts {
   background-color: #e0e2ec;
-  border-color: #d3d6e4; }
+  border-color: #d3d6e4;
+  margin: 0 0 3rem 0; }
+  @media (min-width: 992px) {
+    .goal-charts {
+      margin: 0 0 3rem 2rem; } }
+  .goal-charts h5 {
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0; }
 
 .other-charts {
   background-color: #dbdbdb;
-  border-color: #d1d1d1; }
+  border-color: #d1d1d1;
+  margin: 0 0 3rem 0; }
+  @media (min-width: 992px) {
+    .other-charts {
+      margin: 1rem 0 3rem 2rem; } }
+  .other-charts h5 {
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0; }
 
-.jump-link {
-  color: #a80e55;
-  font-weight: 600; }
+.jump-links {
+  text-align: right;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+  .jump-links a {
+    padding-left: 5px; }
 
 .blankchart {
   opacity: 0; }
