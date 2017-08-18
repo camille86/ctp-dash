@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'GT-Pressura-Bold';
+  src: url("../webfonts/GT-Pressura-Bold.eot");
+  src: url("../webfonts/GT-Pressura-Bold.woff") format("woff"), url("../webfonts/GT-Pressura-Bold.ttf") format("truetype"); }
 .row-no-gutter {
   margin-left: 0;
   margin-right: 0; }
@@ -6,10 +10,10 @@
     padding-right: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px; }
+  font-family: 'Karla', sans-serif;
+  font-size: 16px; }
   body.application {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
     max-width: 1200px;
     margin: auto;
     padding-bottom: 80px; }
@@ -22,8 +26,7 @@ p.explanation {
   font-size: 14px; }
 
 h2, h4, h5 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
+  font-family: 'GT-Pressura-Bold', Helvetica, sans-serif;
   text-transform: uppercase;
   color: #bb105f; }
 
@@ -38,8 +41,7 @@ h5 {
   font-size: 2rem; }
 
 .navbar-brand {
-  font-family: 'Open Sans Condensed', sans-serif;
-  letter-spacing: 0.09rem; }
+  font-family: 'GT-Pressura-Bold', Helvetica, sans-serif; }
 
 .key {
   margin: 1rem 0 2rem 0; }
@@ -50,9 +52,9 @@ h5 {
     display: inline-block; }
 
 .navbar-inverse {
-  background-color: #4c516d;
+  background-color: #000000;
   color: #ececec;
-  border-bottom: 4px solid #222; }
+  border-bottom: 0; }
   .navbar-inverse .navbar-brand {
     font-size: 1.1em; }
   .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
@@ -84,8 +86,6 @@ h5 {
   background-color: #f1efd5;
   color: #444;
   margin-bottom: 16px; }
-  .definition strong {
-    font-weight: 600; }
   .definition dl {
     margin-bottom: 10px; }
 
@@ -122,7 +122,7 @@ h5 {
         font-size: 1.4em; } }
 
 .bg-danger {
-  background-color: #ecd0d3; }
+  background-color: #c8e4f2; }
 
 .filter-btns .btn {
   -webkit-border-radius: 4px;
@@ -160,7 +160,6 @@ h5 {
     padding: 0; }
   .grid-item .name {
     font-size: 1.1em;
-    font-weight: 700;
     padding: 0;
     color: #ffffff;
     line-height: 2;
