@@ -24,6 +24,13 @@
 //     border-radius: $rad;
 // }
 
+@font-face {
+  font-family: 'GT-Pressura-Bold';
+  src: url('../webfonts/GT-Pressura-Bold.eot');
+  src:  url('../webfonts/GT-Pressura-Bold.woff') format('woff'),
+  url('../webfonts/GT-Pressura-Bold.ttf') format('truetype');
+}
+
 .row-no-gutter {
     margin-left: 0;
     margin-right: 0;
@@ -35,10 +42,10 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
     &.application {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Karla', sans-serif;
         max-width: 1200px;
         margin: auto;
         padding-bottom: $widepad * 5;
@@ -54,8 +61,7 @@ p.explanation {
 }
 
 h2, h4, h5 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    font-family: 'GT-Pressura-Bold', Helvetica, sans-serif;
     text-transform: uppercase;
     color: $bright;
 }
@@ -73,8 +79,7 @@ h5 {
 }
 
 .navbar-brand {
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 0.09rem;
+    font-family: 'GT-Pressura-Bold', Helvetica, sans-serif;
 }
 .key {
     margin: 1rem 0 2rem 0;
@@ -89,9 +94,9 @@ h5 {
 
 
 .navbar-inverse {
-    background-color: $darkheader;
+    background-color: #000000;
     color: $whitetxt;
-    border-bottom: 4px solid $darkblack;
+    border-bottom: 0;
 
     .navbar-brand {
         font-size: 1.1em;
@@ -130,10 +135,6 @@ h5 {
     background-color: $softhilite;
     color: $lightblack;
     margin-bottom: $widepad;
-
-    strong {
-        font-weight: 600;
-    }
 
     dl {
         margin-bottom: 10px;
@@ -182,6 +183,6 @@ h5 {
 }
 
 .bg-danger {
-    background-color: $danger;
+    background-color: #c8e4f2;
 }
 
