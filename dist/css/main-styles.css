@@ -47,10 +47,10 @@ h5 {
 .key {
   margin: 1rem 0 2rem 0; }
   .key h4 {
-    color: #bb105f;
-    display: inline-block; }
-  .key ul {
-    display: inline-block; }
+    color: #bb105f; }
+  .key ul.list-inline li {
+    display: block;
+    margin: 0.2rem 0; }
 
 .navbar-inverse {
   background-color: #000000;

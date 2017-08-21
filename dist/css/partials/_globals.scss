@@ -60,10 +60,12 @@ h5 {
     margin: 1rem 0 2rem 0;
     h4 {
         color: $bright;
-        display: inline-block;
     }
-    ul {
-        display: inline-block;
+    ul.list-inline {
+        li {
+            display: block;
+            margin: 0.2rem 0;
+        }
     }
 }
 
