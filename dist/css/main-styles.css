@@ -57,12 +57,12 @@ h5 {
   color: #ececec;
   border-bottom: 0; }
   .navbar-inverse .navbar-brand {
-    font-size: 1.1em; }
+    font-size: 1.7rem; }
   .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
     color: #ececec; }
   @media (min-width: 992px) {
     .navbar-inverse {
-      font-size: 1.2em; } }
+      font-size: 1.5rem; } }
 
 .chart-wrapper {
   border-color: #cecfdd;
@@ -143,6 +143,42 @@ h5 {
   -ms-border-radius: 4px;
   border-radius: 4px; }
 
+.filter-btns .btn {
+  border-left: 0;
+  border-right: 0; }
+.filter-btns .btn[data-filter="*"] {
+  border-left: 1px solid #adadad; }
+.filter-btns .btn[data-filter=".cross"] {
+  border-right: 1px solid #adadad; }
+.filter-btns .btn[data-filter=".workforce"] {
+  background-color: #d58ab0;
+  color: #ffffff; }
+  .filter-btns .btn[data-filter=".workforce"]:hover {
+    background-color: #dda1c0; }
+.filter-btns .btn[data-filter=".childhood"] {
+  background-color: #ca9ecd;
+  color: #ffffff; }
+  .filter-btns .btn[data-filter=".childhood"]:hover {
+    background-color: #d5b1d7; }
+.filter-btns .btn[data-filter=".health"] {
+  background-color: #9dc59a;
+  color: #ffffff; }
+  .filter-btns .btn[data-filter=".health"]:hover {
+    background-color: #b0d1ae; }
+.filter-btns .btn[data-filter=".housing"] {
+  background-color: #9494dc;
+  color: #ffffff; }
+  .filter-btns .btn[data-filter=".housing"]:hover {
+    background-color: #a9a9e3; }
+.filter-btns .btn[data-filter=".cross"] {
+  background-color: #e2b7ac;
+  color: #ffffff; }
+  .filter-btns .btn[data-filter=".cross"]:hover {
+    background-color: #e8c5bd; }
+.filter-btns .btn.active {
+  background-color: #d4d4d4 !important;
+  color: #000000 !important; }
+
 .positive {
   color: #1a9850; }
 
@@ -177,9 +213,9 @@ h5 {
     color: #ffffff;
     line-height: 2;
     margin-top: 0; }
-  .grid-item .expand-grid {
-    color: #efefef;
-    font-weight: 900; }
+  .grid-item .expand-grid .show-more {
+    position: relative;
+    top: -1px; }
   .grid-item .current-val {
     font-size: 2.8em;
     font-weight: 600;
@@ -201,7 +237,8 @@ h5 {
     bottom: 30px;
     font-size: 1.25em;
     width: 90%;
-    color: #333; }
+    color: #333;
+    margin-bottom: 6px; }
   .grid-item .area {
     position: absolute;
     color: #eee;
@@ -246,6 +283,9 @@ h5 {
   @media (min-width: 1200px) {
     .big {
       width: 50%; } }
+  .big .icon {
+    height: 0.5em;
+    width: 0.5em; }
 
 .workforce {
   background: #d58ab0; }
@@ -276,11 +316,11 @@ h5 {
     border-bottom: 1px solid #7575cc; }
 
 .cross {
-  background: #b3b3b3; }
+  background: #e2b7ac; }
   .cross .name {
-    border-bottom: 2px solid #999999; }
+    border-bottom: 2px solid #cca8a0; }
   .cross .descript {
-    border-bottom: 1px solid #999999; }
+    border-bottom: 1px solid #cca8a0; }
 
 .chart210 {
   height: 210px; }
