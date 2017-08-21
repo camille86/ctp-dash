@@ -57,21 +57,25 @@ function setupIsotope() {
         }
     });
 
-    $('.grid-item').on('click', function(e) {
-        // $(this).toggleClass('big');
-        $('.grid-item').not(this).removeClass('big');
-        $(this).toggleClass('big');
-        $('.grid-item .show-more').text('+');
-        $('.big').find('.show-more').text('-');
+    // $('.grid-item').on('click', function(e) {
+    //     // $(this).toggleClass('big');
+    //     $('.grid-item').not(this).removeClass('big');
+    //     $(this).toggleClass('big');
+    //     $('.grid-item .show-more').text('+');
+    //     $('.big').find('.show-more').text('-');
 
-        // redraw
-        $grid.isotope('layout');
-    }).on('click', 'a.area', function(e) {
-        e.stopPropagation();
-    }).on('mouseover', function(e) {
-        $(this).find('.learn-more').removeClass('hidden');
-    }).on('mouseout', function(e) {
-        $(this).find('.learn-more').addClass('hidden');
+    //     // redraw
+    //     $grid.isotope('layout');
+    // }).on('click', 'a.area', function(e) {
+    //     e.stopPropagation();
+    // }).on('mouseover', function(e) {
+    //     $(this).find('.learn-more').removeClass('hidden');
+    // }).on('mouseout', function(e) {
+    //     $(this).find('.learn-more').addClass('hidden');
+    // });
+
+    $('.grid-item').on('click', function() {
+        window.location = $(this).find('a').attr('href');
     });
 
     var $filters = $('#filters');
