@@ -55,8 +55,8 @@ function init(error, hoods, tracts, underempLoc, underempTrend, unempTrend, tran
     d3.select(window).on('resize', function() {
         locationChart.draw(0, true);
 
-        underTrend = makeUnderTrend(under_tr);
-        unTrend = makeUnTrend(un_tr);
+        underTrend = makeUnderTrend(underempTrend);
+        unTrend = makeUnTrend(unempTrend);
 
         commuteMap.draw();
         incomeMap.draw();
