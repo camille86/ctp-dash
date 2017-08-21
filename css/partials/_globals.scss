@@ -1,29 +1,3 @@
-// $darkheader: #4c516d;
-// $darkblack: #222;
-// $medblack: #333;
-// $lightblack: #444;
-// $bright: #bb105f;
-// $softcallout: #dddee7;
-// $softhilite: #f1efd5;
-// $whitetxt: #ececec;
-// $graytxt: #666;
-// $grayborder: #cecfdd;
-// $graybkgnd: #edeef2;
-// $danger: #ecd0d3;
-// $widepad: 16px;
-//
-// $phone: max-width 768px;
-// $tablet: 768px;
-// $laptop: 992px;
-// $lg-laptop: 1200px;
-//
-// @mixin border-radius($rad) {
-//     -webkit-border-radius: $rad;
-//     -moz-border-radius: $rad;
-//     -ms-border-radius: $rad;
-//     border-radius: $rad;
-// }
-
 @font-face {
   font-family: 'GT-Pressura-Bold';
   src: url('../webfonts/GT-Pressura-Bold.eot');
@@ -100,7 +74,7 @@ h5 {
     border-bottom: 0;
 
     .navbar-brand {
-        font-size: 1.1em;
+        font-size: 1.7rem;
     }
 
     .navbar-brand, .navbar-nav > li > a {
@@ -108,7 +82,7 @@ h5 {
     }
 
     @include breakpoint($laptop) {
-        font-size: 1.2em;
+        font-size: 1.5rem;
     }
 }
 

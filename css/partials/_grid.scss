@@ -1,39 +1,57 @@
-// @import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
-//
-//
-// $workforce: #ab1461;
-// $childhood: #953d9a;
-// $health: #3a8b34;
-// $housing: #2929b9;
-// $cross: #666666;
-//
-// $negative: #a50026;
-// $positive: #1a9850;
-// $neutral: #fee08b;
-//
-// $gray6: #666;
-// $hilite: #f3f382;
-//
-// @mixin gridcolors($base-color) {
-//     $darker: lighten(mix($gray6, $base-color, 30%), 20);
-//     background: mix(white, $base-color, 50%);
-//     .name {
-//         border-bottom: 2px solid $darker;
-//     }
-//     .descript {
-//         border-bottom: 1px solid $darker;
-//     }
-// }
-//
-// @mixin transition($args...) {
-//     -webkit-transition: $args;
-//     -moz-transition: $args;
-//     -ms-transition: $args;
-//     transition: $args;
-// }
-
 .filter-btns .btn {
     @include border-radius(4px);
+}
+
+.filter-btns {
+    .btn {
+        border-left: 0;
+        border-right: 0;
+    }
+    .btn[data-filter="*"] {
+        border-left: 1px solid #adadad
+    }
+    .btn[data-filter=".cross"] {
+        border-right: 1px solid #adadad
+    }
+    .btn[data-filter=".workforce"] {
+        background-color: mix(white, $workforce, 50%);
+        color: $white;
+        &:hover {
+            background-color: mix(white, $workforce, 60%);
+        }
+    }
+    .btn[data-filter=".childhood"] {
+        background-color: mix(white, $childhood, 50%);
+        color: $white;
+        &:hover {
+            background-color: mix(white, $childhood, 60%);
+        }
+    }
+    .btn[data-filter=".health"] {
+        background-color: mix(white, $health, 50%);
+        color: $white;
+        &:hover {
+            background-color: mix(white, $health, 60%);
+        }
+    }
+    .btn[data-filter=".housing"] {
+        background-color: mix(white, $housing, 50%);
+        color: $white;
+        &:hover {
+            background-color: mix(white, $housing, 60%);
+        }
+    }
+    .btn[data-filter=".cross"] {
+        background-color: mix(white, $cross, 50%);
+        color: $white;
+        &:hover {
+            background-color: mix(white, $cross, 60%);
+        }
+    }
+    .btn.active {
+        background-color: #d4d4d4 !important;
+        color: $black !important;
+    }
 }
 
 .positive {
@@ -86,8 +104,10 @@
     }
 
     .expand-grid {
-        color: #efefef;
-        font-weight: 900;
+        .show-more {
+            position: relative;
+            top: -1px;
+        }
     }
 
     .current-val {
@@ -120,6 +140,7 @@
         font-size: 1.25em;
         width: 90%;
         color: #333;
+        margin-bottom: 6px;
     }
 
     .area {
@@ -191,6 +212,11 @@
     }
 
     @include transition(font-size 400ms);
+
+    .icon {
+        height: 0.5em;
+        width: 0.5em;
+    }
 }
 
 
